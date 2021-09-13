@@ -23,7 +23,7 @@ import threading
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 
-from ml_warehouse.ml_warehouse_schema import MLWHBase
+from ml_warehouse.ml_warehouse_schema import Base
 
 
 class ConfigurationError(Exception):
@@ -39,7 +39,7 @@ def _init_mlwh_db():
         return None
 
     engine = create_engine(uri, echo=False)
-    MLWHBase.metadata.create_all(engine)
+    Base.metadata.create_all(engine)
 
     return sessionmaker(bind=engine)
 

@@ -8,7 +8,7 @@ from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy_utils.functions.database import drop_database
 from sqlalchemy import func
 
-from ml_warehouse.ml_warehouse_schema_new import Base, OseqFlowcell, Sample, Study
+from ml_warehouse.ml_warehouse_schema import Base, OseqFlowcell, Sample, Study
 
 EARLY = datetime(year=2020, month=6, day=1, hour=0, minute=0, second=0)
 LATE = datetime(year=2020, month=6, day=14, hour=0, minute=0, second=0)

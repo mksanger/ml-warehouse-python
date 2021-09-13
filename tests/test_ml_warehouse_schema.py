@@ -2,7 +2,7 @@ from pytest import mark as m
 import sqlalchemy
 
 from tests.ml_warehouse_fixture import mlwh_session
-from ml_warehouse.ml_warehouse_schema_new import Study, OseqFlowcell
+from ml_warehouse.ml_warehouse_schema import Study, OseqFlowcell
 from sqlalchemy.orm import Session
 
 # Stop IDEs "optimizing" away this import

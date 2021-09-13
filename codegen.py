@@ -28,4 +28,4 @@ subprocess.run(
 os.remove("generated.py.bu")
 
 # Move the generated file.
-os.rename("generated.py", "ml_warehouse/ml_warehouse_schema_new.py")
+os.rename("generated.py", "ml_warehouse/ml_warehouse_schema.py")
