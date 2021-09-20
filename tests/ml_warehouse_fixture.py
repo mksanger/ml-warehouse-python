@@ -7,6 +7,7 @@ from datetime import datetime
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
+from sqlalchemy.sql.expression import text
 from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy_utils.functions.database import drop_database
 from sqlalchemy import func
@@ -170,7 +171,7 @@ def prod_session() -> Optional[Session]:
         return
 
     url = f"mysql+pymysql://{user}:{password}@{host}:{port}/{db}?charset=utf8mb4"
-    engine = create_engine(url)
+    engine = create_engine(url, future=True)
     session = Session(engine)
 
     yield session
@@ -183,13 +184,15 @@ def mlwh_session(config) -> Session:
 
     uri = mysql_url(config)
     # uri = "sqlite:///mlwh.db"
-    engine = create_engine(uri, echo=False)
+    engine = create_engine(uri, echo=False, future=True)
 
     if not database_exists(engine.url):
         create_database(engine.url)
 
     # Workaround for invalid default values for dates.
-    engine.execute("SET sql_mode = '';")
+    with engine.connect() as conn:
+        conn.execute(text("SET sql_mode = '';"))
+        conn.commit()
 
     Base.metadata.create_all(engine)
 

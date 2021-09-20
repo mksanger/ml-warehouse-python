@@ -9,6 +9,7 @@ from ml_warehouse import *
 from tests.ml_warehouse_fixture import mlwh_session, prod_session
 from ml_warehouse.ml_warehouse_schema import Study, OseqFlowcell
 from sqlalchemy.orm import Session
+from sqlalchemy.orm.decl_api import DeclarativeMeta
 from sqlalchemy import inspect
 from sqlalchemy.engine.reflection import Inspector
 from sqlalchemy import Table
@@ -83,7 +84,7 @@ class TestMLWarehouseDeleteRow(object):
 @m.describe("Test all tables in the database")
 class TestMLWarehouseAllTables(object):
     @m.it("Compares model against database.")
-    def test_all_tables(self, prod_session: Optional[Session]):
+    def test_all_tables(self, prod_session: Optional[Session], mlwh_session):
 
         if prod_session is None:
             pytest.skip("DB credentials not provided")
@@ -123,7 +124,7 @@ class TestMLWarehouseAllTables(object):
         if prod_session is None:
             pytest.skip("DB credentials not provided")
 
-        insp: Inspector = inspect(prod_session.connection().engine)
+        insp: Inspector = inspect(prod_session.connection())
 
         table_names = insp.get_table_names()
         tables = []
@@ -141,42 +142,78 @@ class TestMLWarehouseAllTables(object):
 
         for table in tables:
 
+            if isinstance(table, DeclarativeMeta):
+                table: Table = table.__table__
+
             # Get reflected and generated columns
-            if isinstance(table, Table):
-                refl_cols: List[dict] = insp.get_columns(table.name)
-                gen_cols = table.columns
-
-            else:
-                refl_cols = insp.get_columns(table.__tablename__)
-                gen_cols = dict()
-
-                for key in dir(table):
-                    attr = getattr(table, key)
-                    if isinstance(
-                        attr, sqlalchemy.orm.attributes.InstrumentedAttribute
-                    ):
-
-                        try:
-                            gen_cols[attr.expression.name] = attr.expression
-                        except:
-                            pass
+            refl_cols: List[dict] = insp.get_columns(table.name)
+            gen_cols = table.columns
 
             for column in refl_cols:
 
                 colname = column["name"]
                 generated_column = gen_cols.get(colname)
 
-                for (key, value) in column.items():
+                # Check reflected column type against generated column type
+                dialect = prod_session.connection().engine.dialect
+                refl_type = column["type"].compile(dialect)
+                gen_type = generated_column.type.compile(dialect)
 
-                    if key == "type":
-                        dialect = prod_session.connection().engine.dialect
-                        new_type = getattr(generated_column, key).compile(dialect)
-                        new_value = value.compile(dialect)
+                # TODO: figure out how to make this stricter / more useful.
+                assert (
+                    refl_type == gen_type
+                    or "UNSIGNED" in refl_type
+                    or "CHARACTER SET" in refl_type
+                    or "ENUM" in refl_type
+                    and "ENUM" in gen_type
+                    and refl_type.split(")")[0] == gen_type[:-1]
+                    or "CHAR" in refl_type
+                    and "CHAR" in gen_type
+                    and refl_type.split(")")[0] == gen_type[:-1]
+                    or "FLOAT" in refl_type
+                    and "FLOAT" in gen_type
+                    and refl_type.split(",")[0] == gen_type[:-1]
+                )
 
-                        assert (
-                            new_type == new_value
-                            or "UNSIGNED" in new_value
-                            or "COLLATE" in new_value
-                            or "FLOAT" in new_value
-                            and new_value.split(",")[0] == new_type[:-1]
-                        )
+            # Check all primary keys
+            table_name = table.name
+            table
+
+            refl_pks = set(insp.get_pk_constraint(table_name)["constrained_columns"])
+            gen_pks = {col.name for col in table.primary_key.columns}
+
+            assert refl_pks == gen_pks
+
+            # Check all foreign keys
+            refl_fks: list = insp.get_foreign_keys(table_name)
+            expanded_refl_fks = list()
+            gen_fks = table.foreign_keys
+
+            for f in refl_fks:
+                # assert f["constrained_columns"] == f["referred_columns"]
+                for cons, refd in zip(f["constrained_columns"], f["referred_columns"]):
+                    new_dict = f
+                    new_dict["constrained_columns"] = cons
+                    new_dict["referred_columns"] = refd
+                    expanded_refl_fks.append(new_dict)
+
+            assert len(expanded_refl_fks) == len(gen_fks)
+
+            # Check the foreign keys
+
+            for foreign_key in expanded_refl_fks:
+
+                corresponding_generated = list(
+                    filter(
+                        lambda f: f.column.table.name == foreign_key["referred_table"]
+                        and f.column.name == foreign_key["referred_columns"]
+                        and f.parent.name == foreign_key["constrained_columns"],
+                        gen_fks,
+                    )
+                )
+
+                assert len(corresponding_generated) == 1
+                corresponding_generated = corresponding_generated[0]
+
+                for opt, value in foreign_key["options"].items():
+                    assert value == getattr(corresponding_generated, opt)
