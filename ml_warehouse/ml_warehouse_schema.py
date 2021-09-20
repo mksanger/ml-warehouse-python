@@ -1,4 +1,5 @@
-from sqlalchemy import CHAR, Column, DECIMAL, Date, DateTime, Enum, Float, ForeignKey, ForeignKeyConstraint, Index, String, TIMESTAMP, Table, Text, text
+from ml_warehouse._decorators import add_docstring
+from sqlalchemy import CHAR, Column, Computed, DECIMAL, Date, DateTime, Enum, Float, ForeignKey, ForeignKeyConstraint, Index, String, TIMESTAMP, Table, Text, text
 from sqlalchemy.dialects.mysql import BIGINT, DATETIME, ENUM, INTEGER, SMALLINT, TINYINT, VARCHAR
 from sqlalchemy.orm import declarative_base, relationship
 
@@ -6,6 +7,7 @@ Base = declarative_base()
 metadata = Base.metadata
 
 
+@add_docstring
 class ArInternalMetadata(Base):
     __tablename__ = 'ar_internal_metadata'
 
@@ -15,6 +17,7 @@ class ArInternalMetadata(Base):
     value = Column(String(255))
 
 
+@add_docstring
 class CgapAnalyte(Base):
     __tablename__ = 'cgap_analyte'
 
@@ -30,6 +33,7 @@ class CgapAnalyte(Base):
     project = Column(String(50, 'utf8_unicode_ci'))
 
 
+@add_docstring
 class CgapBiomaterial(Base):
     __tablename__ = 'cgap_biomaterial'
 
@@ -40,6 +44,7 @@ class CgapBiomaterial(Base):
     donor_name = Column(String(64, 'utf8_unicode_ci'))
 
 
+@add_docstring
 class CgapConjuredLabware(Base):
     __tablename__ = 'cgap_conjured_labware'
 
@@ -55,11 +60,12 @@ class CgapConjuredLabware(Base):
     project = Column(String(50, 'utf8_unicode_ci'), index=True)
 
 
+@add_docstring
 class CgapHeron(Base):
     __tablename__ = 'cgap_heron'
     __table_args__ = (
-        Index('cgap_heron_rack_and_position', 'container_barcode', 'position', unique=True),
-        Index('cgap_heron_destination_wrangled', 'destination', 'wrangled')
+        Index('cgap_heron_destination_wrangled', 'destination', 'wrangled'),
+        Index('cgap_heron_rack_and_position', 'container_barcode', 'position', unique=True)
     )
 
     cgap_heron_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id. Value can change.')
@@ -80,6 +86,7 @@ class CgapHeron(Base):
     control_accession_number = Column(String(32, 'utf8_unicode_ci'))
 
 
+@add_docstring
 class CgapLineIdentifier(Base):
     __tablename__ = 'cgap_line_identifier'
 
@@ -92,6 +99,7 @@ class CgapLineIdentifier(Base):
     project = Column(String(50, 'utf8_unicode_ci'))
 
 
+@add_docstring
 class CgapOrganoidsConjuredLabware(Base):
     __tablename__ = 'cgap_organoids_conjured_labware'
 
@@ -105,6 +113,7 @@ class CgapOrganoidsConjuredLabware(Base):
     fate = Column(String(40, 'utf8_unicode_ci'))
 
 
+@add_docstring
 class CgapRelease(Base):
     __tablename__ = 'cgap_release'
 
@@ -123,6 +132,7 @@ class CgapRelease(Base):
     project = Column(String(50, 'utf8_unicode_ci'), index=True)
 
 
+@add_docstring
 class CgapSupplierBarcode(Base):
     __tablename__ = 'cgap_supplier_barcode'
 
@@ -132,6 +142,7 @@ class CgapSupplierBarcode(Base):
     date = Column(TIMESTAMP, nullable=False, server_default=text("'0000-00-00 00:00:00'"))
 
 
+@add_docstring
 class IseqExternalProductMetrics(Base):
     __tablename__ = 'iseq_external_product_metrics'
     __table_args__ = {'comment': 'Externally computed metrics for data sequenced at WSI'}
@@ -210,7 +221,10 @@ class IseqExternalProductMetrics(Base):
     sex_reported = Column(CHAR(6), comment='Sex as reported by sample supplier')
     sex_computed = Column(CHAR(6), comment='Genetic sex as identified by sequence data')
 
+    iseq_external_product_components = relationship('IseqExternalProductComponents', back_populates='iseq_external_product_metrics')
 
+
+@add_docstring
 class IseqHeronProductMetrics(Base):
     __tablename__ = 'iseq_heron_product_metrics'
     __table_args__ = {'comment': 'Heron project additional metrics'}
@@ -238,6 +252,7 @@ class IseqHeronProductMetrics(Base):
     num_aligned_reads = Column(BIGINT(20), comment='Number of aligned filtered reads')
 
 
+@add_docstring
 class IseqRun(Base):
     __tablename__ = 'iseq_run'
     __table_args__ = {'comment': 'Table linking run and flowcell identities with the run folder '
@@ -248,6 +263,7 @@ class IseqRun(Base):
     folder_name = Column(String(64, 'utf8_unicode_ci'), comment='Runfolder name')
 
 
+@add_docstring
 class IseqRunLaneMetrics(Base):
     __tablename__ = 'iseq_run_lane_metrics'
     __table_args__ = (
@@ -303,7 +319,10 @@ class IseqRunLaneMetrics(Base):
     interop_occupied_mean = Column(Float(5), comment='Percent of occupied flowcell wells, a mean value over tiles of this lane (derived from Illumina InterOp files)')
     interop_occupied_stdev = Column(Float(5), comment='Standard deviation value for interop_occupied_mean')
 
+    iseq_product_metrics = relationship('IseqProductMetrics', back_populates='iseq_run_lane_metrics')
 
+
+@add_docstring
 class IseqRunStatusDict(Base):
     __tablename__ = 'iseq_run_status_dict'
 
@@ -312,7 +331,10 @@ class IseqRunStatusDict(Base):
     iscurrent = Column(TINYINT(3), nullable=False)
     temporal_index = Column(SMALLINT(5))
 
+    iseq_run_status = relationship('IseqRunStatus', back_populates='iseq_run_status_dict')
 
+
+@add_docstring
 class LighthouseSample(Base):
     __tablename__ = 'lighthouse_sample'
     __table_args__ = (
@@ -324,6 +346,7 @@ class LighthouseSample(Base):
     root_sample_id = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='Id for this sample provided by the Lighthouse lab')
     rna_id = Column(String(255, 'utf8_unicode_ci'), nullable=False, index=True, comment='Lighthouse lab-provided id made up of plate barcode and well')
     result = Column(String(255, 'utf8_unicode_ci'), nullable=False, index=True, comment='Covid-19 test result from the Lighthouse lab')
+    is_current = Column(TINYINT(1), nullable=False, server_default=text("'0'"), comment='Identifies if this sample has the most up to date information for the same rna_id')
     mongodb_id = Column(String(255, 'utf8_unicode_ci'), unique=True, comment='Auto-generated id from MongoDB')
     cog_uk_id = Column(String(255, 'utf8_unicode_ci'), index=True, comment='Consortium-wide id, generated by Sanger on import to LIMS')
     plate_barcode = Column(String(255, 'utf8_unicode_ci'), comment='Barcode of plate sample arrived in, from rna_id')
@@ -353,8 +376,10 @@ class LighthouseSample(Base):
     updated_at = Column(DateTime, comment='When this record was last updated')
     must_sequence = Column(TINYINT(1), comment='PAM provided value whether sample is of high importance')
     preferentially_sequence = Column(TINYINT(1), comment='PAM provided value whether sample is important')
+    current_rna_id = Column(String(255, 'utf8_unicode_ci'), Computed('(if((`is_current` = 1),`rna_id`,NULL))', persisted=True), unique=True)
 
 
+@add_docstring
 class PacBioRunWellMetrics(Base):
     __tablename__ = 'pac_bio_run_well_metrics'
     __table_args__ = (
@@ -409,7 +434,10 @@ class PacBioRunWellMetrics(Base):
     hifi_low_quality_read_length_mean = Column(INTEGER(10), comment='The mean length of HiFi reads filtered due to low quality (<Q20)')
     hifi_low_quality_read_quality_median = Column(SMALLINT(5), comment='The median base quality of HiFi bases filtered due to low quality (<Q20)')
 
+    pac_bio_product_metrics = relationship('PacBioProductMetrics', back_populates='pac_bio_run_well_metrics')
 
+
+@add_docstring
 class Sample(Base):
     __tablename__ = 'sample'
     __table_args__ = (
@@ -480,6 +508,16 @@ class Sample(Base):
     gc_content = Column(String(255, 'utf8_unicode_ci'))
     dna_source = Column(String(255, 'utf8_unicode_ci'))
 
+    bmap_flowcell = relationship('BmapFlowcell', back_populates='sample')
+    flgen_plate = relationship('FlgenPlate', back_populates='sample')
+    iseq_flowcell = relationship('IseqFlowcell', back_populates='sample')
+    oseq_flowcell = relationship('OseqFlowcell', back_populates='sample')
+    pac_bio_run = relationship('PacBioRun', back_populates='sample')
+    qc_result = relationship('QcResult', back_populates='sample')
+    samples_extraction_activity = relationship('SamplesExtractionActivity', back_populates='sample')
+    stock_resource = relationship('StockResource', back_populates='sample')
+    tol_sample_bioproject = relationship('TolSampleBioproject', back_populates='sample')
+
 
 t_schema_migrations = Table(
     'schema_migrations', metadata,
@@ -487,6 +525,7 @@ t_schema_migrations = Table(
 )
 
 
+@add_docstring
 class Study(Base):
     __tablename__ = 'study'
     __table_args__ = (
@@ -534,7 +573,16 @@ class Study(Base):
     s3_email_list = Column(String(255, 'utf8_unicode_ci'))
     data_deletion_period = Column(String(255, 'utf8_unicode_ci'))
 
+    bmap_flowcell = relationship('BmapFlowcell', back_populates='study')
+    flgen_plate = relationship('FlgenPlate', back_populates='study')
+    iseq_flowcell = relationship('IseqFlowcell', back_populates='study')
+    oseq_flowcell = relationship('OseqFlowcell', back_populates='study')
+    pac_bio_run = relationship('PacBioRun', back_populates='study')
+    stock_resource = relationship('StockResource', back_populates='study')
+    study_users = relationship('StudyUsers', back_populates='study')
 
+
+@add_docstring
 class BmapFlowcell(Base):
     __tablename__ = 'bmap_flowcell'
 
@@ -553,10 +601,11 @@ class BmapFlowcell(Base):
     position = Column(INTEGER(10), comment='Flowcell position')
     id_library_lims = Column(String(255), index=True, comment='Earliest LIMs identifier associated with library creation')
 
-    sample = relationship('Sample')
-    study = relationship('Study')
+    sample = relationship('Sample', back_populates='bmap_flowcell')
+    study = relationship('Study', back_populates='bmap_flowcell')
 
 
+@add_docstring
 class FlgenPlate(Base):
     __tablename__ = 'flgen_plate'
     __table_args__ = (
@@ -580,10 +629,11 @@ class FlgenPlate(Base):
     well_uuid_lims = Column(String(36, 'utf8_unicode_ci'), comment='LIMs-specific well uuid')
     qc_state = Column(TINYINT(1), comment='QC state; 1 (pass), 0 (fail), NULL (not known)')
 
-    sample = relationship('Sample')
-    study = relationship('Study')
+    sample = relationship('Sample', back_populates='flgen_plate')
+    study = relationship('Study', back_populates='flgen_plate')
 
 
+@add_docstring
 class IseqExternalProductComponents(Base):
     __tablename__ = 'iseq_external_product_components'
     __table_args__ = (
@@ -600,16 +650,17 @@ class IseqExternalProductComponents(Base):
     num_components = Column(TINYINT(3), nullable=False, comment='Number of component products for this product')
     component_index = Column(TINYINT(3), nullable=False, comment='Unique component index within all components of this product, a value from 1 to the value of num_components column for this product')
 
-    iseq_external_product_metrics = relationship('IseqExternalProductMetrics')
+    iseq_external_product_metrics = relationship('IseqExternalProductMetrics', back_populates='iseq_external_product_components')
 
 
+@add_docstring
 class IseqFlowcell(Base):
     __tablename__ = 'iseq_flowcell'
     __table_args__ = (
-        Index('index_iseqflowcell__id_flowcell_lims__position__tag_index', 'id_flowcell_lims', 'position', 'tag_index'),
-        Index('iseq_flowcell_id_lims_id_flowcell_lims_index', 'id_lims', 'id_flowcell_lims'),
         Index('index_iseq_flowcell_id_flowcell_lims_position_tag_index_id_lims', 'id_flowcell_lims', 'position', 'tag_index', 'id_lims', unique=True),
-        Index('index_iseqflowcell__flowcell_barcode__position__tag_index', 'flowcell_barcode', 'position', 'tag_index')
+        Index('index_iseqflowcell__flowcell_barcode__position__tag_index', 'flowcell_barcode', 'position', 'tag_index'),
+        Index('index_iseqflowcell__id_flowcell_lims__position__tag_index', 'id_flowcell_lims', 'position', 'tag_index'),
+        Index('iseq_flowcell_id_lims_id_flowcell_lims_index', 'id_lims', 'id_flowcell_lims')
     )
 
     id_iseq_flowcell_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id, value can change')
@@ -656,10 +707,12 @@ class IseqFlowcell(Base):
     loading_concentration = Column(Float, comment='Final instrument loading concentration (pM)')
     workflow = Column(String(20, 'utf8_unicode_ci'), comment='Workflow used when processing the flowcell')
 
-    sample = relationship('Sample')
-    study = relationship('Study')
+    sample = relationship('Sample', back_populates='iseq_flowcell')
+    study = relationship('Study', back_populates='iseq_flowcell')
+    iseq_product_metrics = relationship('IseqProductMetrics', back_populates='iseq_flowcell')
 
 
+@add_docstring
 class IseqRunStatus(Base):
     __tablename__ = 'iseq_run_status'
 
@@ -669,9 +722,10 @@ class IseqRunStatus(Base):
     id_run_status_dict = Column(ForeignKey('iseq_run_status_dict.id_run_status_dict'), nullable=False, index=True, comment='Status identifier, see iseq_run_status_dict.id_run_status_dict')
     iscurrent = Column(TINYINT(1), nullable=False, comment='Boolean flag, 1 is the status is current, 0 otherwise')
 
-    iseq_run_status_dict = relationship('IseqRunStatusDict')
+    iseq_run_status_dict = relationship('IseqRunStatusDict', back_populates='iseq_run_status')
 
 
+@add_docstring
 class OseqFlowcell(Base):
     __tablename__ = 'oseq_flowcell'
 
@@ -697,10 +751,11 @@ class OseqFlowcell(Base):
     tag2_set_id_lims = Column(String(255, 'utf8_unicode_ci'), comment='LIMs-specific identifier of the tag set for the second tag')
     tag2_set_name = Column(String(255, 'utf8_unicode_ci'), comment='WTSI-wide tag set name for the second tag')
 
-    sample = relationship('Sample')
-    study = relationship('Study')
+    sample = relationship('Sample', back_populates='oseq_flowcell')
+    study = relationship('Study', back_populates='oseq_flowcell')
 
 
+@add_docstring
 class PacBioRun(Base):
     __tablename__ = 'pac_bio_run'
 
@@ -732,10 +787,12 @@ class PacBioRun(Base):
     library_created_at = Column(DateTime, comment='Timestamp of library creation')
     pac_bio_run_name = Column(String(255, 'utf8_unicode_ci'), comment='Name of the run')
 
-    sample = relationship('Sample')
-    study = relationship('Study')
+    sample = relationship('Sample', back_populates='pac_bio_run')
+    study = relationship('Study', back_populates='pac_bio_run')
+    pac_bio_product_metrics = relationship('PacBioProductMetrics', back_populates='pac_bio_run')
 
 
+@add_docstring
 class QcResult(Base):
     __tablename__ = 'qc_result'
     __table_args__ = (
@@ -758,9 +815,10 @@ class QcResult(Base):
     assay = Column(String(255), comment='assay type and version')
     cv = Column(Float, comment='Coefficient of variance')
 
-    sample = relationship('Sample')
+    sample = relationship('Sample', back_populates='qc_result')
 
 
+@add_docstring
 class SamplesExtractionActivity(Base):
     __tablename__ = 'samples_extraction_activity'
 
@@ -780,9 +838,10 @@ class SamplesExtractionActivity(Base):
     id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier')
     deleted_at = Column(DateTime, comment='Timestamp of any activity removal')
 
-    sample = relationship('Sample')
+    sample = relationship('Sample', back_populates='samples_extraction_activity')
 
 
+@add_docstring
 class StockResource(Base):
     __tablename__ = 'stock_resource'
     __table_args__ = (
@@ -811,10 +870,11 @@ class StockResource(Base):
     snp_count = Column(INTEGER(11), comment='The number of markers detected in genotyping assays')
     measured_gender = Column(String(255, 'utf8_unicode_ci'), comment='The gender call base on the genotyping assay')
 
-    sample = relationship('Sample')
-    study = relationship('Study')
+    sample = relationship('Sample', back_populates='stock_resource')
+    study = relationship('Study', back_populates='stock_resource')
 
 
+@add_docstring
 class StudyUsers(Base):
     __tablename__ = 'study_users'
 
@@ -826,9 +886,10 @@ class StudyUsers(Base):
     email = Column(String(255, 'utf8_unicode_ci'))
     name = Column(String(255, 'utf8_unicode_ci'))
 
-    study = relationship('Study')
+    study = relationship('Study', back_populates='study_users')
 
 
+@add_docstring
 class TolSampleBioproject(Base):
     __tablename__ = 'tol_sample_bioproject'
 
@@ -843,9 +904,10 @@ class TolSampleBioproject(Base):
     bioproject_accession = Column(String(255))
     filename = Column(String(255))
 
-    sample = relationship('Sample')
+    sample = relationship('Sample', back_populates='tol_sample_bioproject')
 
 
+@add_docstring
 class IseqProductMetrics(Base):
     __tablename__ = 'iseq_product_metrics'
     __table_args__ = (
@@ -930,10 +992,14 @@ class IseqProductMetrics(Base):
     target_autosome_coverage_threshold = Column(INTEGER(4), comment='The coverage threshold used in the perc target autosome greater than depth calculation')
     target_autosome_percent_gt_coverage_threshold = Column(Float(5), comment='The percentage of the target autosome covered at greater than the depth specified')
 
-    iseq_flowcell = relationship('IseqFlowcell')
-    iseq_run_lane_metrics = relationship('IseqRunLaneMetrics')
+    iseq_flowcell = relationship('IseqFlowcell', back_populates='iseq_product_metrics')
+    iseq_run_lane_metrics = relationship('IseqRunLaneMetrics', back_populates='iseq_product_metrics')
+    iseq_product_ampliconstats = relationship('IseqProductAmpliconstats', back_populates='iseq_product_metrics')
+    iseq_product_components = relationship('IseqProductComponents', foreign_keys='[IseqProductComponents.id_iseq_pr_component_tmp]', back_populates='iseq_product_metrics')
+    iseq_product_components_ = relationship('IseqProductComponents', foreign_keys='[IseqProductComponents.id_iseq_pr_tmp]', back_populates='iseq_product_metrics_')
 
 
+@add_docstring
 class PacBioProductMetrics(Base):
     __tablename__ = 'pac_bio_product_metrics'
     __table_args__ = {'comment': 'A linking table for the pac_bio_run and pac_bio_run_well_metrics '
@@ -943,15 +1009,16 @@ class PacBioProductMetrics(Base):
     id_pac_bio_rw_metrics_tmp = Column(ForeignKey('pac_bio_run_well_metrics.id_pac_bio_rw_metrics_tmp', ondelete='CASCADE'), nullable=False, index=True, comment='PacBio run well metrics id, see "pac_bio_run_well_metrics.id_pac_bio_rw_metrics_tmp"')
     id_pac_bio_tmp = Column(ForeignKey('pac_bio_run.id_pac_bio_tmp', ondelete='SET NULL'), index=True, comment='PacBio run id, see "pac_bio_run.id_pac_bio_tmp"')
 
-    pac_bio_run_well_metrics = relationship('PacBioRunWellMetrics')
-    pac_bio_run = relationship('PacBioRun')
+    pac_bio_run_well_metrics = relationship('PacBioRunWellMetrics', back_populates='pac_bio_product_metrics')
+    pac_bio_run = relationship('PacBioRun', back_populates='pac_bio_product_metrics')
 
 
+@add_docstring
 class IseqProductAmpliconstats(Base):
     __tablename__ = 'iseq_product_ampliconstats'
     __table_args__ = (
-        Index('iseq_pastats_amplicon', 'primer_panel_num_amplicons', 'amplicon_index'),
         Index('iseq_hrm_digest_unq', 'id_iseq_product', 'primer_panel', 'amplicon_index', unique=True),
+        Index('iseq_pastats_amplicon', 'primer_panel_num_amplicons', 'amplicon_index'),
         {'comment': 'Some of per sample per amplicon metrics generated by samtools '
                 'ampliconstats'}
     )
@@ -971,15 +1038,16 @@ class IseqProductAmpliconstats(Base):
     metric_FPCOV_100 = Column(DECIMAL(5, 2), comment='Coverage percent at depth 100')
     metric_FREADS = Column(INTEGER(10), comment='Number of aligned filtered reads')
 
-    iseq_product_metrics = relationship('IseqProductMetrics')
+    iseq_product_metrics = relationship('IseqProductMetrics', back_populates='iseq_product_ampliconstats')
 
 
+@add_docstring
 class IseqProductComponents(Base):
     __tablename__ = 'iseq_product_components'
     __table_args__ = (
         Index('iseq_pr_comp_compi', 'component_index', 'num_components'),
-        Index('iseq_pr_comp_unique', 'id_iseq_pr_tmp', 'id_iseq_pr_component_tmp', unique=True),
-        Index('iseq_pr_comp_ncomp', 'num_components', 'id_iseq_pr_tmp')
+        Index('iseq_pr_comp_ncomp', 'num_components', 'id_iseq_pr_tmp'),
+        Index('iseq_pr_comp_unique', 'id_iseq_pr_tmp', 'id_iseq_pr_component_tmp', unique=True)
     )
 
     id_iseq_pr_components_tmp = Column(BIGINT(20), primary_key=True, comment='Internal to this database id, value can change')
@@ -988,5 +1056,5 @@ class IseqProductComponents(Base):
     num_components = Column(TINYINT(3), nullable=False, comment='Number of component products for this product')
     component_index = Column(TINYINT(3), nullable=False, comment='Unique component index within all components of this product, \\na value from 1 to the value of num_components column for this product')
 
-    iseq_product_metrics = relationship('IseqProductMetrics', foreign_keys=[id_iseq_pr_component_tmp])
-    iseq_product_metrics_ = relationship('IseqProductMetrics', foreign_keys=[id_iseq_pr_tmp])
+    iseq_product_metrics = relationship('IseqProductMetrics', foreign_keys=[id_iseq_pr_component_tmp], back_populates='iseq_product_components')
+    iseq_product_metrics_ = relationship('IseqProductMetrics', foreign_keys=[id_iseq_pr_tmp], back_populates='iseq_product_components_')

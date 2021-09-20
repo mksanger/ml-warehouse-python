@@ -1,2 +1,3 @@
-sqlacodegen==3.0.0b2
+# sqlacodegen==3.0.0b2
+git+https://github.com/laurentS/sqlacodegen.git@2d964160337debf1d86d7b53310b16466c7a7647 # fork of sqlacodegen with bugfixes
 black==21.8b0

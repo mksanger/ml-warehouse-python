@@ -18,8 +18,6 @@ subprocess.run(
         url,
         "--outfile",
         "generated.py",
-        "--option",
-        "nobidi",
     ]
 )
 
@@ -31,3 +29,20 @@ os.remove("generated.py.bu")
 
 # Move the generated file.
 os.rename("generated.py", "ml_warehouse/ml_warehouse_schema.py")
+
+# Decorate the classes
+result = []
+decorator_added = False
+with open("ml_warehouse/ml_warehouse_schema.py", "r") as read_file:
+
+    result.append("from ml_warehouse._decorators import add_docstring\n")
+
+    for line in read_file.readlines():
+
+        if line.startswith("class"):
+            result.append("@add_docstring\n")
+
+        result.append(line)
+
+with open("ml_warehouse/ml_warehouse_schema.py", "w") as write_file:
+    write_file.writelines(result)
