@@ -1,0 +1,2874 @@
+- abbreviation: 6278STDY
+  abstract: In this study we will undertake whole-exome sequencing of UK IBD cases,
+    this data will be combined with that from IBD cases we have already whole-genome
+    sequenced in 2018, 2019 and 2020.
+  accession_number: EGAS00001005007
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2020-09-24 14:00:43
+  data_access_group: as45 ibdx10
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: Whole exome sequencing of patients with Inflammatory Bowel Disease
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Carl Anderson
+  hmdmc_number: 18/004 - IBD Bioresource Cohort
+  id_lims: SQSCP
+  id_study_lims: '6278'
+  id_study_tmp: 6108
+  last_updated: 2021-08-18 10:10:08
+  name: HG_WC10130_IBD Bioresource Whole Exome Sequencing of 20,000 samples
+  prelim_id: null
+  recorded_at: 2021-08-18 10:10:09
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 1
+  state: active
+  study_title: 'IBD Whole Exome Sequencing '
+  study_type: Exome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 566aae82-fe6e-11ea-b5c0-fa163e2f1184
+- abbreviation: hpgen
+  abstract: This project would establish a collaboration with Stephen Bentley in WTSI
+    pathogens and Diederik van de Beek at the Academic Medical Center in Amsterdam
+    to study host and pathogen genomes in bacterial meningitis. All dutch cases of
+    this very rare and deadly infection is uniformly referred to a single center in
+    Holland, which has collected matched patient/pathogen DNA from 1000 individuals.
+    It marks an important opportunity to engage in host-pathogen genomics, as it is
+    a cohesive and homogenous collection of infected individuals. We propose to run
+    Omni Express chips to study 1000 host genomes in comparison to public Dutch controls
+    as well as to do host-pathogen interaction screens and run within-case association
+    tests on clinical outcome data. The funding for this project will be joint between
+    the Dutch collaborators and Sanger (HumGen funds ~500 samples), it will begin
+    a valuable within-Sanger collaboration, and samples are available immediately
+    (the collaborators are very keen) enabling spend this FY.
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2013-07-18 12:23:42
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: This project would establish a collaboration with Stephen Bentley in
+    WTSI pathogens and Diederik van de Beek at the Academic Medical Center in Amsterdam
+    to study host and pathogen genomes in bacterial meningitis. All dutch cases of
+    this very rare and deadly infection is uniformly referred to a single center in
+    Holland, which has collected matched patient/pathogen DNA from 1000 individuals.
+    It marks an important opportunity to engage in host-pathogen genomics, as it is
+    a cohesive and homogenous collection of infected individuals. We propose to run
+    Omni Express chips to study 1000 host genomes in comparison to public Dutch controls
+    as well as to do host-pathogen interaction screens and run within-case association
+    tests on clinical outcome data. The funding for this project will be joint between
+    the Dutch collaborators and Sanger (HumGen funds ~500 samples), it will begin
+    a valuable within-Sanger collaboration, and samples are available immediately
+    (the collaborators are very keen) enabling spend this FY.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Jeffrey Barrett
+  hmdmc_number: 13/037
+  id_lims: SQSCP
+  id_study_lims: '2708'
+  id_study_tmp: 2676
+  last_updated: 2021-08-18 10:08:23
+  name: Integration of the host and pathogen genetics in bacterial meningitis [omnix_hpgen](hpgen)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:25
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Integration of the host and pathogen genetics in bacterial meningitis
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: e246ec30-efa4-11e2-8b9e-68b59976a382
+- abbreviation: GLAND
+  abstract: 15x whole genome sequencing in samples from the Inuit isolated sample
+    collection in Greenland
+  accession_number: EGAS00001002004
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2015-06-19 11:31:23
+  data_access_group: t144_silc
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: 15x whole genome sequencing in samples from the Inuit isolated sample
+    collection in Greenland
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: '15_055'
+  id_lims: SQSCP
+  id_study_lims: '3705'
+  id_study_tmp: 3675
+  last_updated: 2021-08-18 10:08:54
+  name: IHTP_MWGS_GREENLAND
+  prelim_id: I1995
+  recorded_at: 2021-08-18 10:08:57
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: 15x WGS GREENLAND
+  study_type: Whole Genome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: b699c170-1676-11e5-936b-68b59976a382
+- abbreviation: gwalpc
+  abstract: "Podoconiosis (endemic, non-filarial elephantiasis) is a tropical lymphoedema\
+    \ resulting from\r\nlong-term barefoot exposure to red clay soil derived from\
+    \ volcanic rock. WHO has recently\r\nrecognized it as a Neglected Tropical Disease\
+    \ (NTD) which causes overwhelming economic\r\nand social burdens in impoverished\
+    \ communities. Only a subset of exposed individuals\r\ndevelops podoconiosis.\
+    \ Consistent with a genetic aetiology, our previous studies indicated\r\nhigh\
+    \ heritability (~63%). A genome-wide association study (GWAS) with 194 cases and\
+    \ 203\r\ncontrols from southern Ethiopia found genome-wide significant association\
+    \ of podoconiosis\r\nwith rs17612858, located 5.7kb from HLA-DQA1 and suggestive\
+    \ associations with further\r\nSNPs across the genome.\r\nProposed work\r\nWe\
+    \ have been awarded funding from the MRC to:\r\ni) extend the podoconiosis bioresource\
+    \ to include a further 600 samples from the GWAS\r\npopulation in southern Ethiopia,\
+    \ 1600 samples from 2 ethnically distinct Ethiopian populations\r\nin Ethiopia\
+    \ and 800 samples from Cameroon\r\nii) confirm associations identified in the\
+    \ initial GWAS by typing associated SNPs in each of\r\nthese populations;\r\n\
+    iii) perform high resolution HLA Class II typing of cases, family members and\
+    \ controls;\r\niv) GWAS 1700 samples, 2000 samples will be available, 1000 cases,\
+    \ 1000 controls\r\nv) fine map the region using these population-specific variants\
+    \ to identify putative causal\r\nvariants.\r\nWe plan to carry out the experiments\
+    \ for ii. (covered in original pre-lim) and iv. at the Sanger"
+  accession_number: EGAS00001000920
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-03-19 11:52:52
+  data_access_group: t144_podo
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Podoconiosis (endemic, non-filarial elephantiasis) is a tropical lymphoedema\
+    \ resulting from\r\nlong-term barefoot exposure to red clay soil derived from\
+    \ volcanic rock. WHO has recently\r\nrecognized it as a Neglected Tropical Disease\
+    \ (NTD) which causes overwhelming economic\r\nand social burdens in impoverished\
+    \ communities. Only a subset of exposed individuals\r\ndevelops podoconiosis.\
+    \ Consistent with a genetic aetiology, our previous studies indicated\r\nhigh\
+    \ heritability (~63%). A genome-wide association study (GWAS) with 194 cases and\
+    \ 203\r\ncontrols from southern Ethiopia found genome-wide significant association\
+    \ of podoconiosis\r\nwith rs17612858, located 5.7kb from HLA-DQA1 and suggestive\
+    \ associations with further\r\nSNPs across the genome.\r\nProposed work\r\nWe\
+    \ have been awarded funding from the MRC to:\r\ni) extend the podoconiosis bioresource\
+    \ to include a further 600 samples from the GWAS\r\npopulation in southern Ethiopia,\
+    \ 1600 samples from 2 ethnically distinct Ethiopian populations\r\nin Ethiopia\
+    \ and 800 samples from Cameroon\r\nii) confirm associations identified in the\
+    \ initial GWAS by typing associated SNPs in each of\r\nthese populations;\r\n\
+    iii) perform high resolution HLA Class II typing of cases, family members and\
+    \ controls;\r\niv) GWAS 1700 samples, 2000 samples will be available, 1000 cases,\
+    \ 1000 controls\r\nv) fine map the region using these population-specific variants\
+    \ to identify putative causal\r\nvariants.\r\nWe plan to carry out the experiments\
+    \ for ii. (covered in original pre-lim) and iv. at the Sanger\r\nThis data is\
+    \ part of a pre-publication release. For information on the proper use of pre-publication\
+    \ data shared by the Wellcome Trust Sanger Institute (including details of any\
+    \ publication moratoria), please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: 12/083, 12/084
+  id_lims: SQSCP
+  id_study_lims: '3011'
+  id_study_tmp: 2978
+  last_updated: 2021-08-18 10:08:32
+  name: Replication and fine-mapping of genome-wide associated loci for podoconiosis
+    [omni2.5-8_gwalpc](gwalpc)
+  prelim_id: G1588
+  recorded_at: 2021-08-18 10:08:34
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Replication and fine-mapping of genome-wide associated loci for podoconiosis
+    [omni2.5-8_gwalpc](gwalpc)
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 006b53e0-af5d-11e3-95c9-68b59976a382
+- abbreviation: 5995STDY
+  abstract: Human oesophagus is a patchwork of competing mutant clones. We wish to
+    see how this patchwork is altered under the extreme selection pressures of chemotherapy
+    and radiotherapy both individually and combined.
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2019-10-23 10:06:07
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Human oesophagus is a patchwork of competing mutant clones. We wish
+    to see how this patchwork is altered under the extreme selection pressures of
+    chemotherapy and radiotherapy both individually and combined.  We will sequence
+    2mm2 contiguous pieces of oesophageal epithelium from patients who have undergone
+    chemotherapy and radiotherapy to assess how the mutational landscape has changed.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Phil Jones
+  hmdmc_number: 16/038
+  id_lims: SQSCP
+  id_study_lims: '5995'
+  id_study_tmp: 5825
+  last_updated: 2021-08-18 10:10:00
+  name: The effects of chemotherapy and radiation in human oesophageal epithelium
+  prelim_id: null
+  recorded_at: 2021-08-18 10:10:01
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: The effects of chemotherapy and radiation in human oesophageal epithelium
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: bad9c5de-f57c-11e9-8967-68b599768938
+- abbreviation: hhtmri
+  abstract: "A consortium of scientists (Imperial College, MRC Clinical Science unit\
+    \ and EBI) have developed a high quality, high throughput MRI assay procedure\
+    \ for human subjects. This allows the extensive characterisation of both the human\
+    \ heart and other anatomical features discernible in the central thorax, such\
+    \ as skeleton components, lung parameters. For a number of these organs, in particular\
+    \ the human heart, there is an automated image registration and analysis procedure\
+    \ leading to high quality quantative measures with  both substantial more variance\
+    \ between individuals than between sessions of the same individual, and correlates\
+    \ to known disease related phenotypes, such as the thickening of the heart wall.\
+    \ We are in the process of applying this procedure to ~1,200 healthy human volunteers.\
+    \ This will provide the basis for an association study (the goal of this proposal)\
+    \ and also provide a baseline of normal behaviour for other studies\r\n\r\n\r\n\
+    As this method of phenotyping provides for a large number (>100 independent variables)\
+    \ of quantitative phenotypes we believe this study wil behave more like a molecular\
+    \ phenotyping assay (eg, eQTL) rather than a disease study association (often\
+    \ with fewer variables and  the variables are often binary of complex disease\
+    \ phenotypes). At 1,000 samples we should be well powered for traits with 5% proportion\
+    \ of variance or more associated to genetic effects. As well as looking genomewide,\
+    \ the large set of existing replicated cardiac and anthropomorphic (eg, height)\
+    \ traits allow the assessment of these already discovered variants in the context\
+    \ of this richer phenotyping study, but with a less stringent multiple testing\
+    \ parameter .    \r\n\r\nWe propose therefore to type on a cost effective whole\
+    \ genome SNP array all 1,000 individuals in two batches; 550 in November/December\
+    \ 2011, and 650 in June/July 2012."
+  accession_number: null
+  aligned: 0
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2012-02-06 15:28:47
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: 6 months
+  data_release_delay_reason: other
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: delayed
+  deleted_at: null
+  description: "A consortium of scientists (Imperial College, MRC Clinical Science\
+    \ unit and EBI) have developed a high quality, high throughput MRI assay procedure\
+    \ for human subjects. This allows the extensive characterisation of both the human\
+    \ heart and other anatomical features discernible in the central thorax, such\
+    \ as skeleton components, lung parameters. For a number of these organs, in particular\
+    \ the human heart, there is an automated image registration and analysis procedure\
+    \ leading to high quality quantative measures with  both substantial more variance\
+    \ between individuals than between sessions of the same individual, and correlates\
+    \ to known disease related phenotypes, such as the thickening of the heart wall.\
+    \ We are in the process of applying this procedure to ~1,200 healthy human volunteers.\
+    \ This will provide the basis for an association study (the goal of this proposal)\
+    \ and also provide a baseline of normal behaviour for other studies\r\n\r\n\r\n\
+    As this method of phenotyping provides for a large number (>100 independent variables)\
+    \ of quantitative phenotypes we believe this study wil behave more like a molecular\
+    \ phenotyping assay (eg, eQTL) rather than a disease study association (often\
+    \ with fewer variables and  the variables are often binary of complex disease\
+    \ phenotypes). At 1,000 samples we should be well powered for traits with 5% proportion\
+    \ of variance or more associated to genetic effects. As well as looking genomewide,\
+    \ the large set of existing replicated cardiac and anthropomorphic (eg, height)\
+    \ traits allow the assessment of these already discovered variants in the context\
+    \ of this richer phenotyping study, but with a less stringent multiple testing\
+    \ parameter .    \r\n\r\nWe propose therefore to type on a cost effective whole\
+    \ genome SNP array all 1,000 individuals in two batches; 550 in November/December\
+    \ 2011, and 650 in June/July 2012."
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: None
+  hmdmc_number: 11/079
+  id_lims: SQSCP
+  id_study_lims: '2107'
+  id_study_tmp: 2076
+  last_updated: 2021-08-18 10:08:03
+  name: High quality Human Heart and Thorax MRI study [omnix_hhtmri] (hhtmri)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:05
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 435974b6-50d7-11e1-8e6b-68b59976a382
+- abbreviation: gaibdc
+  abstract: "Crohn's disease and ulcerative colitis case ascertained via the UK inflammatory\
+    \ bowel\r\ndisease consortium and genotyped using the Illumina Core Exome array"
+  accession_number: EGAS00001000924
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-01-22 11:43:00
+  data_access_group: ibd as45 dr9
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Both internal and external funding has enabled 5000 inflammatory bowel\
+    \ disease cases to be\r\nwhole genome sequenced (CD @4X, UC @2X). The Anderson\
+    \ and Barrett groups are\r\ncurrently generating genotypes across these samples\
+    \ for comparison to 4000 population\r\ncontrols sequenced as part of UK10K. The\
+    \ UK10K project has shown that imputing\r\nsequenced genetic variation into previously\
+    \ GWASed samples greatly increases power to\r\ndetect association. Given that\
+    \ our study has been designed to detect association to low\r\nfrequency variation\
+    \ (0.5% and above) these gains in power are especially important. Overall,\r\n\
+    the UKIBDGC has GWAS data for around 1800 CD samples (Affy 500K) and 3000 UC\r\
+    \nsamples (Affy6), though some of these samples have also been whole genome sequenced.\r\
+    \nHere, we apply to get all remaining non-GWAS and non-WGS IBD cases in the UKIBDGC\r\
+    \n(N=X) genotyped genotyped on the Illumina Core Exome Array"
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Carl Anderson/Jeff Barrett
+  hmdmc_number: 12/034, 12/042, 12/026, 12/040, 12/035, 12/039, 12/036, 12/041
+  id_lims: SQSCP
+  id_study_lims: '2923'
+  id_study_tmp: 2890
+  last_updated: 2021-08-18 10:08:29
+  name: Genotyping of additional Inflammatory Bowel Disease cases - 2014 [coreex_gaibdc](gaibdc)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:32
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Genotyping of additional Inflammatory Bowel Disease cases - 2014
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 58967ec0-835a-11e3-af2b-68b59976a382
+- abbreviation: vrildw
+  abstract: "These data have been generated in the context of one of the largest genome-wide\r\
+    \nassociation studies of vaccine responses ever undertaken, which will provide\
+    \ unparalleled\r\npower to identify the genetic factors associated with the response\
+    \ to all of the most commonly\r\nused childhood vaccines worldwide. The large\
+    \ cohort of ca. 7,000 individuals includes 1,400\r\nchildren from Uganda, 1,500\
+    \ South African infants, 500 Burkina Faso infants, 1,800 children\r\nfrom Ecuador\
+    \ and up to 1,800 from a variety of countries (MAL-ED Consortium) recruited\r\n\
+    through existing birth cohorts (Uganda, Ecuador and MAL-ED countries) or ongoing\
+    \ maternal\r\nand child vaccine clinical trials (against pneumococcus in South\
+    \ Africa and malaria in\r\nBurkina). The principal analysed phenotypes are the\
+    \ serological responses at 6 or 12 months\r\nof age to the vaccines administered\
+    \ to all enrolled children as part of expanded programme of\r\nimmunisation in\
+    \ all countries (including diphtheria, tetanus, pertussis, Haemophilus\r\ninfluenzae,\
+    \ measles and hepatitis B). Other phenotypes that are being assessed in the new\r\
+    \nstudies include quantitative response to BCG, rotavirus and pneumococcal vaccines\
+    \ (South\r\nAfrica, Ecuador and Uganda), clinical and immunological response to\
+    \ malaria vaccines\r\n(Burkina), immunological correlates of atopy (Ecuador and\
+    \ Uganda) and malaria infection\r\n(Burkina, Ecuador and Uganda) in addition to\
+    \ non-communicable disease traits such as blood\r\npressure (Uganda)"
+  accession_number: EGAS00001000918
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-05-23 13:07:54
+  data_access_group: vaccgene
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Human genetic heterogeneity accounts for approximately 70% of the\
+    \ observed variability in\r\nresponse to common childhood vaccinations. Identifying\
+    \ the elements of this heterogeneity\r\nwill enable the development of vaccines\
+    \ which have improved clinical and cost effectiveness\r\nthrough rational adjuventation\
+    \ approaches, or by targeting particular at-risk or responsive\r\nsubgroups. The\
+    \ studies published to date have been limited in terms of the number of vaccine\r\
+    \nsubtypes analysed, diversity of the populations included, sample sizes and breadth\
+    \ of other\r\nenvironmental and lifestyle variables which may explain some of\
+    \ the remainder of variation in\r\nthe response to each vaccine. Nevertheless,\
+    \ these studies have proposed that the genes\r\nwhich harbour the variants associated\
+    \ with vaccine responsiveness reside within regions of\r\nthe genome associated\
+    \ with immune function such as the HLA locus and FOXP1and ITGAL.\r\nWe are proposing\
+    \ one of the largest genome-wide association studies of vaccine response\r\never\
+    \ undertaken, which will provide unparalleled power to identify the genetic factors\r\
+    \nassociated with the response to all of the most commonly used childhood vaccines\r\
+    \nworldwide. For the first phase of the project we genotyped ca. 1,400 children\r\
+    \nfrom the Entebbe Mother and Baby (EMaB) study, an ongoing birth cohort in southern\
+    \ Uganda, using the Illumina HumanOmni2.5-8 chip. Analyses for response to vaccination\r\
+    \nagainst diphtheria, tetanus, pertussis, Haemophilus influenzae, measles, hepatitis\
+    \ B and BCG are now underway. Working alongside other ongoing studies, we plan\
+    \ for the second phase\r\nof the project to expand sample sizes to up to 7,000\
+    \ individuals in total. This large cohort will include 1,500 South African infants,\
+    \ 500 Burkina Faso infants, 1,800 children from Ecuador\r\nand up to 1,800 from\
+    \ a variety of countries (MAL-ED Consortium). The principal measured phenotypes\
+    \ will be the serological responses at 6 or 12 months of age to the vaccines\r\
+    \nadministered to all enrolled children as part of expanded programme of immunisation\
+    \ in all countries. As for the primary Ugandan study the responses will be analysed\
+    \ as quantitative\r\ntraits using mixed model (GEMMA) analyses following imputation\
+    \ using a combined 1000 Genome and African Genome Variation Project reference\
+    \ panel. The data will be analysed as one large discovery mega-analysis to maximise\
+    \ the power of finding the relevant associated\r\nvariants. Interim GWAS analyses\
+    \ will be performed on each population to test for population specific signals.\
+    \ Other phenotypes that will be assessed in the new studies include quantitative\
+    \ response to BCG, rotavirus and pneumococcal vaccines (South Africa, Ecuador\
+    \ and Uganda), clinical and immunological response to malaria vaccines (Burkina),\
+    \ immunological correlates of atopy (Ecuador and Uganda) and malaria infection\
+    \ (Burkina,\r\nEcuador and Uganda) in addition to non-communicable disease traits\
+    \ such as blood pressure."
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Manj Sandhu
+  hmdmc_number: 14/017
+  id_lims: SQSCP
+  id_study_lims: '3142'
+  id_study_tmp: 3109
+  last_updated: 2021-08-18 10:08:36
+  name: 'Genome wide association study of vaccine responses in infants living in the
+    Developing World (VaccGene): Phase II African Cohorts [omni2.5-8_vrildw](vrildw)'
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:39
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: 'Genome wide association study of vaccine responses in infants living
+    in the Developing World (VaccGene): Phase II African Cohorts'
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 4082de20-e27b-11e3-8aac-68b59976a382
+- abbreviation: DDD_MAIN
+  abstract: 'Thousands of babies are born each year in the UK who fail to develop
+    normally because of errors in their genetic makeup.  Currently, diagnosis is restricted
+    to a small minority of children and requires the clinician to recognise the appearance
+    of the child and the pattern of symptoms, supplemented by the use of microscopes
+    to identify large rearrangements of the genetic material in chromosomes.  Research
+    shows that the latest molecular testing methods identify previously undetectable
+    changes in chromosomes allowing new diagnoses to be made.   However, clinical
+    use is hampered by the limited availability and inconsistent application of these
+    technologies, and by lack of basic knowledge to link genetic changes directly
+    to symptoms.  The consequence is that clinical diagnoses remain impossible except
+    for a small number of children. '
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2011-05-17 12:10:10
+  data_access_group: ddd
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: We propose to apply state of the art molecular testing, including SNP
+    genotyping, to 12,000 UK children with abnormal development.  The results will
+    provide a unique, on-line catalogue of genetic changes linked to symptoms that
+    will enable clinicians to diagnose developmental disorders. Furthermore, we will
+    design more efficient and cheaper diagnostic assays for relevant genetic testing
+    to be offered to all such patients in the UK and so transform clinical practice
+    for children with abnormal development.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Nigel Carter
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '1834'
+  id_study_tmp: 1808
+  last_updated: 2021-08-18 10:07:56
+  name: DDD_MAIN
+  prelim_id: null
+  recorded_at: 2021-08-18 10:07:57
+  reference_genome: Not suitable for alignment
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: DDD_MAIN
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 9c7f1b7e-807e-11e0-8b93-00144f206e2e
+- abbreviation: bibkidex
+  abstract: "We propose to exome sequence ~7,000 children from ALSPAC and 9,156 children\
+    \ from Born in Bradford (BiB). These represent all children from both cohorts\
+    \ who do not currently have WES data. 3,000 ALSPAC participants are already being\
+    \ exome sequenced by Elise Robinson from Broad. We will not sequence the same\
+    \ individuals, but will combine the data to increase sample size. 96% of ALSPAC\
+    \ participants are of white British ancestry, whereas BiB is ~47% South Asian\
+    \ (predominantly Pakistani), ~36% white European, and ~17% other.\r\nALSPAC offspring\
+    \ are now aged 28-30, and BiB children are aged 9-13. Detailed educational and\
+    \ cognitive data available for both ALSPAC and BiB. The combined dataset will\
+    \ give an overall dataset of ~19,000 children. UKB participants represent ~5%\
+    \ of those invited to participate. BiB enrolled >80% of those eligible to participate\
+    \ and >64% of all babies born within the recruitment window. ALSPAC enrolled 75%\
+    \ of all babies born within the recruitment window. In addition, we propose to\
+    \ sequence selected parents from ALSPAC to generate parent-offspring trios, to\
+    \ enable trio-based analyses, such as detection of de novo mutation and assessment\
+    \ of over/under transmission of risk variants. We anticipate sequencing ~4000\
+    \ parents to produce ~2,000 complete trios.\r\n"
+  accession_number: EGAS00001005273
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2021-03-11 08:46:48
+  data_access_group: birth_cohort_wes
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: We propose to exome sequence birth cohorts with near complete population
+    coverage (thus addressing the ascertainment biases of previous studies), which
+    have detailed longitudinal cognitive and educational data on parents and children,
+    and for which genotyping chip data are readily available.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Matthew Hurles
+  hmdmc_number: 20/0100
+  id_lims: SQSCP
+  id_study_lims: '6407'
+  id_study_tmp: 6237
+  last_updated: 2021-08-18 10:10:11
+  name: HG_WC10162_Birth Cohort_ALSPAC
+  prelim_id: null
+  recorded_at: 2021-08-18 10:10:13
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Birth Cohort_ALSPAC
+  study_type: Exome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 51185040-8246-11eb-972d-fa163eac3af7
+- abbreviation: 5171STDY
+  abstract: 'The study consists of ~ 1000 fresh frozen lung tumours. They will be
+    sequenced using the Agilent baitset Quotation Number: GB-MH-1017-055. This is
+    a collaboration set up by Dr. Ultan McDermott (former CASM) and Astra Zeneca.'
+  accession_number: EGAS00001002883
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2018-01-22 13:30:07
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: 'The study consists of ~ 1000 fresh frozen lung tumours. They will
+    be sequenced using the Agilent baitset Quotation Number: GB-MH-1017-055. This
+    is a collaboration set up by Dr. Ultan McDermott (former CASM) and Astra Zeneca.'
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Peter Campbell
+  hmdmc_number: 17/075
+  id_lims: SQSCP
+  id_study_lims: '5171'
+  id_study_tmp: 5035
+  last_updated: 2021-08-18 10:09:36
+  name: Luminist
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:37
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Luminist
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 5cdd6b26-ff78-11e7-bed9-68b59976a384
+- abbreviation: SC_WES_INT
+  abstract: "INTERVAL is a randomised controlled trial in up to 50,000 blood donors\
+    \ being conducted within the framework of the UK\u2019s National Blood and Transplant\
+    \ service (NHSBT). The main objectives are to determine whether blood can be safely\
+    \ collected more frequently than present practice, and whether donation intervals\
+    \ can be tailored to the individual\u2019s capacity to give blood. Added value\
+    \ is provided by this study\u2019s creation of a national epidemiological bio-resource\
+    \ that will contribute to broader public health research. Here we propose to whole\
+    \ exome sequence a subset of participants from the INTERVAL cohort to be used\
+    \ as a control set of data. (http://www.intervalstudy.org.uk/) "
+  accession_number: EGAS00001000825
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-05-19 09:37:01
+  data_access_group: interval_wes
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: Whole exome sequencing of a subset of participants from the INTERVAL
+    study.
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Nicole Soranzo
+  hmdmc_number: 14/035
+  id_lims: SQSCP
+  id_study_lims: '3130'
+  id_study_tmp: 3097
+  last_updated: 2021-08-18 10:08:35
+  name: SEQCAP_WES_INTERVAL
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:38
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Whole Exome Sequencing of INTERVAL
+  study_type: Exome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 2121a5b0-df39-11e3-83fc-68b59976a382
+- abbreviation: SC_GDAPC
+  abstract: "Using a sequencing-based approach, the Genome Diversity in Africa Project\
+    \ (GDAP)  aims to produce a comprehensive catalogue of human genetic variation\
+    \ in SSA, including single nucleotide polymorphisms (SNPs), structural variants,\
+    \ and haplotypes. This resource will make a substantial contribution to understanding\
+    \ patterns of genetic diversity within and among populations in SSA, as well as\
+    \ providing a global resource to help design, implement and interpret genomic\
+    \ studies in SSA populations and studies comprising globally diverse populations,\
+    \ complementing existing genomic resources. Specifically, we plan to carry out\
+    \ low coverage (4x) whole genome sequencing of up to 2000 individuals across Africa\
+    \ (100 individuals from each ethnolinguistic group), and complement these data\
+    \ with 2.5M Illumina genotyping. We have already completed sequencing of 700 individuals\
+    \ across SSA, we are now adding an additional 500 samples from up to 5 ethno-linguistic\
+    \ groups within Africa, including populations from Burkina Faso, Cameroon, Morocco,\
+    \ Ghana and Seychelles.\r\nOur scientific objectives are to: 1) develop a resource\
+    \ that provides a comprehensive catalogue of genetic variation in populations\
+    \ from SSA accessible to the global scientific community; 2) characterise population\
+    \ genetic diversity, structure, gene flow and admixture across SSA; 3) develop\
+    \ a cost-efficient, next-generation genotype array for diverse populations across\
+    \ SSA; and 4) facilitate whole genome-sequencing association studies of complex\
+    \ traits and diseases by developing a reference panel for imputation and resource\
+    \ for enhancing fine-mapping disease susceptibility loci. These scientific objectives\
+    \ will be supported by cross-cutting operational activities, including network\
+    \ and management of the consortium, research ethics, and research capacity building\
+    \ in statistical genetics and bioinformatics.\r\n"
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-02-20 10:29:00
+  data_access_group: gdap_wgs
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: "Globally, human populations show structured genetic diversity as a\
+    \ result of geographical dispersion, selection and drift. Understanding this genetic\
+    \ variation can provide insights into the evolutionary processes that shape both\
+    \ human adaptation and variation in disease. Populations from SSA have the highest\
+    \ levels of genetic diversity. This characteristic, in addition to historical\
+    \ genetic admixture, can lead to complexities in the design of studies assessing\
+    \ the genetic determinants of disease and human variation. However, such studies\
+    \ of African populations are also likely to provide new opportunities to discover\
+    \ novel disease susceptibility loci and variants and refine gene\u2013disease\
+    \ association signals. A systematic assessment of genetic diversity within SSA\
+    \ would facilitate genomic epidemiological studies in the region.\r\nThe African\
+    \ Genome Variation Project (AGVP) is an international collaboration that aims\
+    \ to produce a comprehensive catalogue of human genetic variation in SSA. This\
+    \ resource has extended our understanding of population history, patterns of genetic\
+    \ diversity within and among populations in SSA, as well as providing a global\
+    \ resource to help design, implement and interpret genomic studies.\r\nThe Genome\
+    \ Diversity in Africa Project (GDAP) will extend and expand the African Genome\
+    \ Variation (AGV) project. Using a sequencing-based approach, GDA project aims\
+    \ to produce a comprehensive catalogue of human genetic variation in SSA, including\
+    \ single nucleotide polymorphisms (SNPs), structural variants, and haplotypes.\
+    \ This resource will make a substantial contribution to understanding patterns\
+    \ of genetic diversity within and among populations in SSA, as well as providing\
+    \ a global resource to help design, implement and interpret genomic studies in\
+    \ SSA populations and studies comprising globally diverse populations, complementing\
+    \ existing genomic resources. Specifically, we plan to carry out low coverage\
+    \ (4x) whole genome sequencing of up to 2000 individuals across Africa (100 individuals\
+    \ from each ethnolinguistic group), and complement these data with 2.5M Illumina\
+    \ genotyping. We have already completed sequencing of 700 individuals across SSA,\
+    \ we are now adding an additional 500 samples from up to 5 ethno-linguistic groups\
+    \ within Africa, including populations from Burkina Faso, Cameroon, Morocco, Ghana\
+    \ and Seychelles.\r\nOur scientific objectives are to: 1) develop a resource that\
+    \ provides a comprehensive catalogue of genetic variation in populations from\
+    \ SSA accessible to the global scientific community; 2) characterise population\
+    \ genetic diversity, structure, gene flow and admixture across SSA; 3) develop\
+    \ a cost-efficient, next-generation genotype array for diverse populations across\
+    \ SSA; and 4) facilitate whole genome-sequencing association studies of complex\
+    \ traits and diseases by developing a reference panel for imputation and resource\
+    \ for enhancing fine-mapping disease susceptibility loci. These scientific objectives\
+    \ will be supported by cross-cutting operational activities, including network\
+    \ and management of the consortium, research ethics, and research capacity building\
+    \ in statistical genetics and bioinformatics.\r\n"
+  ega_dac_accession_number: EGAC00001000237
+  ega_policy_accession_number: EGAP00001000238
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Manj Sandhu
+  hmdmc_number: 14/023
+  id_lims: SQSCP
+  id_study_lims: '2953'
+  id_study_tmp: 2920
+  last_updated: 2021-08-18 10:08:30
+  name: SEQCAP_WGS_GDAP_Cameroon
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:33
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Genome Diversity in Africa Project
+  study_type: Whole Genome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: cfc215b0-9a19-11e3-ace8-68b59976a382
+- abbreviation: pbcsmg
+  abstract: "The project consists of GWAS-level genotyping of DNA samples from approximately\
+    \ 6,000 people with primary biliary cholangitis (PBC, formerly known as primary\
+    \ biliary cirrhosis). PBC is a chronic liver disease that eventually leads to\
+    \ end-stage liver disease (ESLD) with attendant need for liver transplantation\
+    \ (LT) in a substantial proportion of cases. The only licensed treatment for PBC\
+    \ is ursodeoxycholic acid (UDCA), a hydrophilic bile acid with variable efficacy.\
+    \ In UDCA responders (i.e. PBC patients with marked improvement in the liver biochemistry\
+    \ on treatment), LT-free survival is comparable to that of the general population.\
+    \ Conversely, in UDCA non-responders (i.e. those with minimal improvement in the\
+    \ liver biochemistry on treatment), LT-free survival is comparable that of untreated\
+    \ patients in the pre-UDCA era.  \r\nSamples for this project will be obtained\
+    \ from the UK-PBC Research Cohort (n ~ 5,000) and the Italian PBC Consortium (n\
+    \ ~ 1,000). \r\nStatistical analysis will be led by Dr Carl Anderson at the WTSI\
+    \ and Professor Heather Cordell at the Institute for Genetic Medicine, Newcastle\
+    \ University. Analyses will be informed by phenotype data from the UK-PBC Research\
+    \ Cohorts and Italian PBC Consortium.\r\n"
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2016-06-23 14:04:12
+  data_access_group: pbc-strat-med
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "The project consists of GWAS-level genotyping of DNA samples from\
+    \ approximately 6,000 people with primary biliary cholangitis (PBC, formerly known\
+    \ as primary biliary cirrhosis). Samples for this project will be obtained from\
+    \ the UK-PBC Research Cohort (n ~ 5,000) and the Italian PBC Consortium (n ~ 1,000).\
+    \ Statistical analysis will be led by Dr Carl Anderson at the WTSI and Professor\
+    \ Heather Cordell at the Institute for Genetic Medicine, Newcastle University.\
+    \ Analyses will be informed by phenotype data from the UK-PBC Research Cohorts\
+    \ and Italian PBC Consortium \r\nThis data is part of a pre-publication release.\
+    \ For information on the proper use of pre-publication data shared by the Wellcome\
+    \ Trust Sanger Institute please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Carl Anderson
+  hmdmc_number: 15/085
+  id_lims: SQSCP
+  id_study_lims: '4281'
+  id_study_tmp: 4259
+  last_updated: 2021-08-18 10:09:13
+  name: PBC stratified medicine GWAS [corex_pbcsmg](pbcsmg)
+  prelim_id: G1256
+  recorded_at: 2021-08-18 10:09:13
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: PBC stratified medicine GWAS
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 5d01fa80-394b-11e6-a403-68b59976a384
+- abbreviation: arcogen
+  abstract: "Following the arcOGEN GWAS for osteoarthritis, we are now focusing on\
+    \ exonic variation\r\nand are requesting funding to genotype ~2,400 of the arcOGEN\
+    \ samples (which do not have\r\nGWAS data) on the CoreExome array\r\n"
+  accession_number: EGAS00001000914
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-07-01 15:39:20
+  data_access_group: arcogen_coreex
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Following the arcOGEN GWAS for osteoarthritis, we are now focusing\
+    \ on exonic variation and are requesting funding to genotype ~2,400 of the arcOGEN\
+    \ samples (which do not have GWAS data) on the CoreExome array\r\nThis data is\
+    \ part of a pre-publication release. For information on the proper use of pre-publication\
+    \ data shared by the Wellcome Trust Sanger Institute (including details of any\
+    \ publication moratoria), please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: 14/042, 14/044, 14/049
+  id_lims: SQSCP
+  id_study_lims: '3209'
+  id_study_tmp: 3176
+  last_updated: 2021-08-18 10:08:38
+  name: Assessing rare exonic variation in osteoarthritis [coreex_arcogen](arcogen)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:41
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Assessing rare exonic variation in osteoarthritis
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: de503390-0135-11e4-b23c-68b59976a382
+- abbreviation: 5613STDY
+  abstract: Collection and QC study only
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2018-11-23 09:00:31
+  data_access_group: as45 ibdx10
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: not applicable
+  data_release_timing: standard
+  deleted_at: null
+  description: Collection and QC study only
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Carl Anderson
+  hmdmc_number: '12/041, 18/004, eHMDMC 19/0013 '
+  id_lims: SQSCP
+  id_study_lims: '5613'
+  id_study_tmp: 5460
+  last_updated: 2021-08-18 10:09:49
+  name: HG_IBD Sample collection and QC 2019
+  prelim_id: I3352
+  recorded_at: 2021-08-18 10:09:50
+  reference_genome: Not suitable for alignment
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Exome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 3b1f6036-eefe-11e8-8197-68b59976a384
+- abbreviation: 5322STDY
+  abstract: Melanoma is the most aggressive type of skin cancer, causing about 75%
+    of dermatological cancer deaths. Acral lentiginous melanoma (ALM) is the most
+    common subtype of melanoma in admixed Latin American populations, but very few
+    tumour genomes and exomes, all from European-descent individuals, have been analysed
+    across several studies. Because of this, the genomic landscape of ALM is mostly
+    unknown. Our aim in this project is to define this landscape and identify driver
+    somatic alterations by whole-exome sequencing a collection of ALM germline/tumour
+    paired FFPE samples from the National Cancer Institute of Mexico.
+  accession_number: EGAS00001003740
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2018-04-30 09:59:41
+  data_access_group: team113 cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: Melanoma is the most aggressive type of skin cancer, causing about
+    75% of dermatological cancer deaths. Acral lentiginous melanoma (ALM) is the most
+    common subtype of melanoma in admixed Latin American populations, but very few
+    tumour genomes and exomes, all from European-descent individuals, have been analysed
+    across several studies. Because of this, the genomic landscape of ALM is mostly
+    unknown. Our aim in this project is to define this landscape and identify driver
+    somatic alterations by whole-exome sequencing a collection of ALM germline/tumour
+    paired FFPE samples from the National Cancer Institute of Mexico.
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: David Adams
+  hmdmc_number: 18/014
+  id_lims: SQSCP
+  id_study_lims: '5322'
+  id_study_tmp: 5176
+  last_updated: 2021-08-18 10:09:40
+  name: Genomics of acral lentiginous melanoma
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:41
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Genomics of acral lentiginous melanoma
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 3370f85c-4c5d-11e8-bd80-68b599768938
+- abbreviation: 5407STDY
+  abstract: "The objective is to establish whether immunosenescence is associated\
+    \ with the development of clonal haematopoiesis in a healthy ageing population.\
+    \ This will be addressed in collaboration with the European consortium running\
+    \ the ImmunoAgeing project (www.immunoageing.eu).   \r\nGenomic DNA derived from\
+    \ the peripheral blood of 394 individuals at 3-5 time-points over a 20-year period\
+    \ will be analysed. RNA bait pulldown (Agilent) will be used to perform targeted\
+    \ sequencing of genes known to be recurrently mutated in myeloid malignancies\r\
+    \nThe presence, size and nature of clonal haematopoiesis will be correlated with\
+    \ quantitative measures of immunosenescence."
+  accession_number: EGAS00001003183
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2018-06-29 11:19:13
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: 'An investigation of the role of immunosenescence in the development
+    of clonal haematopoiesis.     '
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: George Vassiliou
+  hmdmc_number: 17/006
+  id_lims: SQSCP
+  id_study_lims: '5407'
+  id_study_tmp: 5266
+  last_updated: 2021-08-18 10:09:43
+  name: ImmunoAgeing_Longitudinal
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:44
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: ImmunoAgeing_Longitudinal
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 40d660da-7b8e-11e8-b8fa-68b59976a384
+- abbreviation: SIGhumeb
+  abstract: "DNA in all cells is prone to mutagenesis, with somatic mutations making\
+    \ key contributions to various human diseases such as cancer, and to aging itself.\
+    \ Mutations may be the consequence of exogenous or endogenous mutagenic influences\
+    \ (including radiations and DNA-damaging chemicals), and also result from the\
+    \ intrinsic infidelity of DNA replication or enzymatic DNA modifications. Somatic\
+    \ mutations are generally mitigated by the cellular DNA repair machinery, and\
+    \ defective functioning of components of this machinery can markedly increase\
+    \ mutation rates. Different mutational processes leave different, characteristic\
+    \ signatures of somatic mutations on the exposed cellular genome. Notably, recent\
+    \ analyses of cancer genomes have revealed several novel mutational signatures,\
+    \ the biological bases of which are predominantly unknown. To generally elucidate\
+    \ somatic mutational processes operative in cells, in particular their influences\
+    \ on human disease, we propose to systematically survey the mutational signatures\
+    \ generated by exposures to known DNA damaging agents and defective DNA repair/editing\
+    \ processes. These studies will provide a series of mutational signatures with\
+    \ known underlying causes for subsequent matching to signatures found in normal\
+    \ or diseased human cells, and will explore how various cellular components influence\
+    \ mutagenesis. A \u201Cmutational signature\u201D is the pattern of mutations\
+    \ occurring as a consequence of unfaithful DNA replication, or as a result of\
+    \ an exposure to an endogenous or environmental mutagen. Mutational signatures\
+    \ include one or more classes of DNA change; base substitutions, insertions and\
+    \ deletions, rearrangements and copy number changes. They can be given extra discriminatory\
+    \ power by further characterisation of each mutation class; for example, for base\
+    \ substitutions, by incorporating the subclass, the sequence context, the transcriptional\
+    \ strand, evidence of substitution clustering (kataegis) and other features relating\
+    \ to the genomic or epigenomic landscape. Mutational signatures extracted in this\
+    \ proposal will all be characterised by next generation sequencing of whole genomes\
+    \ of cell clones that have been exposed to a mutational process caused by DNA\
+    \ damaging agents or abnormalities in DNA repair/editing. "
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-03-26 17:01:12
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Analysis of mutational signatures arising in vivo in humans. iPS cells
+    from control patients and 100 patients carrying known mutations in DNA repair/editing
+    genes will be generated, and sequenced. Blood from the patients will also be used
+    to generate reference 'germline' sequence data.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Michael Stratton
+  hmdmc_number: 14/005
+  id_lims: SQSCP
+  id_study_lims: '3023'
+  id_study_tmp: 2990
+  last_updated: 2021-08-18 10:08:32
+  name: G1188 [collectioneb] MutSig-SIGhum
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:35
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Mutational signatures of DNA damage and repair processes
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 3c36b170-b508-11e3-bb2b-68b59976a382
+- abbreviation: sc_autozygELGH
+  abstract: This data set contains whole exome sequences of individuals with self-stated
+    parental relatedness from the East London Genes & Health cohort. Rare frequency
+    functional variants in these healthy individuals will be studied with respect
+    to the genetic health of the participants and loss-of-function analysis of human
+    genes.
+  accession_number: EGAS00001003612
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2019-04-25 07:54:17
+  data_access_group: autozyg mercury
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "This data set contains whole exome sequences of individuals with self-stated\
+    \ parental relatedness from the East London Genes & Health cohort. Rare frequency\
+    \ functional variants in these healthy individuals will be studied with respect\
+    \ to the genetic health of the participants and loss-of-function analysis of human\
+    \ genes.\r\nThis data is part of a pre-publication release. For information on\
+    \ the proper use of pre-publication data shared by the Wellcome Trust Sanger Institute\
+    \ (including details of any publication moratoria), please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Hilary Martin
+  hmdmc_number: '15_081'
+  id_lims: SQSCP
+  id_study_lims: '5802'
+  id_study_tmp: 5638
+  last_updated: 2021-08-18 10:09:55
+  name: HG_The British Autozygosity Populations BioResource Part 6
+  prelim_id: I3382
+  recorded_at: 2021-08-18 10:09:55
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: The British Autozygosity Populations BioResource
+  study_type: Exome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 53db2ad4-672f-11e9-bfd4-68b599768938
+- abbreviation: 2884STDY
+  abstract: 'All cancers arise due to somatically acquired mutations in their genomes
+    which alter the function of key cancer genes. Understanding the critical mutational
+    events underlying the development of cancer is paramount for advancing prevention,
+    early detection and effective treatment of the disease. Breast cancer is the most
+    common cause of cancer death among women. Extraordinary recent advances in sequencing
+    now make it a realistic aim to sequence large numbers of breast cancer genomes
+    to find somatic mutations on a massive scale. '
+  accession_number: EGAS00001000648
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2013-12-11 12:49:43
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: The purpose of this study is to sequence 500 known cancer genes in
+    960 newly diagnosed high risk breast cancer patients treated with current standard
+    of care therapies and trastuzumab, for somatic alteration and copy number changes.
+    We will be using next gen sequencing technology to determine the prognostic relevance
+    of these somatic genetic alterations and of teh low frequency events to determine
+    if they are associated with trastuzumab benefit or HER2 positive breast cancer,
+    i.e. treatment interaction. The samples will be analysed adn correlated with clinical
+    variables including outcome.
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: PRJEB9
+  ethically_approved: 1
+  faculty_sponsor: Peter Campbell
+  hmdmc_number: 13/030
+  id_lims: SQSCP
+  id_study_lims: '2884'
+  id_study_tmp: 2851
+  last_updated: 2021-08-18 10:08:28
+  name: FinHer Breast Cancer Study
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:30
+  reference_genome: Homo_sapiens (CGP_GRCh37.NCBI.allchr_MT)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: FinHer Breast Cancer Study
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: b542ae50-6262-11e3-8bc4-68b59976a382
+- abbreviation: HGDP
+  abstract: High coverage sequencing of the Human Genome Diversity Project (HGDP)
+    Cell Line Panel samples on the Illumina X10 will aid our understanding of world
+    wide population demography, effective population sizes and unravel their genetic
+    relationships and origins.
+  accession_number: ERP006001
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-06-05 08:40:22
+  data_access_group: hgdp_wgs
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: open
+  data_release_timing: standard
+  deleted_at: null
+  description: "Deep sequencing of HGDP samples on the Illumina X10\r\nThis data is\
+    \ part of a pre-publication release. For information on the proper use of pre-publication\
+    \ data shared by the Wellcome Trust Sanger Institute (including details of any\
+    \ publication moratoria), please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Chris Tyler-Smith
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '3162'
+  id_study_tmp: 3129
+  last_updated: 2021-08-18 10:08:36
+  name: SC_WGS_Deep_sequencing_of_HGDP_X10
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:40
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Deep sequencing of HGDP
+  study_type: Whole Genome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 089a4a40-ec8d-11e3-b0d2-68b59976a382
+- abbreviation: 3361STDY
+  abstract: In this experiment we have sequenced tumour normal pairs from patients
+    presenting with CRC who have a prior history of inflammatory bowel disease. The
+    idea is to identify driver mutations, new genes and novel pathways associated
+    with the development of these malignancies.
+  accession_number: EGAS00001001129
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-10-20 08:23:32
+  data_access_group: team145 as45 dr9
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: 'In this experiment we have sequenced tumour normal pairs from patients
+    presenting with CRC who have a prior history of inflammatory bowel disease. The
+    idea is to identify driver mutations, new genes and novel pathways associated
+    with the development of these malignancies. '
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: David Adams
+  hmdmc_number: 14/061
+  id_lims: SQSCP
+  id_study_lims: '3361'
+  id_study_tmp: 3328
+  last_updated: 2021-08-18 10:08:43
+  name: IHTP_ISC_IBDCA_Edinburgh
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:47
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: IBDCA_Edinburgh
+  study_type: Exome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 60ebc230-5832-11e4-906b-68b59976a382
+- abbreviation: 6145STDY
+  abstract: Non-syndromic cases of congenital heart defects (CHD) exhibit variable
+    modes of inheritance (Mendelian and non-Mendelian). Several studies using whole
+    exome sequencing (WES) have identified strong candidates in humans. We have conducted
+    a number of studies with collaborators and colleagues to help us understand the
+    diverse genetic architecture of syndromic as well as non-syndromic cases and this
+    has allowed us to clarify further the best approach for the next generation of
+    studies. We will Whole Genome Sequence ~125 samples in collaboration with our
+    international partner to extend our existing cohort, which will allow us to establish
+    strong genotype-phenotype correlation as well as characterize und sub classify
+    the observed complex genetic architecture among patients and families.
+  accession_number: EGAS00001004569
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 0
+  contaminated_human_dna: 0
+  created: 2020-02-19 14:31:02
+  data_access_group: kiel_chd mercury
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Whole Genome Sequencing of Non-syndromic cases of congenital heart\
+    \ defects (CHD)\r\nThis data is part of a pre-publication release. For information\
+    \ on the proper use of pre-publication data shared by the Wellcome Trust Sanger\
+    \ Institute (including details of any publication moratoria), please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Matthew Hurles
+  hmdmc_number: 18/0135
+  id_lims: SQSCP
+  id_study_lims: '6145'
+  id_study_tmp: 5975
+  last_updated: 2021-08-18 10:10:04
+  name: HG_G3549 WGS_NSCHD_Part2
+  prelim_id: G3549
+  recorded_at: 2021-08-18 10:10:05
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Whole Exome Sequencing in non-syndromic congenital heart patients and
+    families II
+  study_type: Whole Genome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 747fa198-5324-11ea-ad01-fa163e9d6485
+- abbreviation: 4855STDY
+  abstract: Collection and QC study only
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2017-07-18 14:21:59
+  data_access_group: ibd as45 dr9
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Collection and QC study only
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Jeffrey Barrett
+  hmdmc_number: 12/032 and 12/042
+  id_lims: SQSCP
+  id_study_lims: '4855'
+  id_study_tmp: 4772
+  last_updated: 2021-08-18 10:09:29
+  name: IBD Exeter and London DNA Collection and QC [Collection Study]
+  prelim_id: I2925
+  recorded_at: 2021-08-18 10:09:29
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: IBD Exeter and London DNA Collection and QC [Collection Study]
+  study_type: Whole Genome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 75df1bee-6bc4-11e7-a6db-68b59976a384
+- abbreviation: 3030STDY
+  abstract: 'One of the key questions to be explored is whether the biological processes
+    generating specific mutational signatures continue to operate in the human cancer
+    cell lines or simply reflect past mutagenic activity which is no longer operative.
+    To address this question, we have extracted mutational signatures from 1,000 cancer
+    cell lines of diverse cancer types. Several cell lines with mutational signatures
+    of interest will be selected, subcloned over a defined period of time and their
+    exomes sequenced. The increased load of the mutations representative of a specific
+    mutational signature within the genome of a subclone when compared to its parental
+    clone will be informative of the on-going mutational processes. To further confirm
+    our observation from the exome-sequencing pilot project, whole genomes from parental
+    clones and subclones of the cell lines with potentially on-going mutational processes
+    will be sequenced. '
+  accession_number: EGAS00001000790
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-03-28 12:39:19
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: 'Approximately 25 cell lines representative of 11 mutation signatures
+    have been selected and will be grown from a single cell, referred to as parental
+    clone, for a period of 3 months to allow accumulation of mutations. Following
+    that period, we will obtain 2 subclones from each of the parental clone for sequencing
+    analysis. In total we will be sequencing 2 parental clones and 4 subclones per
+    cell line for approximately 25 cell lines. '
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: PRJEB9
+  ethically_approved: 1
+  faculty_sponsor: Michael Stratton
+  hmdmc_number: Anonymised Cell Lines
+  id_lims: SQSCP
+  id_study_lims: '3030'
+  id_study_tmp: 2997
+  last_updated: 2021-08-18 10:08:32
+  name: Exploration of mutational processes in human cancer cell lines- Exome Seq
+    Pilot Project
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:35
+  reference_genome: Homo_sapiens (CGP_GRCh37.NCBI.allchr_MT)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Exploration of  mutational processes in human cancer cell lines- Exome
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: fb19d590-b675-11e3-9a7e-68b59976a382
+- abbreviation: SC_MG
+  abstract: In this project we performed targeted sequencing of around 50 candidate
+    melanoma genes in the germline of melanoma patients and matched controls. Our
+    aim was to identify variants that contribute to melanoma susceptibility
+  accession_number: EGAS00001002081
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2012-08-08 08:04:22
+  data_access_group: cancer team113
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: In this project we performed targeted sequencing of around 50 candidate
+    melanoma genes in the germline of melanoma patients and matched controls. Our
+    aim was to identify variants that contribute to melanoma susceptibility.
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: David Adams
+  hmdmc_number: 12/074
+  id_lims: SQSCP
+  id_study_lims: '2320'
+  id_study_tmp: 2289
+  last_updated: 2021-08-18 10:08:10
+  name: SEQCAP_Melanoma_Germlines
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:11
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Sequencing melanoma germlines
+  study_type: Exome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: a9b73778-e12f-11e1-ad31-68b59976a382
+- abbreviation: ORCADES_C
+  abstract: Test study as defined by HMDMC
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 1
+  created: 2016-06-23 08:40:20
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Test study as defined by HMDMC
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '4280'
+  id_study_tmp: 4258
+  last_updated: 2021-08-18 10:09:13
+  name: ORCADES_15xWGS_collection
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:13
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 1e441800-391e-11e6-a3fb-68b59976a384
+- abbreviation: boost
+  abstract: Test study as defined by HMDMC
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2016-03-07 12:41:56
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Test study as defined by HMDMC
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Aarno Palotie
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '4129'
+  id_study_tmp: 4107
+  last_updated: 2021-08-18 10:09:08
+  name: Fluidigm Boost
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:08
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: fa1a81f0-e461-11e5-9a1f-68b59976a382
+- abbreviation: 3490STDY
+  abstract: We identified 1,345 somatic mutations in normal tissues. We aims to validate
+    them using amplicon MiSeq sequencing.
+  accession_number: EGAS00001001218
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2015-01-20 16:14:25
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: PCR and MiSeq validation for early embryonic substitution candidates
+    from 400 Breast cancer patients
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: PRJEB9
+  ethically_approved: 1
+  faculty_sponsor: Michael Stratton
+  hmdmc_number: 09/020
+  id_lims: SQSCP
+  id_study_lims: '3490'
+  id_study_tmp: 3
+  last_updated: 2021-08-18 10:08:48
+  name: Validation for human early embryonic substitutions
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:52
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: 'Validation for human early embryonic substitutions '
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 67086a80-a0bf-11e4-91dc-68b59976a382
+- abbreviation: SIGhumqc
+  abstract: "DNA in all cells is prone to mutagenesis, with somatic mutations making\
+    \ key contributions to various human diseases such as cancer, and to aging itself.\
+    \ Mutations may be the consequence of exogenous or endogenous mutagenic influences\
+    \ (including radiations and DNA-damaging chemicals), and also result from the\
+    \ intrinsic infidelity of DNA replication or enzymatic DNA modifications. Somatic\
+    \ mutations are generally mitigated by the cellular DNA repair machinery, and\
+    \ defective functioning of components of this machinery can markedly increase\
+    \ mutation rates. Different mutational processes leave different, characteristic\
+    \ signatures of somatic mutations on the exposed cellular genome. Notably, recent\
+    \ analyses of cancer genomes have revealed several novel mutational signatures,\
+    \ the biological bases of which are predominantly unknown. To generally elucidate\
+    \ somatic mutational processes operative in cells, in particular their influences\
+    \ on human disease, we propose to systematically survey the mutational signatures\
+    \ generated by exposures to known DNA damaging agents and defective DNA repair/editing\
+    \ processes. These studies will provide a series of mutational signatures with\
+    \ known underlying causes for subsequent matching to signatures found in normal\
+    \ or diseased human cells, and will explore how various cellular components influence\
+    \ mutagenesis. A \u201Cmutational signature\u201D is the pattern of mutations\
+    \ occurring as a consequence of unfaithful DNA replication, or as a result of\
+    \ an exposure to an endogenous or environmental mutagen. Mutational signatures\
+    \ include one or more classes of DNA change; base substitutions, insertions and\
+    \ deletions, rearrangements and copy number changes. They can be given extra discriminatory\
+    \ power by further characterisation of each mutation class; for example, for base\
+    \ substitutions, by incorporating the subclass, the sequence context, the transcriptional\
+    \ strand, evidence of substitution clustering (kataegis) and other features relating\
+    \ to the genomic or epigenomic landscape. Mutational signatures extracted in this\
+    \ proposal will all be characterised by next generation sequencing of whole genomes\
+    \ of cell clones that have been exposed to a mutational process caused by DNA\
+    \ damaging agents or abnormalities in DNA repair/editing. "
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-03-17 14:10:32
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Analysis of mutational signatures arising in vivo in humans. iPS cells
+    from control patients and 100 patients carrying known mutations in DNA repair/editing
+    genes will be generated, and sequenced. Blood from the patients will also be used
+    to generate reference 'germline' sequence data.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Michael Stratton
+  hmdmc_number: 14/005
+  id_lims: SQSCP
+  id_study_lims: '3000'
+  id_study_tmp: 2967
+  last_updated: 2021-08-18 10:08:31
+  name: G1188 [collectionqc] MutSig-SIGhum
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:34
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Mutational signatures of DNA damage and repair processes
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: e6e76970-addd-11e3-ae60-68b59976a382
+- abbreviation: Ele_Ext
+  abstract: Test study as defined by HMDMC
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 1
+  created: 2014-08-29 08:00:28
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Test study as defined by HMDMC
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '3285'
+  id_study_tmp: 3252
+  last_updated: 2021-08-18 10:08:40
+  name: Ele_Extractions_2014
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:44
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 8aa488e0-2f52-11e4-a78d-68b59976a382
+- abbreviation: 3788STDY
+  abstract: "Wilms' nephroblastoma affects 1 in 10,000 children and is the commonest\
+    \ paediatric kidney malignancy and second commonest abdominal solid malignancy\
+    \ of childhood. More than 85% of patients achieve long-term survival but, in approximately\
+    \ half of patients, treatment involves doxorubicin or more intensive chemotherapy\
+    \ and/or radiotherapy and is associated with significant long-term complications,\
+    \ especially heart failure and second malignancies. We need more precise methods\
+    \ for identifying those patients in whom intensive treatment can be safely reduced\
+    \ and/or replaced by newer targeted agents. A subset of patients who are not initially\
+    \ assigned to a high-risk category relapse unpredictably, and almost half of these\
+    \ patients then face a poor prognosis, despite intensive treatment. Screening\
+    \ for relapse is currently based on  specialist radiology, which often involves\
+    \ the child and carer(s) travelling  considerable distances to a specialist centre.\
+    \ An alternative blood test for circulating tumour DNA would be much easier to\
+    \ access.\r\nThere are few validated genetic biomarkers: loss of chromosomes 1p\
+    \ and 16q, gain of 1q, and TP53 mutations in anaplastic tumours are all associated\
+    \ with an increased risk of relapse, but all found in a minority of cases who\
+    \ relapse. Previous genetic studies and emerging exome sequencing data identified\
+    \ recurrent point mutations and small indels in 21 genes and 9 recurrent chromosomal\
+    \ structural variants. The majority of these variants have not been studied in\
+    \ sufficient numbers to test their association with outcome. We have also found\
+    \ that known prognostic markers are not detectable uniformly throughout the tumour\
+    \ because of intra-tumour heterogeneity, raising questions about the number of\
+    \ tumour samples needed for reliable detection in clinical practice.\r\n"
+  accession_number: EGAS00001001422
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2015-08-20 13:08:27
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Targeted resequencing at high depth (21 genes, 9 chromosomal regions):\
+    \ at least 4 FFPE samples per case and matched germline DNA: \r\n\u2022\t100 cases\
+    \ with detailed outcome data, including 15 cases with tumour relapse (515 samples)\r\
+    \n\u2022\t40 cases with matched pre-chemotherapy biopsies (240 samples)\r\n\u2022\
+    \t50 nephrogenic rests matched to above cases (50 samples)\r\nWe expect a proportion\
+    \ (possibly 10%) of cases to be mutationally silent on the above studies, and\
+    \ propose to subsequently carry out integrated whole-genome, methylome and transcriptome\
+    \ studies on matched frozen tissue from these cases\r\n"
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: PRJEB9
+  ethically_approved: 1
+  faculty_sponsor: Peter Campbell
+  hmdmc_number: 15/043
+  id_lims: SQSCP
+  id_study_lims: '3788'
+  id_study_tmp: 3762
+  last_updated: 2021-08-18 10:08:57
+  name: Precursor lesions, clonal architecture and relapse in Wilms nephroblastoma
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:58
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Precursor lesions, clonal architecture and relapse in Wilms nephroblastoma
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 8c20fc50-473c-11e5-aa8b-68b59976a382
+- abbreviation: brcsa
+  abstract: "As result of the recent 2011-2017 funding round for the NIHR BioMedical\
+    \ Research Centres\r\n(OxBridge, UCL, IC and Kings) and the Leicester NIHR BRU\
+    \ a new initiative has been started\r\nnamed the NIHR BioResource, which is building\
+    \ on the success of the Cambridge\r\nBioResource.\r\nThe purpose of the NIHR BioResource\
+    \ is to create an organisational umbrella across the\r\nalready existing local\
+    \ BioResources with the purpose to create a resource of around 50,000\r\nhealthy\
+    \ volunteers who have consented to participate in biomedical research. These\r\
+    \nvolunteers can then be recalled based on genotype, phenotype or a combination\
+    \ of both for\r\nparticipation in research studies. To facilitate the recall process\
+    \ the Steering Committee has\r\ndecided to allocate \xC2\xA30.5M to the typing\
+    \ of the volunteers with the Exome-SNP-ChIP.\r\nWe seek access to the Sanger Institute\
+    \ pipelines for the purpose of genotyping approximately\r\n10,000 healthy volunteers\
+    \ of the NIHR-BioResource."
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2012-07-16 08:36:26
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: "As result of the recent 2011-2017 funding round for the NIHR BioMedical\
+    \ Research Centres\r\n(OxBridge, UCL, IC and Kings) and the Leicester NIHR BRU\
+    \ a new initiative has been started\r\nnamed the NIHR BioResource, which is building\
+    \ on the success of the Cambridge\r\nBioResource.\r\nThe purpose of the NIHR BioResource\
+    \ is to create an organisational umbrella across the\r\nalready existing local\
+    \ BioResources with the purpose to create a resource of around 50,000\r\nhealthy\
+    \ volunteers who have consented to participate in biomedical research. These\r\
+    \nvolunteers can then be recalled based on genotype, phenotype or a combination\
+    \ of both for\r\nparticipation in research studies. To facilitate the recall process\
+    \ the Steering Committee has\r\ndecided to allocate \xC2\xA30.5M to the typing\
+    \ of the volunteers with the Exome-SNP-ChIP.\r\nWe seek access to the Sanger Institute\
+    \ pipelines for the purpose of genotyping approximately\r\n10,000 healthy volunteers\
+    \ of the NIHR-BioResource."
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Nicole Soranzo
+  hmdmc_number: 12/073 for Batterham cohort only
+  id_lims: SQSCP
+  id_study_lims: '2283'
+  id_study_tmp: 2252
+  last_updated: 2021-08-18 10:08:09
+  name: BRC - Exome SNP array [exome_brcsa](brcsa)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:10
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: BRC - Exome SNP array
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 552c97ea-cf21-11e1-b51a-68b59976a382
+- abbreviation: gvnpcf
+  abstract: Genotyping of DNA from healthy Dutch donors that have been assayed for
+    a panel of neutrophil function assays.
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2016-06-23 14:47:28
+  data_access_group: hematopoiesis
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: 12 months
+  data_release_delay_reason: phd study
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: delayed
+  deleted_at: null
+  description: "Neutrophils are the most abundant type of white blood cell and aberrant\
+    \ function of these cells have been shown to be involved in the biology of autoimmune\
+    \ diseases. As part of the BLUEPRINT extension project, we have characterised\
+    \ a panel of functional assays in neutrophils purified from ~200 healthy donors\
+    \ from the Cambridge Bioresource, with the  aim to quantify biological variation\
+    \ in defined neutrophil granulocyte cellular functions from healthy populations.\
+    \ This project is the first time these assays have been applied to quantitative\
+    \ population genetic studies in an attempt to define genetic variants influencing\
+    \ these cellular functions. Thus it represents a novel dataset with the opportunity\
+    \ to gain insight into basic cellular mechanism and also add to our understanding\
+    \ of the genetic association behind autoimmune disease risk. The analysis is being\
+    \ conducted by a graduate student (Ms Alice Mann) in the Soranzo group at the\
+    \ Sanger Institute.                                                          \r\
+    \nWe now have the opportunity to access a replication/extension dataset of 200-250\
+    \ samples, where the same cellular functions have already been measured using\
+    \ the same experimental assays in a sample of healthy donors in Sanguin, Amsterdam.\
+    \ We request funds to genotype all of these DNA samples using the Illumina core\
+    \ exome array, in order to do genotype-phenotype association studies with the\
+    \ same functional endpoints. We have already identified particular genetic variants\
+    \ influencing these biological phenotypes in our discovery cohort, where samples\
+    \ from a different cohort of healthy individuals were collected, genotyped and\
+    \ experiments conducted, through our collaborators in Professor Willem Ouwehand\u2019\
+    s group at the NHS Blood and Transplant Centre.  Genotyping samples from this\
+    \ second cohort will enable us to replicate our initial results, therefore strengthening\
+    \ our confidence in these novel genetic findings\r\nThis data is part of a pre-publication\
+    \ release. For information on the proper use of pre-publication data shared by\
+    \ the Wellcome Trust Sanger Institute please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Nicole Soranzo
+  hmdmc_number: 13/047
+  id_lims: SQSCP
+  id_study_lims: '4282'
+  id_study_tmp: 4260
+  last_updated: 2021-08-18 10:09:13
+  name: Genetic variation in neutrophil cellular function [coreex_gvnpcf](gvnpcf)
+  prelim_id: I2436
+  recorded_at: 2021-08-18 10:09:13
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Genetic variation in neutrophil cellular function
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 685872a0-3951-11e6-800b-68b599768938
+- abbreviation: NSCHD
+  abstract: Exome sequencing of ~1,800 patients with non-syndromic Congenical Heart
+    Defects (CHD) to identify genes enriched for damaging rare variants that increase
+    risk of CHD
+  accession_number: EGAS00001001734
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2016-02-22 14:01:01
+  data_access_group: chd
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: Exome sequencing of ~1,800 patients with non-syndromic Congenical Heart
+    Defects (CHD) to identify genes enriched for damaging rare variants that increase
+    risk of CHD
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Matthew Hurles
+  hmdmc_number: 12/077
+  id_lims: SQSCP
+  id_study_lims: '4112'
+  id_study_tmp: 4090
+  last_updated: 2021-08-18 10:09:07
+  name: IHTP_ISC_Exome sequencing of Non-syndromic Congenital Heart Defects_Germany
+  prelim_id: I2295
+  recorded_at: 2021-08-18 10:09:07
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Exome sequencing of Non-syndromic Congenital Heart Defects
+  study_type: Whole Genome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: b4d7b900-d96c-11e5-8c4c-68b59976a382
+- abbreviation: Ext_Test
+  abstract: Test study as defined by HMDMC
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-10-02 11:09:14
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Test study as defined by HMDMC
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Richard Durbin
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '3333'
+  id_study_tmp: 3300
+  last_updated: 2021-08-18 10:08:42
+  name: Fibroblast Extraction Test
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:46
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 8b24f290-4a24-11e4-9c2a-68b59976a382
+- abbreviation: amish
+  abstract: "Last year we reported HELIC validation of the APOC3 R19X lipid traits\
+    \ association, previously\r\nidentified in the Amish. The variant has drifted\
+    \ up in frequency from 0.05% to 2-3%\r\nindependently in the Cretan isolate and\
+    \ the Amish and demonstrates the same highly-\r\nsignificant cardioprotective\
+    \ effect (reduced TG, increased HDL levels). We are embarking on\r\na meta-analysis\
+    \ across the HELIC-MANOLIS and existing Amish exome chip data (~1200 in\r\neach\
+    \ cohort). Here we request CoreExome genotyping of an additional set of 2800 Amish\r\
+    \nsamples with relevant trait data to boost power in the meta-analysis. This experiment\
+    \ will also\r\nhelp build a strong relationship between the two cohorts ahead\
+    \ of the high-depth WGS isolate\r\nexperiment"
+  accession_number: EGAS00001000919
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-05-06 09:35:20
+  data_access_group: amish-coreex
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: "Last year we reported HELIC validation of the APOC3 R19X lipid traits\
+    \ association, previously\r\nidentified in the Amish. The variant has drifted\
+    \ up in frequency from 0.05% to 2-3%\r\nindependently in the Cretan isolate and\
+    \ the Amish and demonstrates the same highly-\r\nsignificant cardioprotective\
+    \ effect (reduced TG, increased HDL levels). We are embarking on\r\na meta-analysis\
+    \ across the HELIC-MANOLIS and existing Amish exome chip data (~1200 in\r\neach\
+    \ cohort). Here we request CoreExome genotyping of an additional set of 2800 Amish\r\
+    \nsamples with relevant trait data to boost power in the meta-analysis. This experiment\
+    \ will also\r\nhelp build a strong relationship between the two cohorts ahead\
+    \ of the high-depth WGS isolate\r\nexperiment\r\nThis data is part of a pre-publication\
+    \ release. For information on the proper use of pre-publication data shared by\
+    \ the Wellcome Trust Sanger Institute (including details of any publication moratoria),\
+    \ please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: 14/033
+  id_lims: SQSCP
+  id_study_lims: '3105'
+  id_study_tmp: 3072
+  last_updated: 2021-08-18 10:08:35
+  name: CoreExome Array Genotyping in an Amish population [coreex_amish](amish)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:38
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: CoreExome Array Genotyping in an Amish population
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: bdeb39c0-d501-11e3-a774-68b59976a382
+- abbreviation: ddhip
+  abstract: The National Joint Registry for England and Wales (NJR) has become established
+    as one of the largest repositories of clinical information about patients undergoing
+    hip and knee replacement. We have established a mechanism for the collection of
+    postal DNA samples from consenting NJR patients and have carried out genotyping
+    genome-wide in 900 patients with the condition developmental dysplasia of the
+    hip (DDH) on the Illumina CoreExome array
+  accession_number: EGAS00001000916
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-06-11 10:37:01
+  data_access_group: njr_ddh
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "The National Joint Registry for England and Wales (NJR) has become\
+    \ established as one of the largest repositories of clinical information about\
+    \ patients undergoing hip and knee replacement. We have established a mechanism\
+    \ for the collection of postal DNA samples from consenting NJR patients and have\
+    \ carried out genotyping genome-wide in 900 patients with the condition developmental\
+    \ dysplasia of the hip (DDH) on the Illumina CoreExome array\r\nThis data is part\
+    \ of a pre-publication release. For information on the proper use of pre-publication\
+    \ data shared by the Wellcome Trust Sanger Institute (including details of any\
+    \ publication moratoria), please see http://www.sanger.ac.uk/datasharing/"
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: 14/038
+  id_lims: SQSCP
+  id_study_lims: '3171'
+  id_study_tmp: 3138
+  last_updated: 2021-08-18 10:08:37
+  name: Developmental Dysplasia of the Hip (DDH) [coreex_ddhip](ddhip)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:40
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Developmental Dysplasia of the Hip (DDH)
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 52cf48b0-f154-11e3-961a-68b59976a382
+- abbreviation: 3527STDY
+  abstract: 'Targeted exome  sequencing of patient derived xenografts  from primary
+    colorectal tumours and liver metastases. '
+  accession_number: EGAS00001001171
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2015-02-24 13:52:03
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: 'Targeted exome  sequencing of patient derived xenografts  from primary
+    colorectal tumours and liver metastases. '
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: PRJEB9
+  ethically_approved: 1
+  faculty_sponsor: Ultan McDermott
+  hmdmc_number: 14/080
+  id_lims: SQSCP
+  id_study_lims: '3527'
+  id_study_tmp: 3491
+  last_updated: 2021-08-18 10:08:49
+  name: Mutational Analysis of Colorectal PDX models
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:53
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Mutational Analysis of Colorectal PDX models
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 4fe66680-bc2c-11e4-937a-68b59976a382
+- abbreviation: repsog
+  abstract: "Osteoarthritis is the commonest form of arthritis and affects over 4\
+    \ million individuals in the\r\nUK. It is the commonest reason (85%) for total\
+    \ joint arthroplasty and carries a significant\r\nhealth economic burden. Approximately\
+    \ 10% of hip arthroplasty (THA) surgery in Europe is\r\nrevision surgery for failed\
+    \ prostheses. Aseptic loosening of the prosthesis due to osteolysis\r\naccounts\
+    \ for 60-70% of these failures. Revision surgery carries a higher mortality (2\
+    \ to 5%\r\nversus 0.3%), and poorer functional outcome versus primary THA. The\
+    \ aetiology of aseptic\r\nloosening is complex. The identification of genetic\
+    \ susceptibility loci will enhance our\r\nunderstanding of the pathogenesis of\
+    \ this problem and provide novel targets for biological\r\nintervention that may\
+    \ delay, or provide an alternative treatment for, revision surgery. We have\r\n\
+    conducted a 1000 Genomes Project imputation-based genome-wide association study\
+    \ for\r\naseptic loosening and related endophenotypes (third-party funding) and\
+    \ request here\r\nreplication genotyping of 2 Sequenom plexes in an independent\
+    \ dataset of 3,000 individuals"
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2013-12-02 13:21:00
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Osteoarthritis is the commonest form of arthritis and affects over\
+    \ 4 million individuals in the\r\nUK. It is the commonest reason (85%) for total\
+    \ joint arthroplasty and carries a significant\r\nhealth economic burden. Approximately\
+    \ 10% of hip arthroplasty (THA) surgery in Europe is\r\nrevision surgery for failed\
+    \ prostheses. Aseptic loosening of the prosthesis due to osteolysis\r\naccounts\
+    \ for 60-70% of these failures. Revision surgery carries a higher mortality (2\
+    \ to 5%\r\nversus 0.3%), and poorer functional outcome versus primary THA. The\
+    \ aetiology of aseptic\r\nloosening is complex. The identification of genetic\
+    \ susceptibility loci will enhance our\r\nunderstanding of the pathogenesis of\
+    \ this problem and provide novel targets for biological\r\nintervention that may\
+    \ delay, or provide an alternative treatment for, revision surgery. We have\r\n\
+    conducted a 1000 Genomes Project imputation-based genome-wide association study\
+    \ for\r\naseptic loosening and related endophenotypes (third-party funding) and\
+    \ request here\r\nreplication genotyping of 2 Sequenom plexes in an independent\
+    \ dataset of 3,000 individuals"
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Eleftheria Zeggini
+  hmdmc_number: 09/028
+  id_lims: SQSCP
+  id_study_lims: '2869'
+  id_study_tmp: 2836
+  last_updated: 2021-08-18 10:08:28
+  name: Replication of signals from osteolysis GWAS [seq_repsog](repsog)
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:30
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Replication of signals from osteolysis GWAS
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 96002820-5b54-11e3-a0bd-68b59976a382
+- abbreviation: SC_GDAPG
+  abstract: "Using a sequencing-based approach, the Genome Diversity in Africa Project\
+    \ (GDAP)  aims to produce a comprehensive catalogue of human genetic variation\
+    \ in SSA, including single nucleotide polymorphisms (SNPs), structural variants,\
+    \ and haplotypes. This resource will make a substantial contribution to understanding\
+    \ patterns of genetic diversity within and among populations in SSA, as well as\
+    \ providing a global resource to help design, implement and interpret genomic\
+    \ studies in SSA populations and studies comprising globally diverse populations,\
+    \ complementing existing genomic resources. Specifically, we plan to carry out\
+    \ low coverage (4x) whole genome sequencing of up to 2000 individuals across Africa\
+    \ (100 individuals from each ethnolinguistic group), and complement these data\
+    \ with 2.5M Illumina genotyping. We have already completed sequencing of 700 individuals\
+    \ across SSA, we are now adding an additional 500 samples from up to 5 ethno-linguistic\
+    \ groups within Africa, including populations from Burkina Faso, Cameroon, Morocco,\
+    \ Ghana and Seychelles.\r\nOur scientific objectives are to: 1) develop a resource\
+    \ that provides a comprehensive catalogue of genetic variation in populations\
+    \ from SSA accessible to the global scientific community; 2) characterise population\
+    \ genetic diversity, structure, gene flow and admixture across SSA; 3) develop\
+    \ a cost-efficient, next-generation genotype array for diverse populations across\
+    \ SSA; and 4) facilitate whole genome-sequencing association studies of complex\
+    \ traits and diseases by developing a reference panel for imputation and resource\
+    \ for enhancing fine-mapping disease susceptibility loci. These scientific objectives\
+    \ will be supported by cross-cutting operational activities, including network\
+    \ and management of the consortium, research ethics, and research capacity building\
+    \ in statistical genetics and bioinformatics.\r\n"
+  accession_number: EGAS00001000863
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2014-06-16 09:43:07
+  data_access_group: gdap-wgs
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: "Globally, human populations show structured genetic diversity as a\
+    \ result of geographical dispersion, selection and drift. Understanding this genetic\
+    \ variation can provide insights into the evolutionary processes that shape both\
+    \ human adaptation and variation in disease. Populations from SSA have the highest\
+    \ levels of genetic diversity. This characteristic, in addition to historical\
+    \ genetic admixture, can lead to complexities in the design of studies assessing\
+    \ the genetic determinants of disease and human variation. However, such studies\
+    \ of African populations are also likely to provide new opportunities to discover\
+    \ novel disease susceptibility loci and variants and refine gene\u2013disease\
+    \ association signals. A systematic assessment of genetic diversity within SSA\
+    \ would facilitate genomic epidemiological studies in the region.\r\nThe African\
+    \ Genome Variation Project (AGVP) is an international collaboration that aims\
+    \ to produce a comprehensive catalogue of human genetic variation in SSA. This\
+    \ resource has extended our understanding of population history, patterns of genetic\
+    \ diversity within and among populations in SSA, as well as providing a global\
+    \ resource to help design, implement and interpret genomic studies.\r\nThe Genome\
+    \ Diversity in Africa Project (GDAP) will extend and expand the African Genome\
+    \ Variation (AGV) project. Using a sequencing-based approach, GDA project aims\
+    \ to produce a comprehensive catalogue of human genetic variation in SSA, including\
+    \ single nucleotide polymorphisms (SNPs), structural variants, and haplotypes.\
+    \ This resource will make a substantial contribution to understanding patterns\
+    \ of genetic diversity within and among populations in SSA, as well as providing\
+    \ a global resource to help design, implement and interpret genomic studies in\
+    \ SSA populations and studies comprising globally diverse populations, complementing\
+    \ existing genomic resources. Specifically, we plan to carry out low coverage\
+    \ (4x) whole genome sequencing of up to 2000 individuals across Africa (100 individuals\
+    \ from each ethnolinguistic group), and complement these data with 2.5M Illumina\
+    \ genotyping. We have already completed sequencing of 700 individuals across SSA,\
+    \ we are now adding an additional 500 samples from up to 5 ethno-linguistic groups\
+    \ within Africa, including populations from Burkina Faso, Cameroon, Morocco, Ghana\
+    \ and Seychelles.\r\nOur scientific objectives are to: 1) develop a resource that\
+    \ provides a comprehensive catalogue of genetic variation in populations from\
+    \ SSA accessible to the global scientific community; 2) characterise population\
+    \ genetic diversity, structure, gene flow and admixture across SSA; 3) develop\
+    \ a cost-efficient, next-generation genotype array for diverse populations across\
+    \ SSA; and 4) facilitate whole genome-sequencing association studies of complex\
+    \ traits and diseases by developing a reference panel for imputation and resource\
+    \ for enhancing fine-mapping disease susceptibility loci. These scientific objectives\
+    \ will be supported by cross-cutting operational activities, including network\
+    \ and management of the consortium, research ethics, and research capacity building\
+    \ in statistical genetics and bioinformatics.\r\n\r\n"
+  ega_dac_accession_number: EGAC00001000237
+  ega_policy_accession_number: EGAP00001000238
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Manj Sandhu
+  hmdmc_number: 14/048
+  id_lims: SQSCP
+  id_study_lims: '3180'
+  id_study_tmp: 3147
+  last_updated: 2021-08-18 10:08:37
+  name: SEQCAP_WGS_GDAP_GHANA
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:40
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Genome Diversity in Africa Project
+  study_type: Whole Genome Sequencing
+  study_visibility: Hold
+  uuid_study_lims: 9ee47f10-f53a-11e3-84c7-68b59976a382
+- abbreviation: 4654STDY
+  abstract: "The objective is to establish whether immunosenescence is associated\
+    \ with the development of clonal haematopoiesis in a healthy ageing population.\
+    \ This will be addressed in collaboration with the European consortium running\
+    \ the ImmunoAgeing project (www.immunoageing.eu).   \r\nGenomic DNA derived from\
+    \ the peripheral blood of 300 individuals will be analysed. RNA bait pulldown\
+    \ (Agilent) will be used to perform targeted sequencing of 41 genes known to be\
+    \ recurrently mutated in myeloid malignancies. In addition, a subset of 15 individuals\
+    \ will be analysed using whole exome sequencing. \r\nThe presence, size and nature\
+    \ of clonal haematopoiesis will be correlated with quantitative measures of immunosenescence.\r\
+    \n"
+  accession_number: EGAS00001002315
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2017-02-21 13:56:33
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: 12 months
+  data_release_delay_reason: phd study
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: delayed
+  deleted_at: null
+  description: An investigation of the role of immunosenescence in the development
+    of clonal haematopoiesis.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: George Vassiliou
+  hmdmc_number: 17/006
+  id_lims: SQSCP
+  id_study_lims: '4654'
+  id_study_tmp: 4595
+  last_updated: 2021-08-18 10:09:23
+  name: ImmunoAgeing_TGS
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:23
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: ImmunoAgeing_TGS
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 8d81db10-f83d-11e6-82dd-68b599768938
+- abbreviation: GRD
+  abstract: a
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2011-08-10 08:26:21
+  data_access_group: null
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: a
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Unknown (imported from SNP)
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '1933'
+  id_study_tmp: 1907
+  last_updated: 2021-08-18 10:07:58
+  name: Genotyping R and D
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:00
+  reference_genome: Not suitable for alignment
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Synthetic Genomics
+  study_visibility: Hold
+  uuid_study_lims: 6d9b311e-c32a-11e0-b5b7-00144f01a414
+- abbreviation: null
+  abstract: null
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: null
+  data_access_group: N/A
+  data_deletion_period: null
+  data_destination: seq
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: null
+  data_release_strategy: null
+  data_release_timing: Never
+  deleted_at: null
+  description: null
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: null
+  hmdmc_number: null
+  id_lims: C_GCLP
+  id_study_lims: HIL101
+  id_study_tmp: 3625
+  last_updated: 2016-04-28 10:44:40
+  name: QA.GCLP.ISC.04-28-2015
+  prelim_id: null
+  recorded_at: 2016-04-28 09:44:42
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: null
+  study_title: N/A
+  study_type: null
+  study_visibility: null
+  uuid_study_lims: null
+- abbreviation: CGP_CCL
+  abstract: A panel of over 1000 cancer cell lines are being characterised in order
+    to enhance their utility to the scientific community. The characterisation will
+    consist of exome and RNA sequencing as well as copy number (Affymetrix SNP6.0
+    array) and chip based expression analysis (Affymetrix U219 array). All data will
+    be made publically available and can be accessed via the COSMIC Cell Line database
+    (http://cancer.sanger.ac.uk/cancergenome/projects/cell_lines/).
+  accession_number: EGAS00001000978
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2011-01-14 13:16:17
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: Genomic characterisation of a large series of cancer cell lines.
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: PRJEB9
+  ethically_approved: 1
+  faculty_sponsor: Ultan McDermott
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '1710'
+  id_study_tmp: 1684
+  last_updated: 2021-08-18 10:07:52
+  name: CGP CORE CELL LINES
+  prelim_id: null
+  recorded_at: 2021-08-18 10:07:53
+  reference_genome: Homo_sapiens (CGP_GRCh37.NCBI.allchr_MT)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: 'Cancer Cell Line Exome Sequencing '
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: cd01e30c-1fe5-11e0-9a78-00144f206e2e
+- abbreviation: 5155STDY
+  abstract: "Recent advances in genomics have demonstrated that clonal haemopoiesis\
+    \ driven by leukaemia associated somatic mutations is a relatively common phenomenon\
+    \ that increases in frequency with advancing age. Whilst individuals with clonal\
+    \ haemopoiesis have an increased risk of developing haematological malignancies,\
+    \ they also have an increased mortality from other causes. Additionally, certain\
+    \ mutations are almost exclusively seen in individuals aged 70 years or older,\
+    \ whilst others are seen in individuals with non-haematological cancers including\
+    \ breast and ovarian. Recently, clonal haemopoiesis was found to be associated\
+    \ with a significantly increased risk of atherosclerotic cardiovascular disease.\
+    \ This association is thought to be causative with clonally-derived macrophages\
+    \ showing elevated expression of several chemokine and cytokine genes that contribute\
+    \ to atherosclerosis. \r\nAnother vascular pathology, abdominal aortic aneurysm\
+    \ (AAA), increases with age and shares risk factors with atherosclerosis (including\
+    \ smoking, male sex, high cholesterol). However, the impact of these risk factors\
+    \ and the overlap between AAA and atherosclerosis is poorly understood. To investigate\
+    \ a possible link between clonal haemopoiesis and AAA, we will study DNA samples\
+    \ from 300 patients with AAA and up to 200 controls for evidence of clonal haemopoiesis.\
+    \ This will be done using target DNA enrichment with biotinylated RNA baits followed\
+    \ by high throughput sequencing."
+  accession_number: EGAS00001002873
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2018-01-11 12:52:18
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "Recent advances in genomics have demonstrated that clonal haemopoiesis\
+    \ driven by leukaemia associated somatic mutations is a relatively common phenomenon\
+    \ that increases in frequency with advancing age. Whilst individuals with clonal\
+    \ haemopoiesis have an increased risk of developing haematological malignancies,\
+    \ they also have an increased mortality from other causes. Additionally, certain\
+    \ mutations are almost exclusively seen in individuals aged 70 years or older,\
+    \ whilst others are seen in individuals with non-haematological cancers including\
+    \ breast and ovarian. Recently, clonal haemopoiesis was found to be associated\
+    \ with a significantly increased risk of atherosclerotic cardiovascular disease.\
+    \ This association is thought to be causative with clonally-derived macrophages\
+    \ showing elevated expression of several chemokine and cytokine genes that contribute\
+    \ to atherosclerosis. \r\nAnother vascular pathology, abdominal aortic aneurysm\
+    \ (AAA), increases with age and shares risk factors with atherosclerosis (including\
+    \ smoking, male sex, high cholesterol). However, the impact of these risk factors\
+    \ and the overlap between AAA and atherosclerosis is poorly understood. To investigate\
+    \ a possible link between clonal haemopoiesis and AAA, we will study DNA samples\
+    \ from 300 patients with AAA and up to 200 controls for evidence of clonal haemopoiesis.\
+    \ This will be done using target DNA enrichment with biotinylated RNA baits followed\
+    \ by high throughput sequencing."
+  ega_dac_accession_number: EGAC00001000000
+  ega_policy_accession_number: EGAP00001000001
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: George Vassiliou
+  hmdmc_number: 17/104
+  id_lims: SQSCP
+  id_study_lims: '5155'
+  id_study_tmp: 5022
+  last_updated: 2021-08-18 10:09:36
+  name: Clonal haematopoiesis in patients with AAA
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:37
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Clonal haematopoiesis in patients with AAA
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 4181cbfe-f6ce-11e7-8919-68b599768938
+- abbreviation: 5345STDY
+  abstract: Recent studies on mutational signatures in cancer genomes identified specific
+    patterns of mutations (namely, signatures 2 and 13), which appear in more than
+    50% of the cancer types and reflect patterns of mutations caused by family of
+    APOBEC cytidine deaminases in the setting of viral and retroviral restriction.
+    Here, we set to determine whether APOBEC enzymes are indeed underlying causes
+    of mutational signatures 2 and 13, by knocking-out individual APOBEC genes in
+    human cancer cell lines which continue to acquire relevant signatures over time
+    in vitro.
+  accession_number: ERP108795
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2018-05-16 13:08:14
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: open
+  data_release_timing: standard
+  deleted_at: null
+  description: Recent studies on mutational signatures in cancer genomes identified
+    specific patterns of mutations (namely, signatures 2 and 13), which appear in
+    more than 50% of the cancer types and reflect patterns of mutations caused by
+    family of APOBEC cytidine deaminases in the setting of viral and retroviral restriction.
+    Here, we set to determine whether APOBEC enzymes are indeed underlying causes
+    of mutational signatures 2 and 13, by knocking-out individual APOBEC genes in
+    human cancer cell lines which continue to acquire relevant signatures over time
+    in vitro.
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Michael Stratton
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '5345'
+  id_study_tmp: 5201
+  last_updated: 2021-08-18 10:09:41
+  name: Molecular origins of mutational signatures 2 and 13
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:42
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: 'Molecular origins of mutational signatures 2 and 13 '
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 31738556-590a-11e8-ae77-68b59976a384
+- abbreviation: 5534STDY
+  abstract: Sebaceous tumours are a rare cutaneous cancer with potential for aggressive
+    behaviour. However, limited information is available on these cancers with few
+    published cases. Here we wish to exome sequence these cancers to define the first
+    genomic landscape for this malignancy. We will extract DNA from formalin-fixed,
+    paraffin-embedded (FFPE) cores. Cores may be obtained from lesional and non-lesional
+    tissues of primaries as well as matching metastases. The extracted DNA will be
+    used for exome sequencing.
+  accession_number: EGAS00001003553
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2018-09-27 12:03:34
+  data_access_group: cancer team113
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: 18 months
+  data_release_delay_reason: phd study
+  data_release_sort_of_study: genomic sequencing
+  data_release_strategy: managed
+  data_release_timing: delayed
+  deleted_at: null
+  description: Sebaceous tumours are a rare cutaneous cancer with potential for aggressive
+    behaviour. However, limited information is available on these cancers with few
+    published cases. Here we wish to exome sequence these cancers to define the first
+    genomic landscape for this malignancy. We will extract DNA from formalin-fixed,
+    paraffin-embedded (FFPE) cores. Cores may be obtained from lesional and non-lesional
+    tissues of primaries as well as matching metastases. The extracted DNA will be
+    used for exome sequencing.
+  ega_dac_accession_number: EGAC00001000205
+  ega_policy_accession_number: EGAP00001000210
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: David Adams
+  hmdmc_number: 18/062 19/0046
+  id_lims: SQSCP
+  id_study_lims: '5534'
+  id_study_tmp: 5386
+  last_updated: 2021-08-18 10:09:46
+  name: To profile the landscape of sebaceous tumours_WES
+  prelim_id: null
+  recorded_at: 2021-08-18 10:09:48
+  reference_genome: Homo_sapiens (1000Genomes_hs37d5 + ensembl_75_transcriptome)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: To profile the landscape of sebaceous tumours_WES
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 5be2d54c-c24d-11e8-8512-68b59976a384
+- abbreviation: ibdgwas
+  abstract: GWAS of patients with inflammatory bowel disease recruited from around
+    the UK
+  accession_number: EGAS00001001684
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2016-01-20 15:32:03
+  data_access_group: crohns as45 dr9 ibd
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: managed
+  data_release_timing: standard
+  deleted_at: null
+  description: "As part of our ongoing follow-up of IBD sequencing and previous GWAS\
+    \ experiments, we have identified an additional 1200 samples from the UKIBDGC.\
+    \ We propose to GWAS these to add them to our existing and planned analyses.\r\
+    \n\r\nThis data is part of a pre-publication release. For information on the proper\
+    \ use of pre-publication data shared by the Wellcome Trust Sanger Institute please\
+    \ see http://www.sanger.ac.uk/datasharing/\r\n"
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: '0'
+  ethically_approved: 1
+  faculty_sponsor: Jeffrey Barrett
+  hmdmc_number: 12/042
+  id_lims: SQSCP
+  id_study_lims: '4072'
+  id_study_tmp: 4050
+  last_updated: 2021-08-18 10:09:06
+  name: IBD GWAS 2016 [coreex_ibdgwas](ibdgwas)
+  prelim_id: I2289
+  recorded_at: 2021-08-18 10:09:06
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: IBD GWAS 2016
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: f4d2b5b0-bf8a-11e5-9a1f-68b59976a382
+- abbreviation: HLAA
+  abstract: 'The aim of the project is a comprehensive study of Human Leukocyte Antigen
+    (HLA) diversity in Africa, with an aim of producing resources that will aid future
+    studies. With the information gathered we will produce a reference panel of African
+    HLA haplotypes and surounding genome context. '
+  accession_number: EGAS00001001122
+  aligned: 1
+  array_express_accession_number: E-ERAD-361
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2015-01-14 17:39:13
+  data_access_group: gdap_hla
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: other sequencing-based assay
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: "The aim of the project is a comprehensive study of Human Leukocyte\
+    \ Antigen (HLA) diversity in Africa, with an aim of producing resources that will\
+    \ aid future studies. With the information gathered we will produce a reference\
+    \ panel of African HLA haplotypes and surounding genome context. For the pilot\
+    \ phase we will study 125 samples from five populations spread across Africa.\
+    \ These populations should provide an adequate test of our methods in the face\
+    \ of high diversity. As a first step clinical typing of the samples will be performed\
+    \ at Addenbrooke\u2019s Tissue Typing Laboratory.    "
+  ega_dac_accession_number: EGAC00001000237
+  ega_policy_accession_number: EGAP00001000238
+  ena_project_id: null
+  ethically_approved: 1
+  faculty_sponsor: Manj Sandhu
+  hmdmc_number: 11/091
+  id_lims: SQSCP
+  id_study_lims: '3473'
+  id_study_tmp: 3440
+  last_updated: 2021-08-18 10:08:47
+  name: HLA_GDAP_AADM
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:51
+  reference_genome: Homo_sapiens (GRCh38_full_analysis_set_plus_decoy_hla)
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: Genome Diversity in Africa Project - HLA diversity
+  study_type: Population Genomics
+  study_visibility: Hold
+  uuid_study_lims: 416032e0-9c14-11e4-88f8-68b59976a382
+- abbreviation: CRISPR_C
+  abstract: Test study as defined by HMDMC
+  accession_number: null
+  aligned: 1
+  array_express_accession_number: null
+  contains_human_dna: 1
+  contaminated_human_dna: 0
+  created: 2015-07-30 14:50:03
+  data_access_group: cancer
+  data_deletion_period: null
+  data_destination: null
+  data_release_delay_period: null
+  data_release_delay_reason: null
+  data_release_sort_of_study: genotyping or cytogenetics
+  data_release_strategy: not applicable
+  data_release_timing: never
+  deleted_at: null
+  description: Test study as defined by HMDMC
+  ega_dac_accession_number: null
+  ega_policy_accession_number: null
+  ena_project_id: null
+  ethically_approved: null
+  faculty_sponsor: Mathew Garnett
+  hmdmc_number: null
+  id_lims: SQSCP
+  id_study_lims: '3760'
+  id_study_tmp: 3733
+  last_updated: 2021-08-18 10:08:56
+  name: CTTV015 CRISPR-Cas9 Target ID [collection]
+  prelim_id: null
+  recorded_at: 2021-08-18 10:08:58
+  reference_genome: ' '
+  remove_x_and_autosomes: 0
+  s3_email_list: null
+  separate_y_chromosome_data: 0
+  state: active
+  study_title: null
+  study_type: Cancer Genomics
+  study_visibility: Hold
+  uuid_study_lims: 42a261e0-36ca-11e5-b5c7-68b59976a382

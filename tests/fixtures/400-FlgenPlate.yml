@@ -1,0 +1,1600 @@
+- cost_code: S0910
+  id_flgen_plate_lims: '27204548'
+  id_flgen_plate_tmp: 284330
+  id_lims: SQSCP
+  id_sample_tmp: 5581204
+  id_study_tmp: 6108
+  last_updated: 2021-04-08 14:28:04
+  plate_barcode: 1662208299
+  plate_barcode_lims: '1662208299'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: a143ca68-9876-11eb-bdb9-fa163eea3084
+  qc_state: null
+  recorded_at: 2021-04-08 14:28:13
+  well_label: S068
+  well_uuid_lims: 9938422e-96da-11eb-8fb3-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '12474222'
+  id_flgen_plate_tmp: 78232
+  id_lims: SQSCP
+  id_sample_tmp: 1990076
+  id_study_tmp: 2676
+  last_updated: 2014-12-04 09:07:15
+  plate_barcode: 1662042045
+  plate_barcode_lims: DN379963V
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: e982d7c0-7b94-11e4-ba98-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:08:35
+  well_label: S179
+  well_uuid_lims: d53c4530-7a40-11e4-8bd3-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '15446693'
+  id_flgen_plate_tmp: 147880
+  id_lims: SQSCP
+  id_sample_tmp: 2299922
+  id_study_tmp: 3675
+  last_updated: 2015-12-21 10:49:49
+  plate_barcode: 1662051267
+  plate_barcode_lims: DN425378V
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 849631e0-a7d0-11e5-bdd9-68b59976a382
+  qc_state: null
+  recorded_at: 2015-12-21 10:49:59
+  well_label: S069
+  well_uuid_lims: a481b8c0-91d3-11e5-a35b-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '15239172'
+  id_flgen_plate_tmp: 136373
+  id_lims: SQSCP
+  id_sample_tmp: 2350949
+  id_study_tmp: 2978
+  last_updated: 2015-11-11 16:00:55
+  plate_barcode: 1662051225
+  plate_barcode_lims: DN422552F
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 26a741d0-888d-11e5-9d05-68b59976a382
+  qc_state: null
+  recorded_at: 2015-11-11 16:01:06
+  well_label: S185
+  well_uuid_lims: ae8e4290-8853-11e5-9627-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '27115814'
+  id_flgen_plate_tmp: 271979
+  id_lims: SQSCP
+  id_sample_tmp: 4823914
+  id_study_tmp: 5825
+  last_updated: 2020-10-08 09:37:32
+  plate_barcode: 1382531597
+  plate_barcode_lims: '1382531597'
+  plate_size: 96
+  plate_size_occupied: 95
+  plate_uuid_lims: e3af0ea6-0949-11eb-b851-fa163eea3084
+  qc_state: null
+  recorded_at: 2020-10-08 09:37:44
+  well_label: S37
+  well_uuid_lims: 0c163790-0245-11eb-9070-fa163ecea4e6
+- cost_code: S0968
+  id_flgen_plate_lims: '10907956'
+  id_flgen_plate_tmp: 39225
+  id_lims: SQSCP
+  id_sample_tmp: 1898621
+  id_study_tmp: 2076
+  last_updated: 2014-07-22 10:16:47
+  plate_barcode: 1662031316
+  plate_barcode_lims: DN351336E
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 3c8af950-1189-11e4-b917-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:22:48
+  well_label: S040
+  well_uuid_lims: 713495a0-0e58-11e4-b700-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '12906337'
+  id_flgen_plate_tmp: 238893
+  id_lims: SQSCP
+  id_sample_tmp: 2183722
+  id_study_tmp: 2890
+  last_updated: 2015-02-02 09:56:46
+  plate_barcode: 1662045009
+  plate_barcode_lims: '1662045009'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: c2aff900-aac1-11e4-8b86-68b59976a382
+  qc_state: null
+  recorded_at: 2019-03-05 15:55:56
+  well_label: S083
+  well_uuid_lims: 8b03f070-a7c3-11e4-bdff-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '13383504'
+  id_flgen_plate_tmp: 94063
+  id_lims: SQSCP
+  id_sample_tmp: 2210063
+  id_study_tmp: 3109
+  last_updated: 2015-03-25 17:05:41
+  plate_barcode: 1662045049
+  plate_barcode_lims: DN394785L
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 216b4360-d311-11e4-8e05-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:11:14
+  well_label: S012
+  well_uuid_lims: 1195c3d0-d13f-11e4-b7dc-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '15970362'
+  id_flgen_plate_tmp: 158272
+  id_lims: SQSCP
+  id_sample_tmp: 2550606
+  id_study_tmp: 1808
+  last_updated: 2016-03-17 08:02:55
+  plate_barcode: 1382149389
+  plate_barcode_lims: DN435496I
+  plate_size: 96
+  plate_size_occupied: 40
+  plate_uuid_lims: a5484240-ec16-11e5-8c4c-68b59976a382
+  qc_state: null
+  recorded_at: 2016-03-17 08:02:59
+  well_label: S89
+  well_uuid_lims: 60155bc0-eb7d-11e5-88b1-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '27265391'
+  id_flgen_plate_tmp: 304779
+  id_lims: SQSCP
+  id_sample_tmp: 6180393
+  id_study_tmp: 6237
+  last_updated: 2021-08-24 15:45:04
+  plate_barcode: 1662436101
+  plate_barcode_lims: '1662436101'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 403c9d4c-04f2-11ec-9a79-fa163eac3af7
+  qc_state: null
+  recorded_at: 2021-08-24 15:45:16
+  well_label: S133
+  well_uuid_lims: 5bfd0a36-00cd-11ec-8501-fa163e8a206d
+- cost_code: S0910
+  id_flgen_plate_lims: '24001775'
+  id_flgen_plate_tmp: 235815
+  id_lims: SQSCP
+  id_sample_tmp: 3946698
+  id_study_tmp: 5035
+  last_updated: 2019-01-11 08:25:16
+  plate_barcode: 1382417225
+  plate_barcode_lims: '1382417225'
+  plate_size: 96
+  plate_size_occupied: 66
+  plate_uuid_lims: 6cb954d8-157a-11e9-abfb-68b59976a384
+  qc_state: null
+  recorded_at: 2019-01-11 08:25:29
+  well_label: S89
+  well_uuid_lims: fe3c99fe-1419-11e9-8eb1-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27215375'
+  id_flgen_plate_tmp: 291623
+  id_lims: SQSCP
+  id_sample_tmp: 5635365
+  id_study_tmp: 6237
+  last_updated: 2021-05-12 15:26:01
+  plate_barcode: 1662382246
+  plate_barcode_lims: '1662382246'
+  plate_size: 192
+  plate_size_occupied: 170
+  plate_uuid_lims: 5bef216c-b336-11eb-9719-fa163eac3af7
+  qc_state: null
+  recorded_at: 2021-05-12 15:26:13
+  well_label: S059
+  well_uuid_lims: 92759468-af13-11eb-a8e2-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '13935745'
+  id_flgen_plate_tmp: 106839
+  id_lims: SQSCP
+  id_sample_tmp: 2057471
+  id_study_tmp: 3097
+  last_updated: 2015-05-20 08:24:10
+  plate_barcode: 1662046213
+  plate_barcode_lims: DN403033E
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 901d7a10-fec9-11e4-827c-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-20 08:24:18
+  well_label: S142
+  well_uuid_lims: b2f23f00-f4d1-11e4-9737-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '27224879'
+  id_flgen_plate_tmp: 296356
+  id_lims: SQSCP
+  id_sample_tmp: 5680566
+  id_study_tmp: 6237
+  last_updated: 2021-06-09 09:32:14
+  plate_barcode: 1662435263
+  plate_barcode_lims: '1662435263'
+  plate_size: 192
+  plate_size_occupied: 176
+  plate_uuid_lims: 93156fa4-c905-11eb-ae69-fa163eea3084
+  qc_state: null
+  recorded_at: 2021-06-09 09:32:37
+  well_label: S135
+  well_uuid_lims: d8f2007a-ba3a-11eb-8047-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '12714424'
+  id_flgen_plate_tmp: 80662
+  id_lims: SQSCP
+  id_sample_tmp: 1868169
+  id_study_tmp: 2920
+  last_updated: 2015-01-13 12:07:47
+  plate_barcode: 1662042290
+  plate_barcode_lims: DN383435G
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: c2ca60b0-9b1c-11e4-ba98-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:09:01
+  well_label: S142
+  well_uuid_lims: c7cfeb20-97e3-11e4-a649-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '17191597'
+  id_flgen_plate_tmp: 180276
+  id_lims: SQSCP
+  id_sample_tmp: 2647033
+  id_study_tmp: 4259
+  last_updated: 2016-07-26 12:21:00
+  plate_barcode: 1662062066
+  plate_barcode_lims: DN454279H
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 5f3644b0-532b-11e6-8bd3-68b599768938
+  qc_state: null
+  recorded_at: 2016-07-26 12:21:13
+  well_label: S086
+  well_uuid_lims: 87389350-49bc-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27006795'
+  id_flgen_plate_tmp: 264911
+  id_lims: SQSCP
+  id_sample_tmp: 4265134
+  id_study_tmp: 5825
+  last_updated: 2019-12-18 10:07:50
+  plate_barcode: 1382514475
+  plate_barcode_lims: '1382514475'
+  plate_size: 96
+  plate_size_occupied: 95
+  plate_uuid_lims: 3f8a8ed0-217e-11ea-a4b9-fa163e9d6485
+  qc_state: null
+  recorded_at: 2019-12-18 10:07:58
+  well_label: S65
+  well_uuid_lims: e67bb4b8-1b5b-11ea-a4e2-fa163e399ac0
+- cost_code: S0968
+  id_flgen_plate_lims: '11011848'
+  id_flgen_plate_tmp: 41650
+  id_lims: SQSCP
+  id_sample_tmp: 1982018
+  id_study_tmp: 3176
+  last_updated: 2014-07-28 10:29:49
+  plate_barcode: 1662031374
+  plate_barcode_lims: DN353563V
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 0f025060-1642-11e4-b917-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:23:11
+  well_label: S020
+  well_uuid_lims: 74852060-10ee-11e4-98d8-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '14157079'
+  id_flgen_plate_tmp: 114322
+  id_lims: SQSCP
+  id_sample_tmp: 2067828
+  id_study_tmp: 3097
+  last_updated: 2015-06-16 11:22:47
+  plate_barcode: 1662051006
+  plate_barcode_lims: DN406012L
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: fcccdb50-1419-11e5-936b-68b59976a382
+  qc_state: null
+  recorded_at: 2015-06-16 11:22:56
+  well_label: S141
+  well_uuid_lims: 623fec20-10f0-11e5-a937-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '26217448'
+  id_flgen_plate_tmp: 246895
+  id_lims: SQSCP
+  id_sample_tmp: 3936024
+  id_study_tmp: 5460
+  last_updated: 2019-06-07 13:07:16
+  plate_barcode: 1662192199
+  plate_barcode_lims: '1662192199'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 2c9c1ccc-8925-11e9-8aef-68b599768938
+  qc_state: null
+  recorded_at: 2019-06-07 13:07:35
+  well_label: S035
+  well_uuid_lims: 9336c58c-876c-11e9-b040-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '17129650'
+  id_flgen_plate_tmp: 175839
+  id_lims: SQSCP
+  id_sample_tmp: 2643689
+  id_study_tmp: 4259
+  last_updated: 2016-07-18 09:32:51
+  plate_barcode: 1662062098
+  plate_barcode_lims: DN453115H
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 8d0a8340-4cca-11e6-8b46-68b599768938
+  qc_state: null
+  recorded_at: 2016-07-18 09:33:04
+  well_label: S052
+  well_uuid_lims: a98d27c0-49b4-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '23215528'
+  id_flgen_plate_tmp: 233796
+  id_lims: SQSCP
+  id_sample_tmp: 3810349
+  id_study_tmp: 5176
+  last_updated: 2018-09-10 08:53:34
+  plate_barcode: 1382417179
+  plate_barcode_lims: '1382417179'
+  plate_size: 96
+  plate_size_occupied: 71
+  plate_uuid_lims: 0031bfde-b4d7-11e8-9efc-68b59976a384
+  qc_state: null
+  recorded_at: 2018-09-10 08:53:47
+  well_label: S78
+  well_uuid_lims: 4e308272-b2a9-11e8-8d78-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27265627'
+  id_flgen_plate_tmp: 304927
+  id_lims: SQSCP
+  id_sample_tmp: 6180629
+  id_study_tmp: 6237
+  last_updated: 2021-08-25 10:21:41
+  plate_barcode: 1662457061
+  plate_barcode_lims: '1662457061'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 3dad779e-058e-11ec-9d99-fa163eac3af7
+  qc_state: null
+  recorded_at: 2021-08-25 10:21:52
+  well_label: S091
+  well_uuid_lims: c1ecb97a-00cf-11ec-8501-fa163e8a206d
+- cost_code: S0910
+  id_flgen_plate_lims: '22836378'
+  id_flgen_plate_tmp: 232335
+  id_lims: SQSCP
+  id_sample_tmp: 3758300
+  id_study_tmp: 5266
+  last_updated: 2018-07-31 08:52:52
+  plate_barcode: 1382417628
+  plate_barcode_lims: '1382417628'
+  plate_size: 96
+  plate_size_occupied: 95
+  plate_uuid_lims: 1c22b840-949f-11e8-9d6d-68b59976a384
+  qc_state: null
+  recorded_at: 2018-07-31 10:44:29
+  well_label: S49
+  well_uuid_lims: 98b298d8-90c3-11e8-aee2-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '14252926'
+  id_flgen_plate_tmp: 116746
+  id_lims: SQSCP
+  id_sample_tmp: 2290384
+  id_study_tmp: 2990
+  last_updated: 2015-06-29 07:59:41
+  plate_barcode: 1382121390
+  plate_barcode_lims: DN408092M
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: c96880f0-1e34-11e5-8c4d-68b59976a382
+  qc_state: null
+  recorded_at: 2015-06-29 07:59:45
+  well_label: S78
+  well_uuid_lims: fcbc35e0-1be2-11e5-991e-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '25620882'
+  id_flgen_plate_tmp: 245207
+  id_lims: SQSCP
+  id_sample_tmp: 4043255
+  id_study_tmp: 5638
+  last_updated: 2019-05-15 07:48:59
+  plate_barcode: 1662192080
+  plate_barcode_lims: '1662192080'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: e63804ae-76e5-11e9-9136-68b599768938
+  qc_state: null
+  recorded_at: 2019-05-15 07:49:33
+  well_label: S064
+  well_uuid_lims: 92093c4a-756e-11e9-a9e5-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27222610'
+  id_flgen_plate_tmp: 295603
+  id_lims: SQSCP
+  id_sample_tmp: 5679865
+  id_study_tmp: 6237
+  last_updated: 2021-06-03 14:56:56
+  plate_barcode: 1662435248
+  plate_barcode_lims: '1662435248'
+  plate_size: 192
+  plate_size_occupied: 168
+  plate_uuid_lims: f0b501e4-c47b-11eb-a6d1-fa163eea3084
+  qc_state: null
+  recorded_at: 2021-06-03 14:57:08
+  well_label: S085
+  well_uuid_lims: d6cea2e4-ba3a-11eb-8047-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '11413952'
+  id_flgen_plate_tmp: 7316
+  id_lims: SQSCP
+  id_sample_tmp: 2012535
+  id_study_tmp: 1808
+  last_updated: 2014-08-20 08:02:57
+  plate_barcode: 1382022029
+  plate_barcode_lims: DN361707Q
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 6004e8f0-2840-11e4-a78d-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:16:55
+  well_label: S32
+  well_uuid_lims: 0d2c92d0-195f-11e4-809b-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '11319087'
+  id_flgen_plate_tmp: 6765
+  id_lims: SQSCP
+  id_sample_tmp: 1999490
+  id_study_tmp: 2851
+  last_updated: 2014-08-13 14:15:23
+  plate_barcode: 1381992392
+  plate_barcode_lims: DN358694F
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 40ade3e0-22f4-11e4-8b40-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:16:49
+  well_label: S51
+  well_uuid_lims: 8bc8c5c0-22ea-11e4-a291-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '10544544'
+  id_flgen_plate_tmp: 31527
+  id_lims: SQSCP
+  id_sample_tmp: 1958795
+  id_study_tmp: 3129
+  last_updated: 2014-06-12 14:36:18
+  plate_barcode: 1662031508
+  plate_barcode_lims: DN344845E
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: e1863510-f23e-11e3-b88f-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:21:29
+  well_label: S061
+  well_uuid_lims: b0ba8060-ed86-11e3-a004-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '12127335'
+  id_flgen_plate_tmp: 83159
+  id_lims: SQSCP
+  id_sample_tmp: 7
+  id_study_tmp: 3328
+  last_updated: 2014-10-27 11:53:08
+  plate_barcode: 1662042306
+  plate_barcode_lims: DN374001G
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: cb642970-5dcf-11e4-b068-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:09:27
+  well_label: S107
+  well_uuid_lims: d1a4ce40-5b8e-11e4-8fc9-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '12461243'
+  id_flgen_plate_tmp: 15590
+  id_lims: SQSCP
+  id_sample_tmp: 2156691
+  id_study_tmp: 1808
+  last_updated: 2014-12-03 09:04:19
+  plate_barcode: 1382058635
+  plate_barcode_lims: DN379762O
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 59a93a50-7acb-11e4-ba98-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:18:36
+  well_label: S90
+  well_uuid_lims: a3399f30-794e-11e4-8bd3-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '14524275'
+  id_flgen_plate_tmp: 126398
+  id_lims: SQSCP
+  id_sample_tmp: 2333627
+  id_study_tmp: 1808
+  last_updated: 2015-07-22 14:22:46
+  plate_barcode: 1382122619
+  plate_barcode_lims: DN411245L
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 182bb130-307d-11e5-b214-68b59976a382
+  qc_state: null
+  recorded_at: 2015-07-22 14:22:51
+  well_label: S81
+  well_uuid_lims: 6b5978e0-2ecc-11e5-96d1-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '17129650'
+  id_flgen_plate_tmp: 175936
+  id_lims: SQSCP
+  id_sample_tmp: 2643701
+  id_study_tmp: 4259
+  last_updated: 2016-07-18 09:32:51
+  plate_barcode: 1662062098
+  plate_barcode_lims: DN453115H
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 8d0a8340-4cca-11e6-8b46-68b599768938
+  qc_state: null
+  recorded_at: 2016-07-18 09:33:06
+  well_label: S149
+  well_uuid_lims: a9a543a0-49b4-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27070893'
+  id_flgen_plate_tmp: 269696
+  id_lims: SQSCP
+  id_sample_tmp: 4361719
+  id_study_tmp: 5975
+  last_updated: 2020-07-03 11:54:36
+  plate_barcode: 1662200131
+  plate_barcode_lims: '1662200131'
+  plate_size: 192
+  plate_size_occupied: 35
+  plate_uuid_lims: f79875dc-bd23-11ea-bb6a-fa163e2f1184
+  qc_state: null
+  recorded_at: 2020-07-03 11:54:42
+  well_label: S052
+  well_uuid_lims: 30cd42ba-bc52-11ea-b7cb-fa163ecea4e6
+- cost_code: S0910
+  id_flgen_plate_lims: '20208023'
+  id_flgen_plate_tmp: 212702
+  id_lims: SQSCP
+  id_sample_tmp: 3240484
+  id_study_tmp: 4772
+  last_updated: 2017-10-13 07:43:29
+  plate_barcode: 1662082268
+  plate_barcode_lims: DN502110C
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 1ba27bb6-afea-11e7-9ebf-68b599768938
+  qc_state: null
+  recorded_at: 2017-10-13 07:43:44
+  well_label: S108
+  well_uuid_lims: 8db36daa-ae82-11e7-8100-3c4a9275d6c8
+- cost_code: S0844
+  id_flgen_plate_lims: '10207936'
+  id_flgen_plate_tmp: 361
+  id_lims: SQSCP
+  id_sample_tmp: 1920360
+  id_study_tmp: 2997
+  last_updated: 2014-05-13 12:43:55
+  plate_barcode: 1381936281
+  plate_barcode_lims: DN339097H
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 39907a50-da9c-11e3-8c63-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:15:19
+  well_label: S01
+  well_uuid_lims: 125b2f30-d9c4-11e3-9009-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '11893707'
+  id_flgen_plate_tmp: 62993
+  id_lims: SQSCP
+  id_sample_tmp: 1931679
+  id_study_tmp: 3097
+  last_updated: 2014-09-25 08:15:59
+  plate_barcode: 1662041120
+  plate_barcode_lims: DN370043A
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 253ccf90-448c-11e4-aa43-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:05:39
+  well_label: S084
+  well_uuid_lims: 600e4420-1e42-11e4-a291-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '10423314'
+  id_flgen_plate_tmp: 29631
+  id_lims: SQSCP
+  id_sample_tmp: 1916858
+  id_study_tmp: 2289
+  last_updated: 2014-06-02 13:00:23
+  plate_barcode: 1662031358
+  plate_barcode_lims: DN343282K
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: d2f13630-ea55-11e3-a467-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:21:10
+  well_label: S152
+  well_uuid_lims: 9522f0e0-e664-11e3-8c83-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '14853695'
+  id_flgen_plate_tmp: 130346
+  id_lims: SQSCP
+  id_sample_tmp: 2376552
+  id_study_tmp: 1808
+  last_updated: 2015-09-08 11:12:16
+  plate_barcode: 1382141079
+  plate_barcode_lims: DN416183L
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 736119b0-561a-11e5-8344-68b59976a382
+  qc_state: null
+  recorded_at: 2015-09-08 11:12:21
+  well_label: S91
+  well_uuid_lims: 18cccb00-554f-11e5-a9df-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '16995093'
+  id_flgen_plate_tmp: 194094
+  id_lims: SQSCP
+  id_sample_tmp: 2642014
+  id_study_tmp: 4258
+  last_updated: 2017-03-16 13:38:05
+  plate_barcode: 1662059018
+  plate_barcode_lims: DN451599I
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 7a7623c0-4503-11e6-9d44-68b599768938
+  qc_state: null
+  recorded_at: 2017-03-16 13:39:59
+  well_label: S015
+  well_uuid_lims: 9da6d480-3f62-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '17461941'
+  id_flgen_plate_tmp: 182994
+  id_lims: SQSCP
+  id_sample_tmp: 2546180
+  id_study_tmp: 4107
+  last_updated: 2016-08-16 13:05:19
+  plate_barcode: 1382198597
+  plate_barcode_lims: DN458518T
+  plate_size: 96
+  plate_size_occupied: 48
+  plate_uuid_lims: 11b19cc0-63b2-11e6-b540-68b59976a384
+  qc_state: null
+  recorded_at: 2016-08-16 13:05:26
+  well_label: S41
+  well_uuid_lims: 10138450-638a-11e6-821c-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '13406450'
+  id_flgen_plate_tmp: 24308
+  id_lims: SQSCP
+  id_sample_tmp: 2220364
+  id_study_tmp: 3
+  last_updated: 2015-03-30 09:13:35
+  plate_barcode: 1382108152
+  plate_barcode_lims: DN395504P
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 060ac690-d6bd-11e4-8218-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:20:15
+  well_label: S92
+  well_uuid_lims: 2733ed10-d154-11e4-8878-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '20347146'
+  id_flgen_plate_tmp: 213679
+  id_lims: SQSCP
+  id_sample_tmp: 3289649
+  id_study_tmp: 2967
+  last_updated: 2017-10-30 15:35:04
+  plate_barcode: 1382345363
+  plate_barcode_lims: DN503976C
+  plate_size: 96
+  plate_size_occupied: 38
+  plate_uuid_lims: d9b1d944-bd87-11e7-b4c3-68b599768938
+  qc_state: null
+  recorded_at: 2017-10-30 15:35:09
+  well_label: S41
+  well_uuid_lims: 02e33d58-bd7e-11e7-b52c-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '13788318'
+  id_flgen_plate_tmp: 97762
+  id_lims: SQSCP
+  id_sample_tmp: 2256082
+  id_study_tmp: 3252
+  last_updated: 2015-05-06 07:56:08
+  plate_barcode: 1662046248
+  plate_barcode_lims: DN400966F
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 55b500f0-f3c5-11e4-bc38-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-06 07:56:13
+  well_label: S035
+  well_uuid_lims: 482160d0-efdf-11e4-bfee-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '14911433'
+  id_flgen_plate_tmp: 132071
+  id_lims: SQSCP
+  id_sample_tmp: 2382594
+  id_study_tmp: 3762
+  last_updated: 2015-09-17 07:51:21
+  plate_barcode: 1382141363
+  plate_barcode_lims: DN417229M
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: df7bf190-5d10-11e5-b1a9-68b59976a382
+  qc_state: null
+  recorded_at: 2015-09-17 07:51:26
+  well_label: S67
+  well_uuid_lims: c2328e20-5ba6-11e5-9fed-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '27224993'
+  id_flgen_plate_tmp: 297014
+  id_lims: SQSCP
+  id_sample_tmp: 5680921
+  id_study_tmp: 6237
+  last_updated: 2021-06-09 12:16:36
+  plate_barcode: 1662435203
+  plate_barcode_lims: '1662435203'
+  plate_size: 192
+  plate_size_occupied: 173
+  plate_uuid_lims: 89711cfc-c91c-11eb-b2a3-fa163eea3084
+  qc_state: null
+  recorded_at: 2021-06-09 12:16:44
+  well_label: S064
+  well_uuid_lims: 0742b1a4-ba3b-11eb-a269-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '11061218'
+  id_flgen_plate_tmp: 42825
+  id_lims: SQSCP
+  id_sample_tmp: 1987222
+  id_study_tmp: 2252
+  last_updated: 2014-07-31 13:33:57
+  plate_barcode: 1662031371
+  plate_barcode_lims: DN354429U
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 420a98b0-18b7-11e4-945a-68b599768938
+  qc_state: null
+  recorded_at: 2015-04-08 15:23:21
+  well_label: S070
+  well_uuid_lims: 1f95d740-18ad-11e4-809b-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '18247745'
+  id_flgen_plate_tmp: 187697
+  id_lims: SQSCP
+  id_sample_tmp: 2831741
+  id_study_tmp: 4260
+  last_updated: 2016-12-15 11:30:51
+  plate_barcode: 1662062081
+  plate_barcode_lims: DN471360U
+  plate_size: 192
+  plate_size_occupied: 116
+  plate_uuid_lims: e8925020-c2b9-11e6-bf95-68b59976a384
+  qc_state: null
+  recorded_at: 2016-12-15 11:31:00
+  well_label: S107
+  well_uuid_lims: 574d3560-c2ac-11e6-b158-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27265362'
+  id_flgen_plate_tmp: 304094
+  id_lims: SQSCP
+  id_sample_tmp: 6180998
+  id_study_tmp: 6237
+  last_updated: 2021-08-24 15:21:27
+  plate_barcode: 1662436137
+  plate_barcode_lims: '1662436137'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: f3ab0d72-04ee-11ec-9d99-fa163eac3af7
+  qc_state: null
+  recorded_at: 2021-08-24 15:21:38
+  well_label: S018
+  well_uuid_lims: 883ef750-00d0-11ec-8501-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '13275428'
+  id_flgen_plate_tmp: 23194
+  id_lims: SQSCP
+  id_sample_tmp: 2210630
+  id_study_tmp: 3
+  last_updated: 2015-03-17 09:55:18
+  plate_barcode: 1382108143
+  plate_barcode_lims: DN393179O
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 8b124bb0-cc8b-11e4-9491-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:19:58
+  well_label: S70
+  well_uuid_lims: 46664fe0-c8ba-11e4-b55f-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '27209929'
+  id_flgen_plate_tmp: 286672
+  id_lims: SQSCP
+  id_sample_tmp: 5612687
+  id_study_tmp: 6237
+  last_updated: 2021-04-23 10:36:40
+  plate_barcode: 1662208084
+  plate_barcode_lims: '1662208084'
+  plate_size: 192
+  plate_size_occupied: 168
+  plate_uuid_lims: ca2f16bc-a41f-11eb-9083-fa163eea3084
+  qc_state: null
+  recorded_at: 2021-04-23 10:37:06
+  well_label: S115
+  well_uuid_lims: 9d9f1fe0-a111-11eb-8d48-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '13788318'
+  id_flgen_plate_tmp: 97812
+  id_lims: SQSCP
+  id_sample_tmp: 2256100
+  id_study_tmp: 3252
+  last_updated: 2015-05-06 07:56:08
+  plate_barcode: 1662046248
+  plate_barcode_lims: DN400966F
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 55b500f0-f3c5-11e4-bc38-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-06 07:56:14
+  well_label: S109
+  well_uuid_lims: 485011f0-efdf-11e4-bfee-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '13414818'
+  id_flgen_plate_tmp: 24439
+  id_lims: SQSCP
+  id_sample_tmp: 2222821
+  id_study_tmp: 1808
+  last_updated: 2015-03-31 10:00:15
+  plate_barcode: 1382108161
+  plate_barcode_lims: DN395737H
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: b14dd9a0-d78c-11e4-9674-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:20:17
+  well_label: S33
+  well_uuid_lims: e82f8e10-d15a-11e4-8878-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '14184982'
+  id_flgen_plate_tmp: 116011
+  id_lims: SQSCP
+  id_sample_tmp: 2054891
+  id_study_tmp: 3097
+  last_updated: 2015-06-18 14:28:33
+  plate_barcode: 1662051012
+  plate_barcode_lims: DN406653P
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 466cee00-15c6-11e5-bcec-68b59976a382
+  qc_state: null
+  recorded_at: 2015-06-18 14:28:38
+  well_label: S061
+  well_uuid_lims: 77eebb80-0f76-11e5-b0a2-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '12343259'
+  id_flgen_plate_tmp: 86740
+  id_lims: SQSCP
+  id_sample_tmp: 2054348
+  id_study_tmp: 3097
+  last_updated: 2014-11-17 11:45:00
+  plate_barcode: 1662043003
+  plate_barcode_lims: DN377641V
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 211dcb70-6e4f-11e4-822d-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:10:03
+  well_label: S189
+  well_uuid_lims: 63c9d810-699a-11e4-91ef-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '13739863'
+  id_flgen_plate_tmp: 54993
+  id_lims: SQSCP
+  id_sample_tmp: 2041100
+  id_study_tmp: 3097
+  last_updated: 2015-04-30 10:52:12
+  plate_barcode: 1662046135
+  plate_barcode_lims: DN400362G
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: ecb35950-ef26-11e4-aabb-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-30 10:52:19
+  well_label: S036
+  well_uuid_lims: 43d3db10-ecde-11e4-bfee-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '13667378'
+  id_flgen_plate_tmp: 51060
+  id_lims: SQSCP
+  id_sample_tmp: 2246580
+  id_study_tmp: 1808
+  last_updated: 2015-04-24 07:47:24
+  plate_barcode: 1382111386
+  plate_barcode_lims: DN399310A
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: d2899830-ea55-11e4-aabb-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-24 07:47:30
+  well_label: S73
+  well_uuid_lims: 29056c00-e73d-11e4-bfee-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '17129650'
+  id_flgen_plate_tmp: 175850
+  id_lims: SQSCP
+  id_sample_tmp: 2643777
+  id_study_tmp: 4259
+  last_updated: 2016-07-18 09:32:51
+  plate_barcode: 1662062098
+  plate_barcode_lims: DN453115H
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 8d0a8340-4cca-11e6-8b46-68b599768938
+  qc_state: null
+  recorded_at: 2016-07-18 09:33:04
+  well_label: S063
+  well_uuid_lims: aa3d3de0-49b4-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '12922553'
+  id_flgen_plate_tmp: 90332
+  id_lims: SQSCP
+  id_sample_tmp: 2184229
+  id_study_tmp: 2890
+  last_updated: 2015-02-02 14:13:24
+  plate_barcode: 1662045013
+  plate_barcode_lims: DN385952H
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 8dbeec50-aae5-11e4-976b-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:10:43
+  well_label: S155
+  well_uuid_lims: d51db500-a7c4-11e4-bdff-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '16292099'
+  id_flgen_plate_tmp: 162608
+  id_lims: SQSCP
+  id_sample_tmp: 2532763
+  id_study_tmp: 4090
+  last_updated: 2016-04-21 08:21:28
+  plate_barcode: 1662059040
+  plate_barcode_lims: DN440216R
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 01c16b70-079a-11e6-b5f0-68b599768938
+  qc_state: null
+  recorded_at: 2016-04-21 08:21:41
+  well_label: S056
+  well_uuid_lims: 763af000-0616-11e6-bb80-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '14106308'
+  id_flgen_plate_tmp: 111669
+  id_lims: SQSCP
+  id_sample_tmp: 2047711
+  id_study_tmp: 3097
+  last_updated: 2015-06-11 12:10:47
+  plate_barcode: 1662051218
+  plate_barcode_lims: DN405413U
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: dd9d7040-1032-11e5-93f3-68b59976a382
+  qc_state: null
+  recorded_at: 2015-06-11 12:10:54
+  well_label: S033
+  well_uuid_lims: 14571a40-0de6-11e5-b0a2-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '10543730'
+  id_flgen_plate_tmp: 31330
+  id_lims: SQSCP
+  id_sample_tmp: 1958543
+  id_study_tmp: 3129
+  last_updated: 2014-06-12 12:54:45
+  plate_barcode: 1662031507
+  plate_barcode_lims: DN344838F
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: b23a3d00-f230-11e3-92c3-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:21:27
+  well_label: S054
+  well_uuid_lims: 525e9e20-ed86-11e3-a004-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '12127335'
+  id_flgen_plate_tmp: 83101
+  id_lims: SQSCP
+  id_sample_tmp: 2119829
+  id_study_tmp: 3300
+  last_updated: 2014-10-27 11:53:08
+  plate_barcode: 1662042306
+  plate_barcode_lims: DN374001G
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: cb642970-5dcf-11e4-b068-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:09:26
+  well_label: S009
+  well_uuid_lims: 06ab37e0-5b90-11e4-8fc9-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '26415441'
+  id_flgen_plate_tmp: 249223
+  id_lims: SQSCP
+  id_sample_tmp: 4089691
+  id_study_tmp: 5460
+  last_updated: 2019-07-08 14:23:42
+  plate_barcode: 1662191275
+  plate_barcode_lims: '1662191275'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: fc9d0e9e-a18b-11e9-a771-68b599768938
+  qc_state: null
+  recorded_at: 2019-07-08 14:24:04
+  well_label: S021
+  well_uuid_lims: 8231616c-a15b-11e9-81c0-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '10812865'
+  id_flgen_plate_tmp: 36459
+  id_lims: SQSCP
+  id_sample_tmp: 1954160
+  id_study_tmp: 3072
+  last_updated: 2014-07-15 12:33:09
+  plate_barcode: 1662031347
+  plate_barcode_lims: DN350030I
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: aef35370-0c1b-11e4-9908-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:22:20
+  well_label: S129
+  well_uuid_lims: 95085290-0756-11e4-8ee9-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '11841654'
+  id_flgen_plate_tmp: 68371
+  id_lims: SQSCP
+  id_sample_tmp: 1964970
+  id_study_tmp: 3138
+  last_updated: 2014-09-18 10:15:58
+  plate_barcode: 1662041168
+  plate_barcode_lims: DN369117J
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: a6a28360-3f1c-11e4-8aae-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:06:45
+  well_label: S033
+  well_uuid_lims: ce55b660-3e5a-11e4-9eb8-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '13214973'
+  id_flgen_plate_tmp: 22490
+  id_lims: SQSCP
+  id_sample_tmp: 2208226
+  id_study_tmp: 3491
+  last_updated: 2015-03-09 16:43:39
+  plate_barcode: 1382105516
+  plate_barcode_lims: DN391686U
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 6b954820-c67b-11e4-937a-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:19:51
+  well_label: S16
+  well_uuid_lims: 28d83390-c274-11e4-b65e-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '17183585'
+  id_flgen_plate_tmp: 179387
+  id_lims: SQSCP
+  id_sample_tmp: 2647198
+  id_study_tmp: 4259
+  last_updated: 2016-07-25 09:06:54
+  plate_barcode: 1662059100
+  plate_barcode_lims: DN454030H
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 01b62a10-5247-11e6-ba3d-68b59976a384
+  qc_state: null
+  recorded_at: 2016-07-25 09:07:08
+  well_label: S178
+  well_uuid_lims: d480f800-49bc-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '16596142'
+  id_flgen_plate_tmp: 166883
+  id_lims: SQSCP
+  id_sample_tmp: 2471326
+  id_study_tmp: 2836
+  last_updated: 2016-05-23 09:09:17
+  plate_barcode: 1662059077
+  plate_barcode_lims: DN444478H
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: fd0afa20-20c5-11e6-9a2c-68b599768938
+  qc_state: null
+  recorded_at: 2016-05-23 09:09:31
+  well_label: S176
+  well_uuid_lims: 6b5b3a40-1e95-11e6-b653-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '11328901'
+  id_flgen_plate_tmp: 64611
+  id_lims: SQSCP
+  id_sample_tmp: 2013964
+  id_study_tmp: 3097
+  last_updated: 2014-08-14 10:33:25
+  plate_barcode: 1662041134
+  plate_barcode_lims: DN359046G
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 641266d0-239e-11e4-8c06-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:05:58
+  well_label: S033
+  well_uuid_lims: 52fa4810-1e3d-11e4-a291-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '26990706'
+  id_flgen_plate_tmp: 258477
+  id_lims: SQSCP
+  id_sample_tmp: 4214846
+  id_study_tmp: 5460
+  last_updated: 2019-11-01 11:45:08
+  plate_barcode: 1662196170
+  plate_barcode_lims: '1662196170'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 0e1d1f9e-fc9d-11e9-ab8a-68b599768938
+  qc_state: null
+  recorded_at: 2019-11-01 11:46:01
+  well_label: S096
+  well_uuid_lims: 797095c4-fa5d-11e9-903f-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27044070'
+  id_flgen_plate_tmp: 268688
+  id_lims: SQSCP
+  id_sample_tmp: 4331548
+  id_study_tmp: 5460
+  last_updated: 2020-03-17 14:52:44
+  plate_barcode: 1662200290
+  plate_barcode_lims: '1662200290'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: f57e9390-685e-11ea-891f-fa163e2f1184
+  qc_state: null
+  recorded_at: 2020-03-17 14:52:54
+  well_label: S125
+  well_uuid_lims: b1d4c090-5e01-11ea-bb3a-fa163ecea4e6
+- cost_code: S0968
+  id_flgen_plate_lims: '14105111'
+  id_flgen_plate_tmp: 111162
+  id_lims: SQSCP
+  id_sample_tmp: 2049268
+  id_study_tmp: 3097
+  last_updated: 2015-06-11 08:30:55
+  plate_barcode: 1662051222
+  plate_barcode_lims: DN405386L
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 25948970-1014-11e5-936b-68b59976a382
+  qc_state: null
+  recorded_at: 2015-06-11 08:31:00
+  well_label: S001
+  well_uuid_lims: a46a0980-0de6-11e5-b0a2-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '10868072'
+  id_flgen_plate_tmp: 38129
+  id_lims: SQSCP
+  id_sample_tmp: 1969517
+  id_study_tmp: 3147
+  last_updated: 2014-07-21 08:53:06
+  plate_barcode: 1662031329
+  plate_barcode_lims: DN350966B
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 676ad5d0-10b4-11e4-9908-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:22:38
+  well_label: S058
+  well_uuid_lims: 4e5c65a0-0b68-11e4-8ee9-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '18684742'
+  id_flgen_plate_tmp: 192711
+  id_lims: SQSCP
+  id_sample_tmp: 2917309
+  id_study_tmp: 4595
+  last_updated: 2017-02-28 09:14:24
+  plate_barcode: 1382272545
+  plate_barcode_lims: DN477903H
+  plate_size: 96
+  plate_size_occupied: 95
+  plate_uuid_lims: 42b88710-fd96-11e6-84c4-68b59976a384
+  qc_state: null
+  recorded_at: 2017-02-28 09:14:40
+  well_label: S60
+  well_uuid_lims: 4ed81970-fcc9-11e6-942e-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '18570603'
+  id_flgen_plate_tmp: 190703
+  id_lims: SQSCP
+  id_sample_tmp: 2871199
+  id_study_tmp: 4259
+  last_updated: 2017-02-10 08:55:13
+  plate_barcode: 1662062311
+  plate_barcode_lims: DN476122F
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 91d03040-ef6e-11e6-a2c3-68b599768938
+  qc_state: null
+  recorded_at: 2017-02-10 08:55:34
+  well_label: S083
+  well_uuid_lims: b3168620-edff-11e6-874d-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '12942517'
+  id_flgen_plate_tmp: 18986
+  id_lims: SQSCP
+  id_sample_tmp: 2196401
+  id_study_tmp: 1907
+  last_updated: 2015-02-03 16:22:12
+  plate_barcode: 1382085427
+  plate_barcode_lims: DN386266T
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: c9c244a0-abc0-11e4-8dbb-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:19:12
+  well_label: S36
+  well_uuid_lims: 357c32d0-ab9b-11e4-bdff-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '14325010'
+  id_flgen_plate_tmp: 119149
+  id_lims: SQSCP
+  id_sample_tmp: 2309675
+  id_study_tmp: 1808
+  last_updated: 2015-07-07 07:31:56
+  plate_barcode: 1382122622
+  plate_barcode_lims: DN409289E
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 3286e720-247a-11e5-a33f-68b59976a382
+  qc_state: null
+  recorded_at: 2015-07-07 07:32:03
+  well_label: S28
+  well_uuid_lims: 49f11ae0-1f0a-11e5-991e-3c4a9275d6c6
+- cost_code: ''
+  id_flgen_plate_lims: 27-6886
+  id_flgen_plate_tmp: 143016
+  id_lims: C_GCLP
+  id_sample_tmp: 2426595
+  id_study_tmp: 3625
+  last_updated: 2015-11-20 16:51:46
+  plate_barcode: 1382141356
+  plate_barcode_lims: '1382141356'
+  plate_size: 96
+  plate_size_occupied: 81
+  plate_uuid_lims: null
+  qc_state: null
+  recorded_at: 2015-11-20 16:52:56
+  well_label: S05
+  well_uuid_lims: null
+- cost_code: S0910
+  id_flgen_plate_lims: '27178586'
+  id_flgen_plate_tmp: 279790
+  id_lims: SQSCP
+  id_sample_tmp: 5037428
+  id_study_tmp: 6108
+  last_updated: 2021-02-15 11:06:10
+  plate_barcode: 1662199036
+  plate_barcode_lims: '1662199036'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: cf800260-6f7d-11eb-99a4-fa163eea3084
+  qc_state: null
+  recorded_at: 2021-02-15 11:06:24
+  well_label: S022
+  well_uuid_lims: 4c38800c-5c96-11eb-b311-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '14143701'
+  id_flgen_plate_tmp: 112646
+  id_lims: SQSCP
+  id_sample_tmp: 2068022
+  id_study_tmp: 3097
+  last_updated: 2015-06-12 14:08:37
+  plate_barcode: 1662049031
+  plate_barcode_lims: DN405802G
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 5fe6f740-110c-11e5-936b-68b59976a382
+  qc_state: null
+  recorded_at: 2015-06-12 14:08:43
+  well_label: S064
+  well_uuid_lims: 97c0d260-10f0-11e5-b0a2-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '13059922'
+  id_flgen_plate_tmp: 20483
+  id_lims: SQSCP
+  id_sample_tmp: 2162077
+  id_study_tmp: 1808
+  last_updated: 2015-02-16 16:08:29
+  plate_barcode: 1382085419
+  plate_barcode_lims: DN388585Q
+  plate_size: 96
+  plate_size_occupied: null
+  plate_uuid_lims: 07a4ca60-b5f6-11e4-be99-68b59976a382
+  qc_state: null
+  recorded_at: 2015-04-08 15:19:29
+  well_label: S39
+  well_uuid_lims: 91178750-b5d4-11e4-9d5d-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '27239167'
+  id_flgen_plate_tmp: 307579
+  id_lims: SQSCP
+  id_sample_tmp: 1262310
+  id_study_tmp: 1684
+  last_updated: 2021-07-14 09:04:52
+  plate_barcode: 1382676108
+  plate_barcode_lims: '1382676108'
+  plate_size: 96
+  plate_size_occupied: 70
+  plate_uuid_lims: cc3ce9d4-dff7-11eb-81dc-fa163eac3af7
+  qc_state: null
+  recorded_at: 2021-09-02 11:56:00
+  well_label: S42
+  well_uuid_lims: 21efef78-d8cf-11eb-9bfe-fa163e8a206d
+- cost_code: S0910
+  id_flgen_plate_lims: '26501902'
+  id_flgen_plate_tmp: 251207
+  id_lims: SQSCP
+  id_sample_tmp: 4109191
+  id_study_tmp: 5022
+  last_updated: 2019-07-17 07:12:17
+  plate_barcode: 1382471194
+  plate_barcode_lims: '1382471194'
+  plate_size: 96
+  plate_size_occupied: 60
+  plate_uuid_lims: 35829ff8-a862-11e9-837c-68b59976a384
+  qc_state: null
+  recorded_at: 2019-07-17 13:24:56
+  well_label: S90
+  well_uuid_lims: b01bb3c0-a6dd-11e9-81c0-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '13837177'
+  id_flgen_plate_tmp: 99690
+  id_lims: SQSCP
+  id_sample_tmp: 2042093
+  id_study_tmp: 3097
+  last_updated: 2015-05-08 09:16:20
+  plate_barcode: 1662046245
+  plate_barcode_lims: DN401396U
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: db9431c0-f562-11e4-bddd-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-08 09:16:27
+  well_label: S161
+  well_uuid_lims: 096b1420-ef1d-11e4-bbb6-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '26364530'
+  id_flgen_plate_tmp: 248572
+  id_lims: SQSCP
+  id_sample_tmp: 4093793
+  id_study_tmp: 5201
+  last_updated: 2019-07-02 09:03:25
+  plate_barcode: 1382471016
+  plate_barcode_lims: '1382471016'
+  plate_size: 96
+  plate_size_occupied: 95
+  plate_uuid_lims: 40571294-9ca8-11e9-a771-68b599768938
+  qc_state: null
+  recorded_at: 2019-07-02 09:03:46
+  well_label: S03
+  well_uuid_lims: 70efd968-98e8-11e9-81c0-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '25216883'
+  id_flgen_plate_tmp: 242653
+  id_lims: SQSCP
+  id_sample_tmp: 4017057
+  id_study_tmp: 5386
+  last_updated: 2019-03-20 08:18:28
+  plate_barcode: 1382471296
+  plate_barcode_lims: '1382471296'
+  plate_size: 96
+  plate_size_occupied: 87
+  plate_uuid_lims: bd5a2770-4ae8-11e9-86f6-68b59976a384
+  qc_state: null
+  recorded_at: 2019-03-20 08:18:42
+  well_label: S94
+  well_uuid_lims: 47a53f90-4a36-11e9-98de-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '14063366'
+  id_flgen_plate_tmp: 109722
+  id_lims: SQSCP
+  id_sample_tmp: 2040653
+  id_study_tmp: 3097
+  last_updated: 2015-06-09 08:12:21
+  plate_barcode: 1662046217
+  plate_barcode_lims: DN404936P
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 39569840-0e7f-11e5-936b-68b59976a382
+  qc_state: null
+  recorded_at: 2015-06-09 08:12:28
+  well_label: S090
+  well_uuid_lims: 4dda8b20-0ab3-11e5-a937-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '15924208'
+  id_flgen_plate_tmp: 157171
+  id_lims: SQSCP
+  id_sample_tmp: 2481916
+  id_study_tmp: 4050
+  last_updated: 2016-03-10 12:16:01
+  plate_barcode: 1662054191
+  plate_barcode_lims: DN434640R
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: d39ba7c0-e6b9-11e5-a007-68b59976a382
+  qc_state: null
+  recorded_at: 2016-03-10 12:16:10
+  well_label: S056
+  well_uuid_lims: ed3c03c0-e5db-11e5-bc69-3c4a9275d6c6
+- cost_code: S0968
+  id_flgen_plate_lims: '17006467'
+  id_flgen_plate_tmp: 173287
+  id_lims: SQSCP
+  id_sample_tmp: 2642438
+  id_study_tmp: 4258
+  last_updated: 2016-07-11 10:44:22
+  plate_barcode: 1662059004
+  plate_barcode_lims: DN451740S
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 61274f90-4754-11e6-b982-68b59976a384
+  qc_state: null
+  recorded_at: 2016-07-11 10:44:36
+  well_label: S059
+  well_uuid_lims: 06b835f0-41c4-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '17133179'
+  id_flgen_plate_tmp: 176150
+  id_lims: SQSCP
+  id_sample_tmp: 2643894
+  id_study_tmp: 4259
+  last_updated: 2016-07-18 11:09:52
+  plate_barcode: 1662062097
+  plate_barcode_lims: DN453141J
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 1b63a1a0-4cd8-11e6-b9ee-68b59976a384
+  qc_state: null
+  recorded_at: 2016-07-18 11:10:05
+  well_label: S173
+  well_uuid_lims: f4155b00-49b4-11e6-9a3d-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27217080'
+  id_flgen_plate_tmp: 292214
+  id_lims: SQSCP
+  id_sample_tmp: 5636207
+  id_study_tmp: 6237
+  last_updated: 2021-05-18 15:16:02
+  plate_barcode: 1662435113
+  plate_barcode_lims: '1662435113'
+  plate_size: 192
+  plate_size_occupied: 170
+  plate_uuid_lims: f54e3e4c-b7eb-11eb-8917-fa163eea3084
+  qc_state: null
+  recorded_at: 2021-05-18 15:16:12
+  well_label: S109
+  well_uuid_lims: 56d22490-af1c-11eb-95ce-fa163e8a206d
+- cost_code: S0968
+  id_flgen_plate_lims: '19915239'
+  id_flgen_plate_tmp: 209098
+  id_lims: SQSCP
+  id_sample_tmp: 3221983
+  id_study_tmp: 4259
+  last_updated: 2017-09-07 11:46:48
+  plate_barcode: 1662084008
+  plate_barcode_lims: DN497804P
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 59c0a9f4-93c0-11e7-8181-68b599768938
+  qc_state: null
+  recorded_at: 2017-09-07 11:47:02
+  well_label: S163
+  well_uuid_lims: b5357286-9214-11e7-a6fe-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '16252379'
+  id_flgen_plate_tmp: 161671
+  id_lims: SQSCP
+  id_sample_tmp: 2559349
+  id_study_tmp: 3440
+  last_updated: 2016-04-19 10:56:31
+  plate_barcode: 1662059041
+  plate_barcode_lims: DN439619R
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 55b0d7d0-061d-11e6-aab9-68b599768938
+  qc_state: null
+  recorded_at: 2016-04-19 10:56:43
+  well_label: S067
+  well_uuid_lims: 30b900e0-0606-11e6-bb80-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '26372436'
+  id_flgen_plate_tmp: 248795
+  id_lims: SQSCP
+  id_sample_tmp: 4093995
+  id_study_tmp: 5201
+  last_updated: 2019-07-03 07:45:14
+  plate_barcode: 1382471023
+  plate_barcode_lims: '1382471023'
+  plate_size: 96
+  plate_size_occupied: 63
+  plate_uuid_lims: 7e92a2d0-9d66-11e9-a771-68b599768938
+  qc_state: null
+  recorded_at: 2019-07-03 07:45:27
+  well_label: S52
+  well_uuid_lims: 72107f28-98e8-11e9-81c0-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '12716268'
+  id_flgen_plate_tmp: 80803
+  id_lims: SQSCP
+  id_sample_tmp: 1867770
+  id_study_tmp: 2920
+  last_updated: 2015-01-13 14:13:48
+  plate_barcode: 1662042291
+  plate_barcode_lims: DN383467O
+  plate_size: 192
+  plate_size_occupied: null
+  plate_uuid_lims: 5d24ef20-9b2e-11e4-8523-68b59976a382
+  qc_state: null
+  recorded_at: 2015-05-01 16:09:02
+  well_label: S093
+  well_uuid_lims: 0d033220-9801-11e4-a649-3c4a9275d6c6
+- cost_code: S0910
+  id_flgen_plate_lims: '26990908'
+  id_flgen_plate_tmp: 258603
+  id_lims: SQSCP
+  id_sample_tmp: 4215097
+  id_study_tmp: 5460
+  last_updated: 2019-11-04 09:01:52
+  plate_barcode: 1662196127
+  plate_barcode_lims: '1662196127'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: be78ec2e-fee1-11e9-ab8a-68b599768938
+  qc_state: null
+  recorded_at: 2019-11-04 09:02:10
+  well_label: S032
+  well_uuid_lims: af730574-faf5-11e9-903f-3c4a9275d6c8
+- cost_code: S0968
+  id_flgen_plate_lims: '19108814'
+  id_flgen_plate_tmp: 198533
+  id_lims: SQSCP
+  id_sample_tmp: 3029716
+  id_study_tmp: 3733
+  last_updated: 2017-05-08 09:49:32
+  plate_barcode: 1382321530
+  plate_barcode_lims: DN483463Q
+  plate_size: 96
+  plate_size_occupied: 48
+  plate_uuid_lims: 7cb8a080-33d3-11e7-9e45-68b599768938
+  qc_state: null
+  recorded_at: 2017-05-08 09:52:52
+  well_label: S26
+  well_uuid_lims: 0d447500-317e-11e7-b396-3c4a9275d6c8
+- cost_code: S0910
+  id_flgen_plate_lims: '27043920'
+  id_flgen_plate_tmp: 268138
+  id_lims: SQSCP
+  id_sample_tmp: 4330947
+  id_study_tmp: 5460
+  last_updated: 2020-03-17 11:21:01
+  plate_barcode: 1662200319
+  plate_barcode_lims: '1662200319'
+  plate_size: 192
+  plate_size_occupied: 190
+  plate_uuid_lims: 61ff0392-6841-11ea-891f-fa163e2f1184
+  qc_state: null
+  recorded_at: 2020-03-17 11:21:10
+  well_label: S145
+  well_uuid_lims: 71276b50-5c72-11ea-8281-fa163ecea4e6

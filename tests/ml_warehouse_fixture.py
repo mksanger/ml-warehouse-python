@@ -1,8 +1,7 @@
 import os
-from typing import Optional
-
 from configparser import ConfigParser, Error
 from datetime import datetime
+from typing import Optional
 
 import pytest
 from sqlalchemy import create_engine
@@ -10,151 +9,87 @@ from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.sql.expression import text
 from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy_utils.functions.database import drop_database
-from sqlalchemy import func
+import yaml
 
-from ml_warehouse.ml_warehouse_schema import Base, OseqFlowcell, Sample, Study
+from ml_warehouse.ml_warehouse_schema import (
+    Base,
+    BmapFlowcell,
+    FlgenPlate,
+    IseqFlowcell,
+    IseqProductMetrics,
+    IseqRunLaneMetrics,
+    IseqRunStatus,
+    IseqRunStatusDict,
+    OseqFlowcell,
+    PacBioRun,
+    Sample,
+    StockResource,
+    Study,
+    StudyUsers,
+)
 
-EARLY = datetime(year=2020, month=6, day=1, hour=0, minute=0, second=0)
-LATE = datetime(year=2020, month=6, day=14, hour=0, minute=0, second=0)
-LATEST = datetime(year=2020, month=6, day=30, hour=0, minute=0, second=0)
+
+def insert_from_yaml(sess: Session, table_type, fixtures_fname: str):
+
+    with open(fixtures_fname, "r") as f:
+
+        fixtures = yaml.safe_load(f)
+        objs = []
+        for row in fixtures:
+
+            table = table_type()
+            for key, value in row.items():
+                setattr(table, key, value)
+
+            objs.append(table)
+
+        sess.add_all(objs)
+        sess.commit()
 
 
 def initialize_mlwh(session: Session):
-    instrument_name = "instrument_01"
-    pipeline_id_lims = "Ligation"
-    req_data_type = "Basecalls and raw data"
 
-    study_x = Study(
-        id_lims="LIMS_01",
-        id_study_lims="study_01",
-        name="Study X",
-        last_updated=func.now(),
-        recorded_at=func.now(),
+    insert_from_yaml(
+        session, IseqRunStatusDict, "tests/fixtures/00-IseqRunStatusDict.yml"
     )
-    study_y = Study(
-        id_lims="LIMS_01",
-        id_study_lims="study_02",
-        name="Study Y",
-        last_updated=func.now(),
-        recorded_at=func.now(),
+    insert_from_yaml(session, IseqRunStatus, "tests/fixtures/100-IseqRunStatus.yml")
+
+    insert_from_yaml(session, StudyUsers, "tests/fixtures/100-StudyUser.yml")
+    insert_from_yaml(session, Sample, "tests/fixtures/200-Sample.yml")
+    insert_from_yaml(session, Study, "tests/fixtures/200-Study.yml")
+
+    insert_from_yaml(session, StockResource, "tests/fixtures/400-StockResource.yml")
+    insert_from_yaml(session, OseqFlowcell, "tests/fixtures/300-OseqFlowcell.yml")
+
+    insert_from_yaml(session, BmapFlowcell, "tests/fixtures/300-BmapFlowcell.yml")
+    insert_from_yaml(session, IseqFlowcell, "tests/fixtures/300-IseqFlowcell.yml")
+
+    insert_from_yaml(session, PacBioRun, "tests/fixtures/300-PacBioRun.yml")
+    insert_from_yaml(
+        session, IseqRunLaneMetrics, "tests/fixtures/400-IseqRunLaneMetric.yml"
     )
-    study_z = Study(
-        id_lims="LIMS_01",
-        id_study_lims="study_03",
-        name="Study Z",
-        last_updated=func.now(),
-        recorded_at=func.now(),
+
+
+@pytest.fixture(scope="function")
+def mlwh_session_flgen(mlwh_session: Session) -> Session:
+    mlwh_session.execute(text("SET foreign_key_checks=0;"))
+    insert_from_yaml(mlwh_session, Study, "tests/fixtures/400-Study.yml")
+    insert_from_yaml(mlwh_session, Sample, "tests/fixtures/400-Sample.yml")
+    insert_from_yaml(mlwh_session, FlgenPlate, "tests/fixtures/400-FlgenPlate.yml")
+    mlwh_session.execute(text("SET foreign_key_checks=1;"))
+
+    yield mlwh_session
+
+
+@pytest.fixture(scope="function")
+def mlwh_session_ipm(mlwh_session) -> Session:
+    mlwh_session.execute(text("SET foreign_key_checks=0;"))
+    insert_from_yaml(
+        mlwh_session, IseqProductMetrics, "tests/fixtures/300-IseqProductMetric.yml"
     )
-    session.add_all([study_x, study_y, study_z])
-    session.flush()
+    mlwh_session.execute(text("SET foreign_key_checks=1;"))
 
-    samples = []
-    flowcells = []
-
-    num_samples = 200
-    for s in range(1, num_samples + 1):
-        sid = "sample{}".format(s)
-        name = "sample {}".format(s)
-        samples.append(
-            Sample(
-                id_lims="LIMS_01",
-                id_sample_lims=sid,
-                name=name,
-                last_updated=func.now(),
-                recorded_at=func.now(),
-            )
-        )
-    session.add_all(samples)
-    session.flush()
-
-    num_simple_expts = 5
-    num_instrument_pos = 5
-    sample_idx = 0
-    for expt in range(1, num_simple_expts + 1):
-        for pos in range(1, num_instrument_pos + 1):
-            expt_name = "simple_experiment_{:03}".format(expt)
-            id_flowcell = "flowcell{:03}".format(pos + 10)
-
-            # All the even experiments have the early datetime
-            # All the odd experiments have the late datetime
-            when_expt = EARLY if expt % 2 == 0 else LATE
-
-            flowcells.append(
-                OseqFlowcell(
-                    sample=samples[sample_idx],
-                    study=study_y,
-                    instrument_name=instrument_name,
-                    instrument_slot=pos,
-                    experiment_name=expt_name,
-                    id_flowcell_lims=id_flowcell,
-                    pipeline_id_lims=pipeline_id_lims,
-                    requested_data_type=req_data_type,
-                    last_updated=when_expt,
-                    recorded_at=when_expt,
-                    id_lims="SEQSCAPE",
-                )
-            )
-            sample_idx += 1
-
-    num_multiplexed_expts = 3
-    num_instrument_pos = 5
-    barcodes = [
-        "CACAAAGACACCGACAACTTTCTT",
-        "ACAGACGACTACAAACGGAATCGA",
-        "CCTGGTAACTGGGACACAAGACTC",
-        "TAGGGAAACACGATAGAATCCGAA",
-        "AAGGTTACACAAACCCTGGACAAG",
-        "GACTACTTTCTGCCTTTGCGAGAA",
-        "AAGGATTCATTCCCACGGTAACAC",
-        "ACGTAACTTGGTTTGTTCCCTGAA",
-        "AACCAAGACTCGCTGTGCCTAGTT",
-        "GAGAGGACAAAGGTTTCAACGCTT",
-        "TCCATTCCCTCCGATAGATGAAAC",
-        "TCCGATTCTGCTTCTTTCTACCTG",
-    ]
-
-    msample_idx = 0
-    for expt in range(1, num_multiplexed_expts + 1):
-        for pos in range(1, num_instrument_pos + 1):
-            expt_name = "multiplexed_experiment_{:03}".format(expt)
-            id_flowcell = "flowcell{:03}".format(pos + 100)
-
-            # All the even experiments have the early datetime
-            when = EARLY
-
-            # All the odd experiments have the late datetime
-            if expt % 2 == 1:
-                when = LATE
-                # Or latest if they have an odd instrument position
-                if pos % 2 == 1:
-                    when = LATEST
-
-            for barcode_idx, barcode in enumerate(barcodes):
-                tag_id = "ONT_EXP-012-{:02d}".format(barcode_idx + 1)
-
-                flowcells.append(
-                    OseqFlowcell(
-                        sample=samples[msample_idx],
-                        study=study_z,
-                        instrument_name=instrument_name,
-                        instrument_slot=pos,
-                        experiment_name=expt_name,
-                        id_flowcell_lims=id_flowcell,
-                        tag_set_id_lims="ONT_12",
-                        tag_set_name="ONT library barcodes x12",
-                        tag_sequence=barcode,
-                        tag_identifier=tag_id,
-                        pipeline_id_lims=pipeline_id_lims,
-                        requested_data_type=req_data_type,
-                        last_updated=when,
-                        recorded_at=when,
-                        id_lims="SEQSCAPE",
-                    )
-                )
-                msample_idx += 1
-
-    session.add_all(flowcells)
-    session.commit()
+    yield mlwh_session
 
 
 @pytest.fixture(scope="function")
@@ -189,17 +124,23 @@ def mlwh_session(config) -> Session:
     if not database_exists(engine.url):
         create_database(engine.url)
 
-    # Workaround for invalid default values for dates.
     with engine.connect() as conn:
+        # Workaround for invalid default values for dates.
         conn.execute(text("SET sql_mode = '';"))
+        conn.commit()
+        # Make it easier to populate the tables
+        conn.execute(text("SET foreign_key_checks=0;"))
         conn.commit()
 
     Base.metadata.create_all(engine)
 
     session_maker = sessionmaker(bind=engine)
-    sess = session_maker()
+    sess: Session() = session_maker()
 
     initialize_mlwh(sess)
+    with engine.connect() as conn:
+        conn.execute(text("SET foreign_key_checks=1;"))
+        conn.commit()
 
     yield sess
     sess.close()
