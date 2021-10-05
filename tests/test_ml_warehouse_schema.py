@@ -159,20 +159,11 @@ class TestMLWarehouseAllTables(object):
                 refl_type = column["type"].compile(dialect)
                 gen_type = generated_column.type.compile(dialect)
 
-                # TODO: figure out how to make this stricter / more useful.
+                # Exception for known inconsistency in the schema
                 assert (
                     refl_type == gen_type
-                    or "UNSIGNED" in refl_type
-                    or "CHARACTER SET" in refl_type
-                    or "ENUM" in refl_type
-                    and "ENUM" in gen_type
-                    and refl_type.split(")")[0] == gen_type[:-1]
-                    or "CHAR" in refl_type
-                    and "CHAR" in gen_type
-                    and refl_type.split(")")[0] == gen_type[:-1]
-                    or "FLOAT" in refl_type
-                    and "FLOAT" in gen_type
-                    and refl_type.split(",")[0] == gen_type[:-1]
+                    or table.name in ["iseq_external_product_components"]
+                    and colname in ["id_iseq_product_ext"]
                 )
 
             # Check all primary keys

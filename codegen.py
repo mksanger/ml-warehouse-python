@@ -21,12 +21,6 @@ subprocess.run(
     ]
 )
 
-# Workaround issue with CHAR.
-subprocess.run(
-    ["sed", "-i.bu", "/sqlalchemy.dialects.mysql/s/CHAR, *//", "generated.py"]
-)
-os.remove("generated.py.bu")
-
 # Move the generated file.
 os.rename("generated.py", "ml_warehouse/ml_warehouse_schema.py")
 
