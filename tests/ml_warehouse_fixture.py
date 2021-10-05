@@ -1,10 +1,14 @@
+from configparser import ConfigParser, Error
 from datetime import datetime
 
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
+from sqlalchemy_utils import database_exists, create_database
+from sqlalchemy_utils.functions.database import drop_database
+from sqlalchemy import func
 
-from ml_warehouse.ml_warehouse_schema import MLWHBase, OseqFlowcell, Sample, Study
+from ml_warehouse.ml_warehouse_schema_new import Base, OseqFlowcell, Sample, Study
 
 EARLY = datetime(year=2020, month=6, day=1, hour=0, minute=0, second=0)
 LATE = datetime(year=2020, month=6, day=14, hour=0, minute=0, second=0)
@@ -16,9 +20,27 @@ def initialize_mlwh(session: Session):
     pipeline_id_lims = "Ligation"
     req_data_type = "Basecalls and raw data"
 
-    study_x = Study(id_lims="LIMS_01", id_study_lims="study_01", name="Study X")
-    study_y = Study(id_lims="LIMS_01", id_study_lims="study_02", name="Study Y")
-    study_z = Study(id_lims="LIMS_01", id_study_lims="study_03", name="Study Z")
+    study_x = Study(
+        id_lims="LIMS_01",
+        id_study_lims="study_01",
+        name="Study X",
+        last_updated=func.now(),
+        recorded_at=func.now(),
+    )
+    study_y = Study(
+        id_lims="LIMS_01",
+        id_study_lims="study_02",
+        name="Study Y",
+        last_updated=func.now(),
+        recorded_at=func.now(),
+    )
+    study_z = Study(
+        id_lims="LIMS_01",
+        id_study_lims="study_03",
+        name="Study Z",
+        last_updated=func.now(),
+        recorded_at=func.now(),
+    )
     session.add_all([study_x, study_y, study_z])
     session.flush()
 
@@ -29,7 +51,15 @@ def initialize_mlwh(session: Session):
     for s in range(1, num_samples + 1):
         sid = "sample{}".format(s)
         name = "sample {}".format(s)
-        samples.append(Sample(id_lims="LIMS_01", id_sample_lims=sid, name=name))
+        samples.append(
+            Sample(
+                id_lims="LIMS_01",
+                id_sample_lims=sid,
+                name=name,
+                last_updated=func.now(),
+                recorded_at=func.now(),
+            )
+        )
     session.add_all(samples)
     session.flush()
 
@@ -56,6 +86,8 @@ def initialize_mlwh(session: Session):
                     pipeline_id_lims=pipeline_id_lims,
                     requested_data_type=req_data_type,
                     last_updated=when_expt,
+                    recorded_at=when_expt,
+                    id_lims="SEQSCAPE",
                 )
             )
             sample_idx += 1
@@ -111,6 +143,8 @@ def initialize_mlwh(session: Session):
                         pipeline_id_lims=pipeline_id_lims,
                         requested_data_type=req_data_type,
                         last_updated=when,
+                        recorded_at=when,
+                        id_lims="SEQSCAPE",
                     )
                 )
                 msample_idx += 1
@@ -120,12 +154,19 @@ def initialize_mlwh(session: Session):
 
 
 @pytest.fixture(scope="function")
-def mlwh_session(tmp_path) -> Session:
-    p = tmp_path / "mlwh"
-    uri = "sqlite:///{}".format(p)
+def mlwh_session(config) -> Session:
 
+    uri = mysql_url(config)
+    # uri = "sqlite:///mlwh.db"
     engine = create_engine(uri, echo=False)
-    MLWHBase.metadata.create_all(engine)
+
+    if not database_exists(engine.url):
+        create_database(engine.url)
+
+    # Workaround for invalid default values for dates.
+    engine.execute("SET sql_mode = '';")
+
+    Base.metadata.create_all(engine)
 
     session_maker = sessionmaker(bind=engine)
     sess = session_maker()
@@ -134,3 +175,37 @@ def mlwh_session(tmp_path) -> Session:
 
     yield sess
     sess.close()
+
+    drop_database(engine.url)
+
+
+def mysql_url(config: ConfigParser):
+    """Returns a MySQL URL configured through an ini file.
+
+    The keys and values are:
+
+    [MySQL]
+    user       = <database user, defaults to "mlwh">
+    password   = <database password, defaults to empty i.e. "">
+    ip_address = <database IP address, defaults to "127.0.0.1">
+    port       = <database port, defaults to 3306>
+    schema     = <database schema, defaults to "mlwh">
+    """
+    section = "MySQL"
+
+    if section not in config.sections():
+        raise Error(
+            "The {} configuration section is missing. "
+            "You need to fill this in before running "
+            "tests on a {} database".format(section, section)
+        )
+    connection_conf = config[section]
+    user = connection_conf.get("user", "mlwh")
+    password = connection_conf.get("password", "")
+    ip_address = connection_conf.get("ip_address", "127.0.0.1")
+    port = connection_conf.get("port", "3306")
+    schema = connection_conf.get("schema", "mlwh")
+
+    return "mysql+pymysql://{}:{}@{}:{}/{}".format(
+        user, password, ip_address, port, schema
+    )
