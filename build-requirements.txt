@@ -1,0 +1,2 @@
+sqlacodegen==2.3.0
+black==21.8b0

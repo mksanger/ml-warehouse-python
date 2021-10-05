@@ -10,7 +10,7 @@ setup(
     author_email="ab59@sanger.ac.uk",
     description="Automation for processing DNA sequence data",
     install_requires=[
-        "sqlalchemy>=1.3",
+        "sqlalchemy>=1.4",
     ],
     tests_require=["pytest", "pytest-it"],
 )
