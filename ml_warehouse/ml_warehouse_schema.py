@@ -193,3 +193,81 @@ class OseqFlowcell(MLWHBase):
                 self.last_updated,
             )
         )
+
+
+def find_recent_ont_expt(session: Session, since: datetime) -> List[str]:
+    """Finds recent ONT experiments in the ML warehouse database.
+
+    Finds ONT experiments in the ML warehouse database that have been updated
+    since a specified date and time. If any element of the experiment (any of
+    the positions in a multi-flowcell experiment, any of the multiplexed
+    elements within a position) have been updated in the query window, the
+    experiment name will be returned.
+
+    Args:
+        session: An open SQL session.
+        since: A datetime.
+
+    Returns:
+        List of matching experiment name strings
+    """
+
+    result = (
+        session.query(distinct(OseqFlowcell.experiment_name))
+        .filter(OseqFlowcell.last_updated >= since)
+        .all()
+    )
+
+    # The default behaviour of SQLAlchemy is that the result here is a list
+    # of tuples, each of which must be unpacked. The official way to do
+    # that for all cases is to extend sqlalchemy.orm.query.Query to do the
+    # unpacking. However, that's too fancy for MVP, so we just unpack
+    # manually.
+    return [value for value, in result]
+
+
+def find_recent_ont_pos(session: Session, since: datetime) -> List[Tuple]:
+    """Finds recent ONT experiments and instrument positions in the ML
+    warehouse database.
+
+    Finds ONT experiments and associated instrument positions in the ML
+    warehouse database that have been updated since a specified date and time.
+
+    Args:
+        session: An open SQL session.
+        since: A datetime.
+
+    Returns:
+        List of matching (experiment name, position) tuples
+    """
+
+    return (
+        session.query(OseqFlowcell.experiment_name, OseqFlowcell.instrument_slot)
+        .filter(OseqFlowcell.last_updated >= since)
+        .group_by(OseqFlowcell.experiment_name, OseqFlowcell.instrument_slot)
+        .order_by(
+            OseqFlowcell.experiment_name.asc(), OseqFlowcell.instrument_slot.asc()
+        )
+        .all()
+    )
+
+
+def find_ont_plex_info(
+    session: Session, experiment_name: str, instrument_slot: int
+) -> List[OseqFlowcell]:
+    flowcells = (
+        session.query(OseqFlowcell)
+        .filter(
+            OseqFlowcell.experiment_name == experiment_name,
+            OseqFlowcell.instrument_slot == instrument_slot,
+        )
+        .order_by(
+            OseqFlowcell.experiment_name.asc(),
+            OseqFlowcell.instrument_slot.asc(),
+            OseqFlowcell.tag_identifier.asc(),
+            OseqFlowcell.tag2_identifier.asc(),
+        )
+        .all()
+    )
+
+    return flowcells
