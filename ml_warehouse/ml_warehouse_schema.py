@@ -1,3 +1,22 @@
+# -*- coding: utf-8 -*-
+#
+# Copyright © 2021 Genome Research Ltd. All rights reserved.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# @author Adam Blanchet <ab59@sanger.ac.uk>
+
 from ml_warehouse._decorators import add_docstring
 from sqlalchemy import CHAR, Column, Computed, DECIMAL, Date, DateTime, Enum, Float, ForeignKey, ForeignKeyConstraint, Index, String, TIMESTAMP, Table, Text, text
 from sqlalchemy.dialects.mysql import BIGINT as mysqlBIGINT, CHAR as mysqlCHAR, DATETIME as mysqlDATETIME, DOUBLE as mysqlDOUBLE, ENUM as mysqlENUM, FLOAT as mysqlFLOAT, INTEGER as mysqlINTEGER, SMALLINT as mysqlSMALLINT, TINYINT as mysqlTINYINT, VARCHAR as mysqlVARCHAR
