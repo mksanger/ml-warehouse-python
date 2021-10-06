@@ -18,6 +18,8 @@ subprocess.run(
         url,
         "--outfile",
         "generated.py",
+        "--option",
+        "nobidi",
     ]
 )
 

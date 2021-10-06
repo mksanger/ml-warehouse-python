@@ -1,20 +1,18 @@
-# coding: utf-8
 from sqlalchemy import CHAR, Column, DECIMAL, Date, DateTime, Enum, Float, ForeignKey, ForeignKeyConstraint, Index, String, TIMESTAMP, Table, Text, text
 from sqlalchemy.dialects.mysql import BIGINT, DATETIME, ENUM, INTEGER, SMALLINT, TINYINT, VARCHAR
-from sqlalchemy.orm import relationship
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
 metadata = Base.metadata
 
 
-class ArInternalMetadatum(Base):
+class ArInternalMetadata(Base):
     __tablename__ = 'ar_internal_metadata'
 
     key = Column(String(255), primary_key=True)
-    value = Column(String(255))
     created_at = Column(DATETIME(fsp=6), nullable=False)
     updated_at = Column(DATETIME(fsp=6), nullable=False)
+    value = Column(String(255))
 
 
 class CgapAnalyte(Base):
@@ -23,12 +21,12 @@ class CgapAnalyte(Base):
     cgap_analyte_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id. Value can change.')
     cell_line_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, index=True)
     destination = Column(String(32, 'utf8_unicode_ci'), nullable=False)
-    jobs = Column(String(64, 'utf8_unicode_ci'))
     slot_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, unique=True)
     release_date = Column(TIMESTAMP, nullable=False, server_default=text("'0000-00-00 00:00:00'"))
     labware_barcode = Column(String(20, 'utf8_unicode_ci'), nullable=False)
-    passage_number = Column(INTEGER(2))
     cell_state = Column(String(40, 'utf8_unicode_ci'), nullable=False)
+    jobs = Column(String(64, 'utf8_unicode_ci'))
+    passage_number = Column(INTEGER(2))
     project = Column(String(50, 'utf8_unicode_ci'))
 
 
@@ -37,9 +35,9 @@ class CgapBiomaterial(Base):
 
     cgap_biomaterial_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id. Value can change.')
     donor_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, index=True)
+    biomaterial_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, unique=True)
     donor_accession_number = Column(String(38, 'utf8_unicode_ci'))
     donor_name = Column(String(64, 'utf8_unicode_ci'))
-    biomaterial_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, unique=True)
 
 
 class CgapConjuredLabware(Base):
@@ -50,31 +48,31 @@ class CgapConjuredLabware(Base):
     cell_line_long_name = Column(String(48, 'utf8_unicode_ci'), nullable=False, index=True)
     cell_line_uuid = Column(String(38, 'utf8_unicode_ci'), nullable=False, index=True)
     passage_number = Column(INTEGER(2), nullable=False)
-    fate = Column(String(40, 'utf8_unicode_ci'))
     conjure_date = Column(TIMESTAMP, nullable=False, index=True, server_default=text("'0000-00-00 00:00:00'"))
     labware_state = Column(String(20, 'utf8_unicode_ci'), nullable=False, index=True)
-    project = Column(String(50, 'utf8_unicode_ci'), index=True)
     slot_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, unique=True)
+    fate = Column(String(40, 'utf8_unicode_ci'))
+    project = Column(String(50, 'utf8_unicode_ci'), index=True)
 
 
 class CgapHeron(Base):
     __tablename__ = 'cgap_heron'
     __table_args__ = (
-        Index('cgap_heron_destination_wrangled', 'destination', 'wrangled'),
-        Index('cgap_heron_rack_and_position', 'container_barcode', 'position', unique=True)
+        Index('cgap_heron_rack_and_position', 'container_barcode', 'position', unique=True),
+        Index('cgap_heron_destination_wrangled', 'destination', 'wrangled')
     )
 
     cgap_heron_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id. Value can change.')
     container_barcode = Column(String(32, 'utf8_unicode_ci'), nullable=False)
-    tube_barcode = Column(String(32, 'utf8_unicode_ci'), unique=True)
     supplier_sample_id = Column(String(64, 'utf8_unicode_ci'), nullable=False, index=True)
     position = Column(String(8, 'utf8_unicode_ci'), nullable=False)
     sample_type = Column(String(32, 'utf8_unicode_ci'), nullable=False)
     release_time = Column(TIMESTAMP, nullable=False, index=True, server_default=text("'0000-00-00 00:00:00'"))
     study = Column(String(32, 'utf8_unicode_ci'), nullable=False, index=True)
     destination = Column(String(32, 'utf8_unicode_ci'), nullable=False)
-    wrangled = Column(TIMESTAMP)
     sample_state = Column(String(32, 'utf8_unicode_ci'), nullable=False)
+    tube_barcode = Column(String(32, 'utf8_unicode_ci'), unique=True)
+    wrangled = Column(TIMESTAMP)
     lysis_buffer = Column(String(64, 'utf8_unicode_ci'))
     priority = Column(TINYINT(4))
     sample_identifier = Column(String(64, 'utf8_unicode_ci'), index=True, comment='The COG-UK barcode of a sample or the mixtio barcode of a control')
@@ -88,9 +86,9 @@ class CgapLineIdentifier(Base):
     cgap_line_identifier_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id. Value can change.')
     line_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, unique=True)
     friendly_name = Column(String(48, 'utf8_unicode_ci'), nullable=False, index=True)
+    biomaterial_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, index=True)
     accession_number = Column(String(38, 'utf8_unicode_ci'))
     direct_parent_uuid = Column(String(36, 'utf8_unicode_ci'), index=True)
-    biomaterial_uuid = Column(String(36, 'utf8_unicode_ci'), nullable=False, index=True)
     project = Column(String(50, 'utf8_unicode_ci'))
 
 
@@ -102,9 +100,9 @@ class CgapOrganoidsConjuredLabware(Base):
     cell_line_long_name = Column(String(48, 'utf8_unicode_ci'), nullable=False, index=True)
     cell_line_uuid = Column(String(38, 'utf8_unicode_ci'), nullable=False, index=True)
     passage_number = Column(INTEGER(2), nullable=False)
-    fate = Column(String(40, 'utf8_unicode_ci'))
     conjure_date = Column(TIMESTAMP, nullable=False, index=True, server_default=text("'0000-00-00 00:00:00'"))
     labware_state = Column(String(20, 'utf8_unicode_ci'), nullable=False, index=True)
+    fate = Column(String(40, 'utf8_unicode_ci'))
 
 
 class CgapRelease(Base):
@@ -116,12 +114,12 @@ class CgapRelease(Base):
     cell_line_uuid = Column(String(38, 'utf8_unicode_ci'), nullable=False, index=True)
     goal = Column(String(64, 'utf8_unicode_ci'), nullable=False)
     jobs = Column(String(64, 'utf8_unicode_ci'), nullable=False)
-    destination = Column(String(64, 'utf8_unicode_ci'))
     user = Column(String(6, 'utf8_unicode_ci'), nullable=False)
     release_date = Column(TIMESTAMP, nullable=False, server_default=text("'0000-00-00 00:00:00'"))
     cell_state = Column(String(40, 'utf8_unicode_ci'), nullable=False)
-    fate = Column(String(40, 'utf8_unicode_ci'))
     passage_number = Column(INTEGER(2), nullable=False)
+    destination = Column(String(64, 'utf8_unicode_ci'))
+    fate = Column(String(40, 'utf8_unicode_ci'))
     project = Column(String(50, 'utf8_unicode_ci'), index=True)
 
 
@@ -134,18 +132,18 @@ class CgapSupplierBarcode(Base):
     date = Column(TIMESTAMP, nullable=False, server_default=text("'0000-00-00 00:00:00'"))
 
 
-class IseqExternalProductMetric(Base):
+class IseqExternalProductMetrics(Base):
     __tablename__ = 'iseq_external_product_metrics'
     __table_args__ = {'comment': 'Externally computed metrics for data sequenced at WSI'}
 
     id_iseq_ext_pr_metrics_tmp = Column(BIGINT(20), primary_key=True, comment='Internal to this database id, value can change')
-    created = Column(DateTime, server_default=text("CURRENT_TIMESTAMP"), comment='Datetime this record was created')
-    last_changed = Column(DateTime, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), comment='Datetime this record was created or changed')
+    file_name = Column(String(300), nullable=False, index=True, comment='Comma-delimitered alphabetically sorted list of file names, which unambigiously define WSI sources of data')
+    file_path = Column(String(760), nullable=False, unique=True, comment='Comma-delimitered alphabetically sorted list of full external file paths for the files in file_names column as uploaded by WSI')
+    created = Column(DateTime, server_default=text('CURRENT_TIMESTAMP'), comment='Datetime this record was created')
+    last_changed = Column(DateTime, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'), comment='Datetime this record was created or changed')
     supplier_sample_name = Column(VARCHAR(255), index=True, comment='Sample name given by the supplier, as recorded by WSI')
     plate_barcode = Column(VARCHAR(255), index=True, comment='Stock plate barcode, as recorded by WSI')
     library_id = Column(INTEGER(11), index=True, comment='WSI library identifier')
-    file_name = Column(String(300), nullable=False, index=True, comment='Comma-delimitered alphabetically sorted list of file names, which unambigiously define WSI sources of data')
-    file_path = Column(String(760), nullable=False, unique=True, comment='Comma-delimitered alphabetically sorted list of full external file paths for the files in file_names column as uploaded by WSI')
     md5_staging = Column(CHAR(32), comment='WSI validation hex MD5, not set for multiple source files')
     manifest_upload_status = Column(CHAR(15), index=True, comment='WSI manifest upload status, one of "IN PROGRESS", "DONE", "FAIL", not set for multiple source files')
     manifest_upload_status_change_date = Column(DateTime, comment='Date the status of manifest upload is changed by WSI')
@@ -182,7 +180,7 @@ class IseqExternalProductMetric(Base):
     double_error_fraction = Column(Float, comment='Fraction of marker pairs with two read pairs evidencing parity and non-parity, may only be calculated if 1% <= verify_bam_id_score < 5%')
     contamination_assessment = Column(CHAR(4), comment='"PASS" or "FAIL" based on verify_bam_id_score_assessment and double_error_fraction < 0.2%')
     yield_whole_genome = Column(Float, comment='Sequence data quantity (Gb) excluding duplicate reads, adaptors, overlapping bases from reads on the same fragment, soft-clipped bases')
-    _yield = Column('yield', Float, comment='Sequence data quantity (Gb) excluding duplicate reads, adaptors, overlapping bases from reads on the same fragment, soft-clipped bases, non-N autosome only')
+    yield_ = Column('yield', Float, comment='Sequence data quantity (Gb) excluding duplicate reads, adaptors, overlapping bases from reads on the same fragment, soft-clipped bases, non-N autosome only')
     yield_q20 = Column(BIGINT(20), comment='Yield in bases at or above Q20 filtered in the same way as the yield column values')
     yield_q30 = Column(BIGINT(20), comment='Yield in bases at or above Q30 filtered in the same way as the yield column values')
     num_reads = Column(BIGINT(20), comment='Number of reads filtered in the same way as the yield column values')
@@ -213,15 +211,15 @@ class IseqExternalProductMetric(Base):
     sex_computed = Column(CHAR(6), comment='Genetic sex as identified by sequence data')
 
 
-class IseqHeronProductMetric(Base):
+class IseqHeronProductMetrics(Base):
     __tablename__ = 'iseq_heron_product_metrics'
     __table_args__ = {'comment': 'Heron project additional metrics'}
 
     id_iseq_hrpr_metrics_tmp = Column(BIGINT(20), primary_key=True, comment='Internal to this database id, value can change')
-    created = Column(DateTime, server_default=text("CURRENT_TIMESTAMP"), comment='Datetime this record was created')
-    last_changed = Column(DateTime, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), comment='Datetime this record was created or changed')
-    id_run = Column(INTEGER(10), index=True, comment='Run id')
     id_iseq_product = Column(CHAR(64, 'utf8_unicode_ci'), nullable=False, unique=True, comment='Product id, a foreign key into iseq_product_metrics table')
+    created = Column(DateTime, server_default=text('CURRENT_TIMESTAMP'), comment='Datetime this record was created')
+    last_changed = Column(DateTime, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'), comment='Datetime this record was created or changed')
+    id_run = Column(INTEGER(10), index=True, comment='Run id')
     supplier_sample_name = Column(String(255, 'utf8_unicode_ci'), index=True, comment='Sample name given by the supplier, as recorded by WSI')
     pp_name = Column(String(40, 'utf8_unicode_ci'), server_default=text("'ncov2019-artic-nf'"), comment='The name of the pipeline that produced the QC metric')
     pp_version = Column(String(40, 'utf8_unicode_ci'), index=True, comment='The version of the pipeline specified in the pp_name column')
@@ -242,33 +240,34 @@ class IseqHeronProductMetric(Base):
 
 class IseqRun(Base):
     __tablename__ = 'iseq_run'
-    __table_args__ = {'comment': 'Table linking run and flowcell identities with the run folder name'}
+    __table_args__ = {'comment': 'Table linking run and flowcell identities with the run folder '
+                'name'}
 
     id_run = Column(INTEGER(10), primary_key=True, comment='NPG run identifier')
     id_flowcell_lims = Column(String(20, 'utf8_unicode_ci'), index=True, comment='LIMS specific flowcell id')
     folder_name = Column(String(64, 'utf8_unicode_ci'), comment='Runfolder name')
 
 
-class IseqRunLaneMetric(Base):
+class IseqRunLaneMetrics(Base):
     __tablename__ = 'iseq_run_lane_metrics'
     __table_args__ = (
         Index('iseq_rlm_cancelled_and_run_complete_index', 'cancelled', 'run_complete'),
         Index('iseq_rlm_cancelled_and_run_pending_index', 'cancelled', 'run_pending')
     )
 
-    flowcell_barcode = Column(String(15, 'utf8_unicode_ci'), comment='Manufacturer flowcell barcode or other identifier as recorded by NPG')
     id_run = Column(INTEGER(10), primary_key=True, nullable=False, index=True, comment='NPG run identifier')
     position = Column(SMALLINT(2), primary_key=True, nullable=False, comment='Flowcell lane number')
-    last_changed = Column(DateTime, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), comment='Date this record was created or changed')
+    paired_read = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
+    cycles = Column(INTEGER(4), nullable=False)
+    cancelled = Column(TINYINT(1), nullable=False, server_default=text("'0'"), comment='Boolen flag to indicate whether the run was cancelled')
+    flowcell_barcode = Column(String(15, 'utf8_unicode_ci'), comment='Manufacturer flowcell barcode or other identifier as recorded by NPG')
+    last_changed = Column(DateTime, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'), comment='Date this record was created or changed')
     qc_seq = Column(TINYINT(1), comment='Sequencing lane level QC outcome, a result of either manual or automatic assessment by core')
     instrument_name = Column(CHAR(32, 'utf8_unicode_ci'))
     instrument_external_name = Column(CHAR(10, 'utf8_unicode_ci'), comment='Name assigned to the instrument by the manufacturer')
     instrument_model = Column(CHAR(64, 'utf8_unicode_ci'))
     instrument_side = Column(CHAR(1, 'utf8_unicode_ci'), comment='Illumina instrument side (A or B), if appropriate')
     workflow_type = Column(String(20, 'utf8_unicode_ci'), comment='Illumina instrument workflow type')
-    paired_read = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
-    cycles = Column(INTEGER(4), nullable=False)
-    cancelled = Column(TINYINT(1), nullable=False, server_default=text("'0'"), comment='Boolen flag to indicate whether the run was cancelled')
     run_pending = Column(DateTime, comment='Timestamp of run pending status')
     run_complete = Column(DateTime, comment='Timestamp of run complete status')
     qc_complete = Column(DateTime, comment='Timestamp of qc complete status')
@@ -317,18 +316,18 @@ class IseqRunStatusDict(Base):
 class LighthouseSample(Base):
     __tablename__ = 'lighthouse_sample'
     __table_args__ = (
-        Index('index_lighthouse_sample_on_root_sample_id_and_rna_id_and_result', 'root_sample_id', 'rna_id', 'result', unique=True),
-        Index('index_lighthouse_sample_on_plate_barcode_and_created_at', 'plate_barcode', 'created_at')
+        Index('index_lighthouse_sample_on_plate_barcode_and_created_at', 'plate_barcode', 'created_at'),
+        Index('index_lighthouse_sample_on_root_sample_id_and_rna_id_and_result', 'root_sample_id', 'rna_id', 'result', unique=True)
     )
 
     id = Column(INTEGER(11), primary_key=True)
-    mongodb_id = Column(String(255, 'utf8_unicode_ci'), unique=True, comment='Auto-generated id from MongoDB')
     root_sample_id = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='Id for this sample provided by the Lighthouse lab')
-    cog_uk_id = Column(String(255, 'utf8_unicode_ci'), index=True, comment='Consortium-wide id, generated by Sanger on import to LIMS')
     rna_id = Column(String(255, 'utf8_unicode_ci'), nullable=False, index=True, comment='Lighthouse lab-provided id made up of plate barcode and well')
+    result = Column(String(255, 'utf8_unicode_ci'), nullable=False, index=True, comment='Covid-19 test result from the Lighthouse lab')
+    mongodb_id = Column(String(255, 'utf8_unicode_ci'), unique=True, comment='Auto-generated id from MongoDB')
+    cog_uk_id = Column(String(255, 'utf8_unicode_ci'), index=True, comment='Consortium-wide id, generated by Sanger on import to LIMS')
     plate_barcode = Column(String(255, 'utf8_unicode_ci'), comment='Barcode of plate sample arrived in, from rna_id')
     coordinate = Column(String(255, 'utf8_unicode_ci'), comment='Well position from plate sample arrived in, from rna_id')
-    result = Column(String(255, 'utf8_unicode_ci'), nullable=False, index=True, comment='Covid-19 test result from the Lighthouse lab')
     date_tested_string = Column(String(255, 'utf8_unicode_ci'), comment='When the covid-19 test was carried out by the Lighthouse lab')
     date_tested = Column(DateTime, index=True, comment='date_tested_string in date format')
     source = Column(String(255, 'utf8_unicode_ci'), comment='Lighthouse centre that the sample came from')
@@ -356,11 +355,12 @@ class LighthouseSample(Base):
     preferentially_sequence = Column(TINYINT(1), comment='PAM provided value whether sample is important')
 
 
-class PacBioRunWellMetric(Base):
+class PacBioRunWellMetrics(Base):
     __tablename__ = 'pac_bio_run_well_metrics'
     __table_args__ = (
         Index('pac_bio_metrics_run_well', 'pac_bio_run_name', 'well_label', unique=True),
-        {'comment': 'Status and run information by well and some basic QC data from SMRT Link'}
+        {'comment': 'Status and run information by well and some basic QC data from '
+                'SMRT Link'}
     )
 
     id_pac_bio_rw_metrics_tmp = Column(INTEGER(11), primary_key=True)
@@ -418,10 +418,11 @@ class Sample(Base):
 
     id_sample_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id, value can change')
     id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier, e.g. CLARITY-GCLP, SEQSCAPE')
-    uuid_sample_lims = Column(String(36, 'utf8_unicode_ci'), unique=True, comment='LIMS-specific sample uuid')
     id_sample_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='LIMS-specific sample identifier')
     last_updated = Column(DateTime, nullable=False, comment='Timestamp of last update')
     recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update')
+    consent_withdrawn = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
+    uuid_sample_lims = Column(String(36, 'utf8_unicode_ci'), unique=True, comment='LIMS-specific sample uuid')
     deleted_at = Column(DateTime, comment='Timestamp of sample deletion')
     created = Column(DateTime, comment='Timestamp of sample creation')
     name = Column(String(255, 'utf8_unicode_ci'), index=True)
@@ -445,7 +446,6 @@ class Sample(Base):
     public_name = Column(String(255, 'utf8_unicode_ci'))
     sample_visibility = Column(String(255, 'utf8_unicode_ci'))
     strain = Column(String(255, 'utf8_unicode_ci'))
-    consent_withdrawn = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
     donor_id = Column(String(255, 'utf8_unicode_ci'))
     phenotype = Column(String(255, 'utf8_unicode_ci'), comment='The phenotype of the sample as described in Sequencescape')
     developmental_stage = Column(String(255, 'utf8_unicode_ci'), comment='Developmental Stage')
@@ -495,10 +495,13 @@ class Study(Base):
 
     id_study_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id, value can change')
     id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier, e.g. GCLP-CLARITY, SEQSCAPE')
-    uuid_study_lims = Column(String(36, 'utf8_unicode_ci'), unique=True, comment='LIMS-specific study uuid')
     id_study_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='LIMS-specific study identifier')
     last_updated = Column(DateTime, nullable=False, comment='Timestamp of last update')
     recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update')
+    remove_x_and_autosomes = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
+    aligned = Column(TINYINT(1), nullable=False, server_default=text("'1'"))
+    separate_y_chromosome_data = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
+    uuid_study_lims = Column(String(36, 'utf8_unicode_ci'), unique=True, comment='LIMS-specific study uuid')
     deleted_at = Column(DateTime, comment='Timestamp of study deletion')
     created = Column(DateTime, comment='Timestamp of study creation')
     name = Column(String(255, 'utf8_unicode_ci'), index=True)
@@ -524,9 +527,6 @@ class Study(Base):
     data_release_timing = Column(String(255, 'utf8_unicode_ci'))
     data_release_delay_period = Column(String(255, 'utf8_unicode_ci'))
     data_release_delay_reason = Column(String(255, 'utf8_unicode_ci'))
-    remove_x_and_autosomes = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
-    aligned = Column(TINYINT(1), nullable=False, server_default=text("'1'"))
-    separate_y_chromosome_data = Column(TINYINT(1), nullable=False, server_default=text("'0'"))
     data_access_group = Column(String(255, 'utf8_unicode_ci'))
     prelim_id = Column(String(20, 'utf8_unicode_ci'), comment='The preliminary study id prior to entry into the LIMS')
     hmdmc_number = Column(String(255, 'utf8_unicode_ci'), comment='The Human Materials and Data Management Committee approval number(s) for the study.')
@@ -547,11 +547,11 @@ class BmapFlowcell(Base):
     instrument_name = Column(String(255), nullable=False, comment='The name of the instrument on which the sample was run')
     enzyme_name = Column(String(255), nullable=False, comment='The name of the recognition enzyme used')
     chip_barcode = Column(String(255), nullable=False, comment='Manufacturer chip identifier')
+    id_flowcell_lims = Column(String(255), nullable=False, index=True, comment='LIMs-specific flowcell id')
+    id_lims = Column(String(10), nullable=False, comment='LIM system identifier')
     chip_serialnumber = Column(String(16), comment='Manufacturer chip identifier')
     position = Column(INTEGER(10), comment='Flowcell position')
-    id_flowcell_lims = Column(String(255), nullable=False, index=True, comment='LIMs-specific flowcell id')
     id_library_lims = Column(String(255), index=True, comment='Earliest LIMs identifier associated with library creation')
-    id_lims = Column(String(10), nullable=False, comment='LIM system identifier')
 
     sample = relationship('Sample')
     study = relationship('Study')
@@ -571,12 +571,12 @@ class FlgenPlate(Base):
     last_updated = Column(DateTime, nullable=False, comment='Timestamp of last update')
     recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update')
     plate_barcode = Column(INTEGER(10), nullable=False, comment='Manufacturer (Fluidigm) chip barcode')
+    id_flgen_plate_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='LIMs-specific plate id')
+    well_label = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='Manufactuer well identifier within a plate, S001-S192')
     plate_barcode_lims = Column(String(128, 'utf8_unicode_ci'), comment='LIMs-specific plate barcode')
     plate_uuid_lims = Column(String(36, 'utf8_unicode_ci'), comment='LIMs-specific plate uuid')
-    id_flgen_plate_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='LIMs-specific plate id')
     plate_size = Column(SMALLINT(6), comment='Total number of wells on a plate')
     plate_size_occupied = Column(SMALLINT(6), comment='Number of occupied wells on a plate')
-    well_label = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='Manufactuer well identifier within a plate, S001-S192')
     well_uuid_lims = Column(String(36, 'utf8_unicode_ci'), comment='LIMs-specific well uuid')
     qc_state = Column(TINYINT(1), comment='QC state; 1 (pass), 0 (fail), NULL (not known)')
 
@@ -584,13 +584,14 @@ class FlgenPlate(Base):
     study = relationship('Study')
 
 
-class IseqExternalProductComponent(Base):
+class IseqExternalProductComponents(Base):
     __tablename__ = 'iseq_external_product_components'
     __table_args__ = (
-        Index('iseq_ext_pr_comp_unique', 'id_iseq_product', 'id_iseq_product_ext', unique=True),
         Index('iseq_ext_pr_comp_compi', 'component_index', 'num_components'),
         Index('iseq_ext_pr_comp_ncomp', 'num_components', 'id_iseq_product'),
-        {'comment': 'Table linking iseq_external_product_metrics table products to components in the iseq_product_metrics table'}
+        Index('iseq_ext_pr_comp_unique', 'id_iseq_product', 'id_iseq_product_ext', unique=True),
+        {'comment': 'Table linking iseq_external_product_metrics table products to '
+                'components in the iseq_product_metrics table'}
     )
 
     id_iseq_ext_pr_components_tmp = Column(BIGINT(20), primary_key=True, comment='Internal to this database id, value can change')
@@ -599,15 +600,15 @@ class IseqExternalProductComponent(Base):
     num_components = Column(TINYINT(3), nullable=False, comment='Number of component products for this product')
     component_index = Column(TINYINT(3), nullable=False, comment='Unique component index within all components of this product, a value from 1 to the value of num_components column for this product')
 
-    iseq_external_product_metric = relationship('IseqExternalProductMetric')
+    iseq_external_product_metrics = relationship('IseqExternalProductMetrics')
 
 
 class IseqFlowcell(Base):
     __tablename__ = 'iseq_flowcell'
     __table_args__ = (
-        Index('index_iseq_flowcell_id_flowcell_lims_position_tag_index_id_lims', 'id_flowcell_lims', 'position', 'tag_index', 'id_lims', unique=True),
         Index('index_iseqflowcell__id_flowcell_lims__position__tag_index', 'id_flowcell_lims', 'position', 'tag_index'),
         Index('iseq_flowcell_id_lims_id_flowcell_lims_index', 'id_lims', 'id_flowcell_lims'),
+        Index('index_iseq_flowcell_id_flowcell_lims_position_tag_index_id_lims', 'id_flowcell_lims', 'position', 'tag_index', 'id_lims', unique=True),
         Index('index_iseqflowcell__flowcell_barcode__position__tag_index', 'flowcell_barcode', 'position', 'tag_index')
     )
 
@@ -615,18 +616,20 @@ class IseqFlowcell(Base):
     last_updated = Column(DateTime, nullable=False, comment='Timestamp of last update')
     recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update')
     id_sample_tmp = Column(ForeignKey('sample.id_sample_tmp'), nullable=False, index=True, comment='Sample id, see "sample.id_sample_tmp"')
-    id_study_tmp = Column(ForeignKey('study.id_study_tmp'), index=True, comment='Study id, see "study.id_study_tmp"')
-    cost_code = Column(String(20, 'utf8_unicode_ci'), comment='Valid WTSI cost code')
-    is_r_and_d = Column(TINYINT(1), server_default=text("'0'"), comment='A boolean flag derived from cost code, flags RandD')
     id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier, e.g. CLARITY-GCLP, SEQSCAPE')
-    priority = Column(SMALLINT(2), server_default=text("'1'"), comment='Priority')
-    manual_qc = Column(TINYINT(1), comment='Manual QC decision, NULL for unknown')
-    external_release = Column(TINYINT(1), comment='Defaults to manual qc value; can be changed by the user later')
-    flowcell_barcode = Column(String(15, 'utf8_unicode_ci'), comment='Manufacturer flowcell barcode or other identifier')
     id_flowcell_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='LIMs-specific flowcell id, batch_id for Sequencescape')
     position = Column(SMALLINT(2), nullable=False, comment='Flowcell lane number')
     entity_type = Column(String(30, 'utf8_unicode_ci'), nullable=False, comment='Lane type: library, pool, library_control, library_indexed, library_indexed_spike')
     entity_id_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='Most specific LIMs identifier associated with this lane or plex or spike')
+    is_spiked = Column(TINYINT(1), nullable=False, server_default=text("'0'"), comment='Boolean flag indicating presence of a spike')
+    id_pool_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, index=True, comment='Most specific LIMs identifier associated with the pool')
+    id_study_tmp = Column(ForeignKey('study.id_study_tmp'), index=True, comment='Study id, see "study.id_study_tmp"')
+    cost_code = Column(String(20, 'utf8_unicode_ci'), comment='Valid WTSI cost code')
+    is_r_and_d = Column(TINYINT(1), server_default=text("'0'"), comment='A boolean flag derived from cost code, flags RandD')
+    priority = Column(SMALLINT(2), server_default=text("'1'"), comment='Priority')
+    manual_qc = Column(TINYINT(1), comment='Manual QC decision, NULL for unknown')
+    external_release = Column(TINYINT(1), comment='Defaults to manual qc value; can be changed by the user later')
+    flowcell_barcode = Column(String(15, 'utf8_unicode_ci'), comment='Manufacturer flowcell barcode or other identifier')
     tag_index = Column(SMALLINT(5), comment='Tag index, NULL if lane is not a pool')
     tag_sequence = Column(String(30, 'utf8_unicode_ci'), comment='Tag sequence')
     tag_set_id_lims = Column(String(20, 'utf8_unicode_ci'), comment='LIMs-specific identifier of the tag set')
@@ -636,14 +639,12 @@ class IseqFlowcell(Base):
     tag2_set_id_lims = Column(String(20, 'utf8_unicode_ci'), comment='LIMs-specific identifier of the tag set for tag 2')
     tag2_set_name = Column(String(100, 'utf8_unicode_ci'), comment='WTSI-wide tag set name for tag 2')
     tag2_identifier = Column(String(30, 'utf8_unicode_ci'), comment='The position of tag2 within the tag group')
-    is_spiked = Column(TINYINT(1), nullable=False, server_default=text("'0'"), comment='Boolean flag indicating presence of a spike')
     pipeline_id_lims = Column(String(60, 'utf8_unicode_ci'), comment='LIMs-specific pipeline identifier that unambiguously defines library type')
     bait_name = Column(String(50, 'utf8_unicode_ci'), comment='WTSI-wide name that uniquely identifies a bait set')
     requested_insert_size_from = Column(INTEGER(5), comment='Requested insert size min value')
     requested_insert_size_to = Column(INTEGER(5), comment='Requested insert size max value')
     forward_read_length = Column(SMALLINT(4), comment='Requested forward read length, bp')
     reverse_read_length = Column(SMALLINT(4), comment='Requested reverse read length, bp')
-    id_pool_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, index=True, comment='Most specific LIMs identifier associated with the pool')
     legacy_library_id = Column(INTEGER(11), index=True, comment='Legacy library_id for backwards compatibility.')
     id_library_lims = Column(String(255, 'utf8_unicode_ci'), index=True, comment='Earliest LIMs identifier associated with library creation')
     team = Column(String(255, 'utf8_unicode_ci'), comment='The team responsible for creating the flowcell')
@@ -659,7 +660,7 @@ class IseqFlowcell(Base):
     study = relationship('Study')
 
 
-class IseqRunStatu(Base):
+class IseqRunStatus(Base):
     __tablename__ = 'iseq_run_status'
 
     id_run_status = Column(INTEGER(11), primary_key=True)
@@ -683,10 +684,10 @@ class OseqFlowcell(Base):
     experiment_name = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The name of the experiment, eg. The lims generated run id')
     instrument_name = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The name of the instrument on which the sample was run')
     instrument_slot = Column(INTEGER(11), nullable=False, comment='The numeric identifier of the slot on which the sample was run')
+    id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier')
     pipeline_id_lims = Column(String(255, 'utf8_unicode_ci'), comment='LIMs-specific pipeline identifier that unambiguously defines library type')
     requested_data_type = Column(String(255, 'utf8_unicode_ci'), comment='The type of data produced by sequencing, eg. basecalls only')
     deleted_at = Column(DateTime, comment='Timestamp of any flowcell destruction')
-    id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier')
     tag_identifier = Column(String(255, 'utf8_unicode_ci'), comment='Position of the first tag within the tag group')
     tag_sequence = Column(String(255, 'utf8_unicode_ci'), comment='Sequence of the first tag')
     tag_set_id_lims = Column(String(255, 'utf8_unicode_ci'), comment='LIMs-specific identifier of the tag set for the first tag')
@@ -709,9 +710,16 @@ class PacBioRun(Base):
     id_sample_tmp = Column(ForeignKey('sample.id_sample_tmp'), nullable=False, index=True, comment='Sample id, see "sample.id_sample_tmp"')
     id_study_tmp = Column(ForeignKey('study.id_study_tmp'), nullable=False, index=True, comment='Sample id, see "study.id_study_tmp"')
     id_pac_bio_run_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='Lims specific identifier for the pacbio run')
-    pac_bio_run_uuid = Column(String(36, 'utf8_unicode_ci'), comment='Uuid identifier for the pacbio run')
     cost_code = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='Valid WTSI cost-code')
     id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier')
+    plate_barcode = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The human readable barcode for the plate loaded onto the machine')
+    plate_uuid_lims = Column(String(36, 'utf8_unicode_ci'), nullable=False, comment='The plate uuid')
+    well_label = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The well identifier for the plate, A1-H12')
+    well_uuid_lims = Column(String(36, 'utf8_unicode_ci'), nullable=False, comment='The well uuid')
+    pac_bio_library_tube_id_lims = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='LIMS specific identifier for originating library tube')
+    pac_bio_library_tube_uuid = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The uuid for the originating library tube')
+    pac_bio_library_tube_name = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The name of the originating library tube')
+    pac_bio_run_uuid = Column(String(36, 'utf8_unicode_ci'), comment='Uuid identifier for the pacbio run')
     tag_identifier = Column(String(30, 'utf8_unicode_ci'), comment='Tag index within tag set, NULL if untagged')
     tag_sequence = Column(String(30, 'utf8_unicode_ci'), comment='Tag sequence for tag')
     tag_set_id_lims = Column(String(20, 'utf8_unicode_ci'), comment='LIMs-specific identifier of the tag set for tag')
@@ -720,13 +728,6 @@ class PacBioRun(Base):
     tag2_set_id_lims = Column(String(20, 'utf8_unicode_ci'))
     tag2_set_name = Column(String(100, 'utf8_unicode_ci'))
     tag2_identifier = Column(String(30, 'utf8_unicode_ci'))
-    plate_barcode = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The human readable barcode for the plate loaded onto the machine')
-    plate_uuid_lims = Column(String(36, 'utf8_unicode_ci'), nullable=False, comment='The plate uuid')
-    well_label = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The well identifier for the plate, A1-H12')
-    well_uuid_lims = Column(String(36, 'utf8_unicode_ci'), nullable=False, comment='The well uuid')
-    pac_bio_library_tube_id_lims = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='LIMS specific identifier for originating library tube')
-    pac_bio_library_tube_uuid = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The uuid for the originating library tube')
-    pac_bio_library_tube_name = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The name of the originating library tube')
     pac_bio_library_tube_legacy_id = Column(INTEGER(11), comment='Legacy library_id for backwards compatibility.')
     library_created_at = Column(DateTime, comment='Timestamp of library creation')
     pac_bio_run_name = Column(String(255, 'utf8_unicode_ci'), comment='Name of the run')
@@ -745,17 +746,17 @@ class QcResult(Base):
     id_sample_tmp = Column(ForeignKey('sample.id_sample_tmp'), nullable=False, index=True)
     id_qc_result_lims = Column(String(20), nullable=False, comment='LIMS-specific qc_result identifier')
     id_lims = Column(String(10), nullable=False, comment='LIMS system identifier (e.g. SEQUENCESCAPE)')
-    id_pool_lims = Column(String(255), comment='Most specific LIMs identifier associated with the pool. (Asset external_identifier in SS)')
-    id_library_lims = Column(String(255), index=True, comment='Earliest LIMs identifier associated with library creation. (Aliquot external_identifier in SS)')
-    labware_purpose = Column(String(255), comment='Labware Purpose name. (e.g. Plate Purpose for a Well)')
-    assay = Column(String(255), comment='assay type and version')
     value = Column(String(255), nullable=False, comment='Value of the mesurement')
     units = Column(String(255), nullable=False, comment='Mesurement unit')
-    cv = Column(Float, comment='Coefficient of variance')
     qc_type = Column(String(255), nullable=False, comment='Type of mesurement')
     date_created = Column(DateTime, nullable=False, comment='The date the qc_result was first created in SS')
     last_updated = Column(DateTime, nullable=False, comment='The date the qc_result was last updated in SS')
     recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update')
+    id_pool_lims = Column(String(255), comment='Most specific LIMs identifier associated with the pool. (Asset external_identifier in SS)')
+    id_library_lims = Column(String(255), index=True, comment='Earliest LIMs identifier associated with library creation. (Aliquot external_identifier in SS)')
+    labware_purpose = Column(String(255), comment='Labware Purpose name. (e.g. Plate Purpose for a Well)')
+    assay = Column(String(255), comment='assay type and version')
+    cv = Column(Float, comment='Coefficient of variance')
 
     sample = relationship('Sample')
 
@@ -776,8 +777,8 @@ class SamplesExtractionActivity(Base):
     last_updated = Column(DateTime, nullable=False, comment='Timestamp of last change to activity')
     recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update')
     completed_at = Column(DateTime, nullable=False, comment='Timestamp of activity completion')
-    deleted_at = Column(DateTime, comment='Timestamp of any activity removal')
     id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier')
+    deleted_at = Column(DateTime, comment='Timestamp of any activity removal')
 
     sample = relationship('Sample')
 
@@ -792,15 +793,15 @@ class StockResource(Base):
     last_updated = Column(DateTime, nullable=False, comment='Timestamp of last update')
     recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update')
     created = Column(DateTime, nullable=False, comment='Timestamp of initial registration of stock in LIMS')
-    deleted_at = Column(DateTime, comment='Timestamp of initial registration of deletion in parent LIMS. NULL if not deleted.')
     id_sample_tmp = Column(ForeignKey('sample.id_sample_tmp'), nullable=False, index=True, comment='Sample id, see "sample.id_sample_tmp"')
     id_study_tmp = Column(ForeignKey('study.id_study_tmp'), nullable=False, index=True, comment='Sample id, see "study.id_study_tmp"')
     id_lims = Column(String(10, 'utf8_unicode_ci'), nullable=False, comment='LIM system identifier')
     id_stock_resource_lims = Column(String(20, 'utf8_unicode_ci'), nullable=False, comment='Lims specific identifier for the stock')
-    stock_resource_uuid = Column(String(36, 'utf8_unicode_ci'), comment='Uuid identifier for the stock')
     labware_type = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The type of labware containing the stock. eg. Well, Tube')
     labware_machine_barcode = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='The barcode of the containing labware as read by a barcode scanner')
     labware_human_barcode = Column(String(255, 'utf8_unicode_ci'), nullable=False, index=True, comment='The barcode of the containing labware in human readable format')
+    deleted_at = Column(DateTime, comment='Timestamp of initial registration of deletion in parent LIMS. NULL if not deleted.')
+    stock_resource_uuid = Column(String(36, 'utf8_unicode_ci'), comment='Uuid identifier for the stock')
     labware_coordinate = Column(String(255, 'utf8_unicode_ci'), comment='For wells, the coordinate on the containing plate. Null for tubes.')
     current_volume = Column(Float, comment='The current volume of material in microlitres based on measurements and know usage')
     initial_volume = Column(Float, comment='The result of the initial volume measurement in microlitres conducted on the material')
@@ -814,7 +815,7 @@ class StockResource(Base):
     study = relationship('Study')
 
 
-class StudyUser(Base):
+class StudyUsers(Base):
     __tablename__ = 'study_users'
 
     id_study_users_tmp = Column(INTEGER(10), primary_key=True, comment='Internal to this database id, value can change')
@@ -832,20 +833,20 @@ class TolSampleBioproject(Base):
     __tablename__ = 'tol_sample_bioproject'
 
     id_tsb_tmp = Column(INTEGER(10), primary_key=True)
+    date_added = Column(TIMESTAMP, nullable=False, server_default=text('CURRENT_TIMESTAMP'))
+    date_updated = Column(TIMESTAMP, nullable=False, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'))
     id_sample_tmp = Column(ForeignKey('sample.id_sample_tmp', ondelete='SET NULL'), index=True)
     file = Column(String(255), unique=True)
     library_type = Column(Enum('Chromium genome', 'Haplotagging', 'Hi-C', 'Hi-C - Arima v1', 'Hi-C - Arima v2', 'Hi-C - Dovetail', 'Hi-C - Omni-C', 'Hi-C - Qiagen', 'PacBio - CLR', 'PacBio - HiFi', 'ONT', 'RNA PolyA', 'RNA-seq dUTP eukaryotic', 'Standard', 'unknown', 'HiSeqX PCR free'))
     tolid = Column(String(40))
     biosample_accession = Column(String(255))
     bioproject_accession = Column(String(255))
-    date_added = Column(TIMESTAMP, nullable=False, server_default=text("CURRENT_TIMESTAMP"))
-    date_updated = Column(TIMESTAMP, nullable=False, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"))
     filename = Column(String(255))
 
     sample = relationship('Sample')
 
 
-class IseqProductMetric(Base):
+class IseqProductMetrics(Base):
     __tablename__ = 'iseq_product_metrics'
     __table_args__ = (
         ForeignKeyConstraint(['id_run', 'position'], ['iseq_run_lane_metrics.id_run', 'iseq_run_lane_metrics.position'], ondelete='CASCADE'),
@@ -854,7 +855,7 @@ class IseqProductMetric(Base):
 
     id_iseq_pr_metrics_tmp = Column(BIGINT(20), primary_key=True, comment='Internal to this database id, value can change')
     id_iseq_product = Column(CHAR(64, 'utf8_unicode_ci'), nullable=False, unique=True, comment='Product id')
-    last_changed = Column(DateTime, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), comment='Date this record was created or changed')
+    last_changed = Column(DateTime, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'), comment='Date this record was created or changed')
     id_iseq_flowcell_tmp = Column(ForeignKey('iseq_flowcell.id_iseq_flowcell_tmp', ondelete='SET NULL'), index=True, comment='Flowcell id, see "iseq_flowcell.id_iseq_flowcell_tmp"')
     id_run = Column(INTEGER(10), comment='NPG run identifier')
     position = Column(SMALLINT(2), comment='Flowcell lane number')
@@ -930,37 +931,39 @@ class IseqProductMetric(Base):
     target_autosome_percent_gt_coverage_threshold = Column(Float(5), comment='The percentage of the target autosome covered at greater than the depth specified')
 
     iseq_flowcell = relationship('IseqFlowcell')
-    iseq_run_lane_metric = relationship('IseqRunLaneMetric')
+    iseq_run_lane_metrics = relationship('IseqRunLaneMetrics')
 
 
-class PacBioProductMetric(Base):
+class PacBioProductMetrics(Base):
     __tablename__ = 'pac_bio_product_metrics'
-    __table_args__ = {'comment': 'A linking table for the pac_bio_run and pac_bio_run_well_metrics tables with a potential for adding per-product QC data'}
+    __table_args__ = {'comment': 'A linking table for the pac_bio_run and pac_bio_run_well_metrics '
+                'tables with a potential for adding per-product QC data'}
 
     id_pac_bio_pr_metrics_tmp = Column(INTEGER(11), primary_key=True)
     id_pac_bio_rw_metrics_tmp = Column(ForeignKey('pac_bio_run_well_metrics.id_pac_bio_rw_metrics_tmp', ondelete='CASCADE'), nullable=False, index=True, comment='PacBio run well metrics id, see "pac_bio_run_well_metrics.id_pac_bio_rw_metrics_tmp"')
     id_pac_bio_tmp = Column(ForeignKey('pac_bio_run.id_pac_bio_tmp', ondelete='SET NULL'), index=True, comment='PacBio run id, see "pac_bio_run.id_pac_bio_tmp"')
 
-    pac_bio_run_well_metric = relationship('PacBioRunWellMetric')
+    pac_bio_run_well_metrics = relationship('PacBioRunWellMetrics')
     pac_bio_run = relationship('PacBioRun')
 
 
-class IseqProductAmpliconstat(Base):
+class IseqProductAmpliconstats(Base):
     __tablename__ = 'iseq_product_ampliconstats'
     __table_args__ = (
         Index('iseq_pastats_amplicon', 'primer_panel_num_amplicons', 'amplicon_index'),
         Index('iseq_hrm_digest_unq', 'id_iseq_product', 'primer_panel', 'amplicon_index', unique=True),
-        {'comment': 'Some of per sample per amplicon metrics generated by samtools ampliconstats'}
+        {'comment': 'Some of per sample per amplicon metrics generated by samtools '
+                'ampliconstats'}
     )
 
     id_iseq_pr_astats_tmp = Column(BIGINT(20), primary_key=True, comment='Internal to this database id, value can change')
-    created = Column(DateTime, server_default=text("CURRENT_TIMESTAMP"), comment='Datetime this record was created')
-    last_changed = Column(DateTime, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), comment='Datetime this record was created or changed')
     id_iseq_product = Column(ForeignKey('iseq_product_metrics.id_iseq_product'), nullable=False, comment='Product id, a foreign key into iseq_product_metrics table')
     primer_panel = Column(String(255, 'utf8_unicode_ci'), nullable=False, comment='A string uniquely identifying the primer panel')
     primer_panel_num_amplicons = Column(SMALLINT(5), nullable=False, comment='Total number of amplicons in the primer panel')
     amplicon_index = Column(SMALLINT(5), nullable=False, comment='Amplicon index (position) in the primer panel, from 1 to the value of primer_panel_num_amplicons')
     pp_name = Column(String(40, 'utf8_unicode_ci'), nullable=False, comment='Name of the portable pipeline that generated the data')
+    created = Column(DateTime, server_default=text('CURRENT_TIMESTAMP'), comment='Datetime this record was created')
+    last_changed = Column(DateTime, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'), comment='Datetime this record was created or changed')
     pp_version = Column(String(40, 'utf8_unicode_ci'), comment='Version of the portable pipeline and/or samtools that generated the data')
     metric_FPCOV_1 = Column(DECIMAL(5, 2), comment='Coverage percent at depth 1')
     metric_FPCOV_10 = Column(DECIMAL(5, 2), comment='Coverage percent at depth 10')
@@ -968,10 +971,10 @@ class IseqProductAmpliconstat(Base):
     metric_FPCOV_100 = Column(DECIMAL(5, 2), comment='Coverage percent at depth 100')
     metric_FREADS = Column(INTEGER(10), comment='Number of aligned filtered reads')
 
-    iseq_product_metric = relationship('IseqProductMetric')
+    iseq_product_metrics = relationship('IseqProductMetrics')
 
 
-class IseqProductComponent(Base):
+class IseqProductComponents(Base):
     __tablename__ = 'iseq_product_components'
     __table_args__ = (
         Index('iseq_pr_comp_compi', 'component_index', 'num_components'),
@@ -985,5 +988,5 @@ class IseqProductComponent(Base):
     num_components = Column(TINYINT(3), nullable=False, comment='Number of component products for this product')
     component_index = Column(TINYINT(3), nullable=False, comment='Unique component index within all components of this product, \\na value from 1 to the value of num_components column for this product')
 
-    iseq_product_metric = relationship('IseqProductMetric', primaryjoin='IseqProductComponent.id_iseq_pr_component_tmp == IseqProductMetric.id_iseq_pr_metrics_tmp')
-    iseq_product_metric1 = relationship('IseqProductMetric', primaryjoin='IseqProductComponent.id_iseq_pr_tmp == IseqProductMetric.id_iseq_pr_metrics_tmp')
+    iseq_product_metrics = relationship('IseqProductMetrics', foreign_keys=[id_iseq_pr_component_tmp])
+    iseq_product_metrics_ = relationship('IseqProductMetrics', foreign_keys=[id_iseq_pr_tmp])

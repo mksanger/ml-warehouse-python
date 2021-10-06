@@ -1,2 +1,2 @@
-sqlacodegen==2.3.0
+sqlacodegen==3.0.0b2
 black==21.8b0
