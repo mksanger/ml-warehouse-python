@@ -1,3 +1,6 @@
+import os
+from typing import Optional
+
 from configparser import ConfigParser, Error
 from datetime import datetime
 
@@ -154,6 +157,28 @@ def initialize_mlwh(session: Session):
 
 
 @pytest.fixture(scope="function")
+def prod_session() -> Optional[Session]:
+
+    user = os.environ.get("MYSQL_USER")
+    db = os.environ.get("MYSQL_DBNAME")
+    password = os.environ.get("MYSQL_PW")
+    host = os.environ.get("MYSQL_HOST")
+    port = os.environ.get("MYSQL_PORT")
+
+    if None in (user, db, password, host, port):
+        yield None
+        return
+
+    url = f"mysql+pymysql://{user}:{password}@{host}:{port}/{db}?charset=utf8mb4"
+    engine = create_engine(url)
+    session = Session(engine)
+
+    yield session
+
+    session.close()
+
+
+@pytest.fixture(scope="function")
 def mlwh_session(config) -> Session:
 
     uri = mysql_url(config)
@@ -206,6 +231,6 @@ def mysql_url(config: ConfigParser):
     port = connection_conf.get("port", "3306")
     schema = connection_conf.get("schema", "mlwh")
 
-    return "mysql+pymysql://{}:{}@{}:{}/{}".format(
+    return "mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8mb4".format(
         user, password, ip_address, port, schema
     )
