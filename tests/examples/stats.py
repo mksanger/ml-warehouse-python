@@ -19,7 +19,7 @@
 
 from datetime import datetime
 
-from ml_warehouse.ml_warehouse_schema import (
+from ml_warehouse.schema import (
     IseqRunLaneMetrics,
     IseqRunStatus,
     IseqRunStatusDict,

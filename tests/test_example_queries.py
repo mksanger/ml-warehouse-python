@@ -18,37 +18,31 @@
 # @author Adam Blanchet <ab59@sanger.ac.uk>
 
 from datetime import datetime
+
+from pytest import mark as m
+
 from examples.genotyping import get_flgen_plate
 from examples.long_illumina import summarize_long_illumina
-from examples.npg_qc import (
-    get_iseq_product_metrics_by_study,
-    get_iseq_product_metrics_run,
-    get_iseq_product_metrics_by_decode_percent,
-)
 from examples.npg_irods import (
     find_pacbio_runs,
     get_bmap_flowcell_records,
     get_stock_records,
+)
+from examples.npg_qc import (
+    get_iseq_product_metrics_by_decode_percent,
+    get_iseq_product_metrics_by_study,
+    get_iseq_product_metrics_run,
 )
 from examples.recently_updated import (
     get_recent_fluidigm,
     get_recent_ont,
     get_recent_pacbio_runs,
 )
-from pytest import mark as m
-from tests.ml_warehouse_fixture import (
-    mlwh_session,
-    mlwh_session_flgen,
-    mlwh_session_ipm,
-)
-
-# Stop IDEs optimizing away import
-_ = mlwh_session_flgen, mlwh_session, mlwh_session_ipm
 
 
 @m.describe("Running example queries")
 class TestMLWarehouseExampleRecentQueries(object):
-    @m.it("Successfully retrieve recently updated PacBio runs")
+    @m.it("Retrieves recently updated PacBio runs")
     def test_retrieve_recent_pacbio(self, mlwh_session):
 
         max_age = datetime(year=2021, month=1, day=31)
@@ -108,7 +102,6 @@ class TestMLWarehouseExampleRecentQueries(object):
         max_age = datetime(year=2021, month=8, day=19)
 
         records = get_recent_fluidigm(mlwh_session_flgen, max_age)
-
         assert records.count() == 3
 
         expected_records = [
@@ -145,7 +138,7 @@ class TestMLWarehouseExampleRecentQueries(object):
 
 @m.describe("Running example genotyping queries")
 class TestMLWarehouseExampleGenotypingQueries(object):
-    @m.it("Retrieves FlgenPlate matching barcode and label")
+    @m.it("Retrieves an FlgenPlate matching barcode and label")
     def test_retrieve_flgen_plate(self, mlwh_session_flgen):
 
         records = get_flgen_plate(mlwh_session_flgen, 1382108143, "S70")
@@ -178,7 +171,7 @@ class TestMLWarehouseExampleGenotypingQueries(object):
 
 @m.describe("Running example npg_irods queries")
 class TestMLWarehouseExampleNpgIrodsQueries(object):
-    @m.it("Successfully retrieve StockResource by stock ID")
+    @m.it("Retrieves StockResource by stock ID")
     def test_retrieve_stock_resource(self, mlwh_session):
 
         stock_id = "stock_barcode_01234"
@@ -188,7 +181,7 @@ class TestMLWarehouseExampleNpgIrodsQueries(object):
         assert records.count() == 1
         assert records.first().id_stock_resource_tmp == 2345678
 
-    @m.it("Successfully retrieve BmapFlowcellRecords by chip serialnumber and position")
+    @m.it("Retrieves BmapFlowcellRecords by chip serialnumber and position")
     def test_retrieve_bmap_flowcell(self, mlwh_session):
 
         chip_serialnumber = "KHPZDTGLPQJGPNWU"
@@ -199,7 +192,7 @@ class TestMLWarehouseExampleNpgIrodsQueries(object):
         assert records.count() == 1
         assert records.first().id_sample_tmp == 3135749
 
-    @m.it("Successfully retrieve PacBio runs")
+    @m.it("Retrieves PacBio runs")
     def test_retrieve_pacbio_runs(self, mlwh_session):
 
         run_id = 32669
@@ -246,7 +239,7 @@ class TestMLWarehouseExampleNpgIrodsQueries(object):
 
 @m.describe("Running example npg_qc queries")
 class TestMLWarehouseExampleNpgQcQueries(object):
-    @m.it("Successfully retrieve IseqProductMetrics")
+    @m.it("Retrieves IseqProductMetrics")
     def test_retrieve_iseq_product_metrics(self, mlwh_session_ipm):
 
         run_ids = [7915, 15440, 18980, 17550]
@@ -261,7 +254,7 @@ class TestMLWarehouseExampleNpgQcQueries(object):
         assert records.first().id_run == 17550
         assert records.first().study_count == 5
 
-    @m.it("Successfully retrieve IseqProductMetrics by study")
+    @m.it("Retrieves IseqProductMetrics by study")
     def test_retrieve_iseq_product_metrics_by_study(self, mlwh_session_ipm):
 
         study_name = "Illumina Controls"
@@ -277,7 +270,7 @@ class TestMLWarehouseExampleNpgQcQueries(object):
         expected_run_ids = [7915, 17550, 18980]
         assert set(observed_run_ids) == set(expected_run_ids)
 
-    @m.it("Successfully retrieve IseqProductMetrics by decode percent")
+    @m.it("Retrieves IseqProductMetrics by decode percent")
     def test_retrieve_iseq_product_metrics_by_decode_percent(self, mlwh_session):
 
         max_decode_percent = 95
@@ -296,7 +289,7 @@ class TestMLWarehouseExampleNpgQcQueries(object):
 
 @m.describe("Running example long Illumina runs query")
 class TestMLWarehouseExampleLongIlluminaQuery(object):
-    @m.it("Successfully get long Illumina runs")
+    @m.it("Gets long Illumina runs")
     def test_summarize_long_illumina(self, mlwh_session_ipm):
 
         faculty_sponsor_pattern = "%tyler%"

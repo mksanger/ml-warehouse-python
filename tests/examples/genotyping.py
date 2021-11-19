@@ -18,7 +18,8 @@
 # @author Adam Blanchet <ab59@sanger.ac.uk>
 
 from sqlalchemy.orm import Session
-from ml_warehouse.ml_warehouse_schema import FlgenPlate
+
+from ml_warehouse.schema import FlgenPlate
 
 
 def get_flgen_plate(sess: Session, plate_barcode: int, well_label: str):
