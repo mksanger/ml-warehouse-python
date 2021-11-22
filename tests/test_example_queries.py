@@ -145,7 +145,7 @@ class TestMLWarehouseExampleRecentQueries(object):
 
 @m.describe("Running example genotyping queries")
 class TestMLWarehouseExampleGenotypingQueries(object):
-    @m.it("Retrieves a of FlgenPlate matching barcode and label")
+    @m.it("Retrieves FlgenPlate matching barcode and label")
     def test_retrieve_flgen_plate(self, mlwh_session_flgen):
 
         records = get_flgen_plate(mlwh_session_flgen, 1382108143, "S70")
