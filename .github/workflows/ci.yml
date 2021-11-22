@@ -1,0 +1,59 @@
+name: Unit tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        python-version: [ "3.8", "3.9" ]
+        mysql-version: [ "5.7", "8.0" ]
+
+    services:
+      mysql:
+        image: mysql:${{ matrix.mysql-version }}
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd "mysqladmin ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+        env:
+          MYSQL_RANDOM_ROOT_PASSWORD: yes
+          MYSQL_TCP_PORT: 3306
+          MYSQL_USER: "test"
+          MYSQL_PASSWORD: "test"
+          MYSQL_DATABASE: "mlwarehouse"
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Setup Python ${{ matrix.python-version }}"
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: "x64"
+
+      - name: Cache pip packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+
+      - name: Install pip packages
+        run: |
+          pip install -r requirements.txt
+          pip install -r test-requirements.txt
+
+      - name: "Check code formatting [Black]"
+        run: >-
+          black --check --diff --quiet .
+          --force-exclude ml_warehouse/ml_warehouse_schema.py
+
+      - name: "Run unit tests"
+        run: |
+          pytest --it
