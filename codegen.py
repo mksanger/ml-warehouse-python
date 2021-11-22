@@ -41,12 +41,12 @@ subprocess.run(
 )
 
 # Move the generated file.
-os.rename("generated.py", "ml_warehouse/ml_warehouse_schema.py")
+os.rename("generated.py", "src/ml_warehouse/schema.py")
 
 # Decorate the classes
 result = []
 decorator_added = False
-with open("ml_warehouse/ml_warehouse_schema.py", "r") as read_file:
+with open("src/ml_warehouse/schema.py", "r") as read_file:
 
     result.append("from ml_warehouse._decorators import add_docstring\n")
 
@@ -57,5 +57,5 @@ with open("ml_warehouse/ml_warehouse_schema.py", "r") as read_file:
 
         result.append(line)
 
-with open("ml_warehouse/ml_warehouse_schema.py", "w") as write_file:
+with open("src/ml_warehouse/schema.py", "w") as write_file:
     write_file.writelines(result)

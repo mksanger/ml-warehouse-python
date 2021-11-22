@@ -17,16 +17,11 @@
 #
 # @author Adam Blanchet <ab59@sanger.ac.uk>
 
-from sqlalchemy.sql.functions import func
-from ml_warehouse.ml_warehouse_schema import (
-    FlgenPlate,
-    OseqFlowcell,
-    PacBioRun,
-    Study,
-    Sample,
-)
-from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
+
+from sqlalchemy.orm import Session
+
+from ml_warehouse.schema import FlgenPlate, OseqFlowcell, PacBioRun, Sample, Study
 
 
 def get_recent_pacbio_runs(sess: Session, max_age: datetime):

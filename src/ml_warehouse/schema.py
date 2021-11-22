@@ -17,10 +17,11 @@
 #
 # @author Adam Blanchet <ab59@sanger.ac.uk>
 
-from ml_warehouse._decorators import add_docstring
 from sqlalchemy import CHAR, Column, Computed, DECIMAL, Date, DateTime, Enum, Float, ForeignKey, ForeignKeyConstraint, Index, String, TIMESTAMP, Table, Text, text
 from sqlalchemy.dialects.mysql import BIGINT as mysqlBIGINT, CHAR as mysqlCHAR, DATETIME as mysqlDATETIME, DOUBLE as mysqlDOUBLE, ENUM as mysqlENUM, FLOAT as mysqlFLOAT, INTEGER as mysqlINTEGER, SMALLINT as mysqlSMALLINT, TINYINT as mysqlTINYINT, VARCHAR as mysqlVARCHAR
 from sqlalchemy.orm import declarative_base, relationship
+
+from ml_warehouse._decorators import add_docstring
 
 Base = declarative_base()
 metadata = Base.metadata

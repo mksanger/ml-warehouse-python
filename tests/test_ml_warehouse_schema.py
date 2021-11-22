@@ -19,23 +19,16 @@
 
 from typing import List, Optional
 
-from pytest import mark as m
 import pytest
 import sqlalchemy
-import ml_warehouse
-from ml_warehouse import *
-
-from tests.ml_warehouse_fixture import mlwh_session, prod_session
-from ml_warehouse.ml_warehouse_schema import Study, OseqFlowcell
+from pytest import mark as m
+from sqlalchemy import Table, inspect
+from sqlalchemy.engine.reflection import Inspector
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.decl_api import DeclarativeMeta
-from sqlalchemy import inspect
-from sqlalchemy.engine.reflection import Inspector
-from sqlalchemy import Table
 
-
-# Stop IDEs "optimizing" away these imports
-_ = mlwh_session, prod_session
+import ml_warehouse
+from ml_warehouse.schema import OseqFlowcell, Study
 
 
 @m.describe("Querying the ML Warehouse")
@@ -48,9 +41,9 @@ class TestMLWarehouseQueries(object):
         assert len(all_studies) > 0
 
 
-@m.describe("Resilience to modifiying the database schema")
+@m.describe("Resilience to modifying the database schema")
 class TestMLWarehouseResilience(object):
-    @m.it("Successfully retrieves a record of study after a column is added")
+    @m.it("Retrieves a record of study after a column is added")
     def test_added_column_resilience(self, mlwh_session: Session):
 
         mlwh_session.execute("ALTER TABLE study ADD COLUMN extra_column INT;")
@@ -60,7 +53,7 @@ class TestMLWarehouseResilience(object):
 
         assert len(studies) > 0
 
-    @m.it("Successfully retrieves records after column type has been extended")
+    @m.it("Retrieves records after column type has been extended")
     def test_extended_column_type_resilience(self, mlwh_session: Session):
 
         mlwh_session.execute("ALTER TABLE oseq_flowcell MODIFY instrument_slot BIGINT;")
@@ -70,7 +63,7 @@ class TestMLWarehouseResilience(object):
 
         assert len(oseq_flowcells) > 0
 
-    @m.it("Fail to retreive records after a column has been dropped")
+    @m.it("Fails to retrieve records after a column has been dropped")
     @m.xfail(raises=sqlalchemy.exc.OperationalError, strict=True)
     def test_dropped_column_resilience(self, mlwh_session: Session):
 
@@ -84,7 +77,7 @@ class TestMLWarehouseResilience(object):
 
 @m.describe("Deleting rows from the database")
 class TestMLWarehouseDeleteRow(object):
-    @m.it("Successfully deletes rows from the database")
+    @m.it("Deletes rows from the database")
     def test_delete_rows(self, mlwh_session: Session):
 
         study_z = mlwh_session.query(Study).filter(Study.name == "Study Z").first()
@@ -115,9 +108,9 @@ class TestMLWarehouseAllTables(object):
         table_names = insp.get_table_names()
         tables = []
 
-        for attr in dir(ml_warehouse.ml_warehouse_schema):
+        for attr in dir(ml_warehouse.schema):
             try:
-                class_ = getattr(ml_warehouse.ml_warehouse_schema, attr)
+                class_ = getattr(ml_warehouse.schema, attr)
                 if class_.__dict__.get("__tablename__") in table_names:
                     tables.append(class_)
                 elif class_.__dict__.get("name") in table_names:
@@ -148,9 +141,9 @@ class TestMLWarehouseAllTables(object):
         table_names = insp.get_table_names()
         tables = []
 
-        for attr in dir(ml_warehouse.ml_warehouse_schema):
+        for attr in dir(ml_warehouse.schema):
             try:
-                class_ = getattr(ml_warehouse.ml_warehouse_schema, attr)
+                class_ = getattr(ml_warehouse.schema, attr)
                 if class_.__dict__.get("__tablename__") in table_names:
                     tables.append(class_)
                 elif class_.__dict__.get("name") in table_names:
@@ -187,7 +180,6 @@ class TestMLWarehouseAllTables(object):
 
             # Check all primary keys
             table_name = table.name
-            table
 
             refl_pks = set(insp.get_pk_constraint(table_name)["constrained_columns"])
             gen_pks = {col.name for col in table.primary_key.columns}
