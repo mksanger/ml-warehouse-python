@@ -58,3 +58,8 @@ jobs:
         run: |
           export PYTHONPATH=$PWD/src:$PWD/tests:$PYTHONPATH
           pytest --it
+
+      - name: "Check package can be installed"
+        run: |
+          pip install .
+          python -c "import ml_warehouse"
