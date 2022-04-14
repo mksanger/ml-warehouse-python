@@ -1,4 +1,3 @@
----
 - cost_code: S0730
   id_lims: SQSCP
   id_pac_bio_run_lims: 45137
@@ -6,7 +5,7 @@
   id_sample_tmp: 2546241
   id_study_tmp: 2541
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT759603V
   pac_bio_library_tube_legacy_id: 15977171
   pac_bio_library_tube_name: DN434306G-A1
@@ -16,10 +15,10 @@
   plate_barcode: DN436096A
   plate_uuid_lims: 31b46920-f013-11e5-a007-68b59976a382
   recorded_at: 2016-04-04 10:09:05
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A1
   well_uuid_lims: 31d892f0-f013-11e5-a007-68b59976a382
 - cost_code: S0730
@@ -29,7 +28,7 @@
   id_sample_tmp: 2546242
   id_study_tmp: 2541
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT759604W
   pac_bio_library_tube_legacy_id: 15977172
   pac_bio_library_tube_name: DN434306G-B1
@@ -39,10 +38,10 @@
   plate_barcode: DN436096A
   plate_uuid_lims: 31b46920-f013-11e5-a007-68b59976a382
   recorded_at: 2016-04-04 10:09:05
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B1
   well_uuid_lims: 31f62d10-f013-11e5-a007-68b59976a382
 - cost_code: S0700
@@ -52,7 +51,7 @@
   id_sample_tmp: 2538162
   id_study_tmp: 2658
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT758272S
   pac_bio_library_tube_legacy_id: 15958888
   pac_bio_library_tube_name: DN434137H-A1
@@ -62,10 +61,10 @@
   plate_barcode: DN436096A
   plate_uuid_lims: 31b46920-f013-11e5-a007-68b59976a382
   recorded_at: 2016-04-04 10:09:05
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: C1
   well_uuid_lims: 320436d0-f013-11e5-a007-68b59976a382
 - cost_code: S0982
@@ -75,7 +74,7 @@
   id_sample_tmp: 2550516
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT758946O
   pac_bio_library_tube_legacy_id: 15976081
   pac_bio_library_tube_name: DN434932D-A2
@@ -85,10 +84,10 @@
   plate_barcode: DN436096A
   plate_uuid_lims: 31b46920-f013-11e5-a007-68b59976a382
   recorded_at: 2016-04-04 10:09:05
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: D1
   well_uuid_lims: 3211f270-f013-11e5-a007-68b59976a382
 - cost_code: S0982
@@ -98,7 +97,7 @@
   id_sample_tmp: 2550517
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT758947P
   pac_bio_library_tube_legacy_id: 15976082
   pac_bio_library_tube_name: DN434932D-B2
@@ -108,10 +107,10 @@
   plate_barcode: DN436096A
   plate_uuid_lims: 31b46920-f013-11e5-a007-68b59976a382
   recorded_at: 2016-04-04 10:09:05
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: E1
   well_uuid_lims: 321fd520-f013-11e5-a007-68b59976a382
 - cost_code: S0982
@@ -121,7 +120,7 @@
   id_sample_tmp: 2550518
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT758948Q
   pac_bio_library_tube_legacy_id: 15976083
   pac_bio_library_tube_name: DN434932D-C2
@@ -131,10 +130,10 @@
   plate_barcode: DN436096A
   plate_uuid_lims: 31b46920-f013-11e5-a007-68b59976a382
   recorded_at: 2016-04-04 10:09:05
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: F1
   well_uuid_lims: 322ddee0-f013-11e5-a007-68b59976a382
 - cost_code: S0982
@@ -144,7 +143,7 @@
   id_sample_tmp: 2550519
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT758949R
   pac_bio_library_tube_legacy_id: 15976084
   pac_bio_library_tube_name: DN434932D-D2
@@ -154,10 +153,10 @@
   plate_barcode: DN436096A
   plate_uuid_lims: 31b46920-f013-11e5-a007-68b59976a382
   recorded_at: 2016-04-04 10:09:05
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: G1
   well_uuid_lims: 323c5dd0-f013-11e5-a007-68b59976a382
 - cost_code: S0702
@@ -167,7 +166,7 @@
   id_sample_tmp: 1991865
   id_study_tmp: 351
   last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT447149M
   pac_bio_library_tube_legacy_id: 11651816
   pac_bio_library_tube_name: DN362988U-A1
@@ -177,10 +176,10 @@
   plate_barcode: DN374815N
   plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
   recorded_at: 2016-04-04 10:07:22
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A1
   well_uuid_lims: 6f46a290-60fd-11e4-b294-68b59976a382
 - cost_code: S0702
@@ -190,7 +189,7 @@
   id_sample_tmp: 2085346
   id_study_tmp: 263
   last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT540295W
   pac_bio_library_tube_legacy_id: 11800135
   pac_bio_library_tube_name: DN365397P-A1
@@ -200,33 +199,10 @@
   plate_barcode: DN374815N
   plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
   recorded_at: 2016-04-04 10:07:22
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: B1
-  well_uuid_lims: 6faa6d70-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1716
-  id_sample_tmp: 2085346
-  id_study_tmp: 263
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540295W
-  pac_bio_library_tube_legacy_id: 11800135
-  pac_bio_library_tube_name: DN365397P-A1
-  pac_bio_library_tube_uuid: dd6cf670-3a83-11e4-9c2a-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:22
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B1
   well_uuid_lims: 6faa6d70-60fd-11e4-b294-68b59976a382
 - cost_code: S0702
@@ -236,7 +212,7 @@
   id_sample_tmp: 2030286
   id_study_tmp: 291
   last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT540288A
   pac_bio_library_tube_legacy_id: 11799643
   pac_bio_library_tube_name: DN361557U-A1
@@ -246,56 +222,10 @@
   plate_barcode: DN374815N
   plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
   recorded_at: 2016-04-04 10:07:22
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: D1
-  well_uuid_lims: 6fa64ec0-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1718
-  id_sample_tmp: 2030286
-  id_study_tmp: 291
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540288A
-  pac_bio_library_tube_legacy_id: 11799643
-  pac_bio_library_tube_name: DN361557U-A1
-  pac_bio_library_tube_uuid: 8a6f6340-3a83-11e4-ad3f-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: D1
-  well_uuid_lims: 6fa64ec0-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1719
-  id_sample_tmp: 2030286
-  id_study_tmp: 291
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540288A
-  pac_bio_library_tube_legacy_id: 11799643
-  pac_bio_library_tube_name: DN361557U-A1
-  pac_bio_library_tube_uuid: 8a6f6340-3a83-11e4-ad3f-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: D1
   well_uuid_lims: 6fa64ec0-60fd-11e4-b294-68b59976a382
 - cost_code: S0702
@@ -305,7 +235,7 @@
   id_sample_tmp: 2030850
   id_study_tmp: 1838
   last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT540293U
   pac_bio_library_tube_legacy_id: 11799745
   pac_bio_library_tube_name: DN362987T-A1
@@ -315,148 +245,10 @@
   plate_barcode: DN374815N
   plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
   recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: A2
-  well_uuid_lims: 6f93ff40-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1721
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: A2
-  well_uuid_lims: 6f93ff40-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1722
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: A2
-  well_uuid_lims: 6f93ff40-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1723
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: A2
-  well_uuid_lims: 6f93ff40-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1724
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: A2
-  well_uuid_lims: 6f93ff40-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1725
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: A2
-  well_uuid_lims: 6f93ff40-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1726
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A2
   well_uuid_lims: 6f93ff40-60fd-11e4-b294-68b59976a382
 - cost_code: S0702
@@ -466,7 +258,7 @@
   id_sample_tmp: 2030850
   id_study_tmp: 1838
   last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT540293U
   pac_bio_library_tube_legacy_id: 11799745
   pac_bio_library_tube_name: DN362987T-A1
@@ -476,56 +268,10 @@
   plate_barcode: DN374815N
   plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
   recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: B2
-  well_uuid_lims: 6f770160-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1728
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
-  well_label: B2
-  well_uuid_lims: 6f770160-60fd-11e4-b294-68b59976a382
-- cost_code: S0702
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 32669
-  id_pac_bio_tmp: 1729
-  id_sample_tmp: 2030850
-  id_study_tmp: 1838
-  last_updated: 2016-03-31 14:19:44
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT540293U
-  pac_bio_library_tube_legacy_id: 11799745
-  pac_bio_library_tube_name: DN362987T-A1
-  pac_bio_library_tube_uuid: a82f5ac0-3a83-11e4-896d-68b59976a382
-  pac_bio_run_name: 32669
-  pac_bio_run_uuid: 6f133680-60fd-11e4-b294-68b59976a382
-  plate_barcode: DN374815N
-  plate_uuid_lims: 104e63d0-60fe-11e4-a3f1-68b59976a382
-  recorded_at: 2016-04-04 10:07:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B2
   well_uuid_lims: 6f770160-60fd-11e4-b294-68b59976a382
 - cost_code: S0755
@@ -535,7 +281,7 @@
   id_sample_tmp: 1751257
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365899Q
   pac_bio_library_tube_legacy_id: 9445461
   pac_bio_library_tube_name: DN323980T-B1
@@ -545,10 +291,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A1
   well_uuid_lims: 35cbadb0-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -558,7 +304,7 @@
   id_sample_tmp: 2307088
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT661823V
   pac_bio_library_tube_legacy_id: 14427602
   pac_bio_library_tube_name: DN407857G-E1
@@ -571,30 +317,7 @@
   tag_identifier: 75
   tag_sequence: GAATCTGTAT
   tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
-  well_label: A2
-  well_uuid_lims: 35cfa550-3ceb-11e5-8758-68b59976a382
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 40415
-  id_pac_bio_tmp: 3117
-  id_sample_tmp: 2307089
-  id_study_tmp: 2979
-  last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT661824W
-  pac_bio_library_tube_legacy_id: 14427603
-  pac_bio_library_tube_name: DN407857G-F1
-  pac_bio_library_tube_uuid: e01ca530-2959-11e5-a897-68b59976a382
-  pac_bio_run_name: 40415
-  pac_bio_run_uuid: 89e5c9e0-3cea-11e5-936b-68b59976a382
-  plate_barcode: DN413057R
-  plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
-  recorded_at: 2016-04-04 10:08:23
-  tag_identifier: 76
-  tag_sequence: GTACATCTAT
-  tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
+  tag_set_name: 73 to 96 - 10 mer tags
   well_label: A2
   well_uuid_lims: 35cfa550-3ceb-11e5-8758-68b59976a382
 - cost_code: S0755
@@ -604,7 +327,7 @@
   id_sample_tmp: 1751260
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365901Q
   pac_bio_library_tube_legacy_id: 9445463
   pac_bio_library_tube_name: DN323980T-C1
@@ -614,10 +337,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B1
   well_uuid_lims: 35effe90-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -627,7 +350,7 @@
   id_sample_tmp: 2332894
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT668806C
   pac_bio_library_tube_legacy_id: 14528970
   pac_bio_library_tube_name: DN410794I-E3
@@ -637,10 +360,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B2
   well_uuid_lims: 35f13710-3ceb-11e5-8758-68b59976a382
 - cost_code: S0755
@@ -650,7 +373,7 @@
   id_sample_tmp: 1751261
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365902R
   pac_bio_library_tube_legacy_id: 9445464
   pac_bio_library_tube_name: DN323980T-D1
@@ -660,10 +383,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: C1
   well_uuid_lims: 36142860-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -673,7 +396,7 @@
   id_sample_tmp: 2341023
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT676342L
   pac_bio_library_tube_legacy_id: 14643677
   pac_bio_library_tube_name: DN411853G-A1
@@ -683,10 +406,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: C2
   well_uuid_lims: 3617aad0-3ceb-11e5-8758-68b59976a382
 - cost_code: S0755
@@ -696,7 +419,7 @@
   id_sample_tmp: 1751254
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365903S
   pac_bio_library_tube_legacy_id: 9445465
   pac_bio_library_tube_name: DN323980T-E1
@@ -706,10 +429,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: D1
   well_uuid_lims: 36284ca0-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -719,7 +442,7 @@
   id_sample_tmp: 2341024
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT676343M
   pac_bio_library_tube_legacy_id: 14643678
   pac_bio_library_tube_name: DN411853G-B1
@@ -729,10 +452,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: D2
   well_uuid_lims: 3629ac30-3ceb-11e5-8758-68b59976a382
 - cost_code: S0755
@@ -742,7 +465,7 @@
   id_sample_tmp: 1751255
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365904T
   pac_bio_library_tube_legacy_id: 9445466
   pac_bio_library_tube_name: DN323980T-F1
@@ -752,10 +475,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: E1
   well_uuid_lims: 363a9c20-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -765,7 +488,7 @@
   id_sample_tmp: 2341025
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT676344N
   pac_bio_library_tube_legacy_id: 14643679
   pac_bio_library_tube_name: DN411853G-C1
@@ -775,10 +498,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: E2
   well_uuid_lims: 363c49d0-3ceb-11e5-8758-68b59976a382
 - cost_code: S0755
@@ -788,7 +511,7 @@
   id_sample_tmp: 1751263
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365898P
   pac_bio_library_tube_legacy_id: 9445460
   pac_bio_library_tube_name: DN323980T-A2
@@ -798,10 +521,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: F1
   well_uuid_lims: 3658d280-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -811,7 +534,7 @@
   id_sample_tmp: 2341026
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT676345O
   pac_bio_library_tube_legacy_id: 14643680
   pac_bio_library_tube_name: DN411853G-D1
@@ -821,10 +544,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: F2
   well_uuid_lims: 365a5920-3ceb-11e5-8758-68b59976a382
 - cost_code: S0755
@@ -834,7 +557,7 @@
   id_sample_tmp: 1751268
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365900P
   pac_bio_library_tube_legacy_id: 9445462
   pac_bio_library_tube_name: DN323980T-B2
@@ -844,10 +567,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: G1
   well_uuid_lims: 36697450-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -857,7 +580,7 @@
   id_sample_tmp: 2341027
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT676346P
   pac_bio_library_tube_legacy_id: 14643681
   pac_bio_library_tube_name: DN411853G-E1
@@ -867,10 +590,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: G2
   well_uuid_lims: 366ad3e0-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -880,7 +603,7 @@
   id_sample_tmp: 2307088
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT661823V
   pac_bio_library_tube_legacy_id: 14427602
   pac_bio_library_tube_name: DN407857G-E1
@@ -893,30 +616,7 @@
   tag_identifier: 75
   tag_sequence: GAATCTGTAT
   tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
-  well_label: H1
-  well_uuid_lims: 367a3d30-3ceb-11e5-8758-68b59976a382
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 40415
-  id_pac_bio_tmp: 3131
-  id_sample_tmp: 2307089
-  id_study_tmp: 2979
-  last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT661824W
-  pac_bio_library_tube_legacy_id: 14427603
-  pac_bio_library_tube_name: DN407857G-F1
-  pac_bio_library_tube_uuid: e01ca530-2959-11e5-a897-68b59976a382
-  pac_bio_run_name: 40415
-  pac_bio_run_uuid: 89e5c9e0-3cea-11e5-936b-68b59976a382
-  plate_barcode: DN413057R
-  plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
-  recorded_at: 2016-04-04 10:08:23
-  tag_identifier: 76
-  tag_sequence: GTACATCTAT
-  tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
+  tag_set_name: 73 to 96 - 10 mer tags
   well_label: H1
   well_uuid_lims: 367a3d30-3ceb-11e5-8758-68b59976a382
 - cost_code: S0982
@@ -926,7 +626,7 @@
   id_sample_tmp: 2341028
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:50
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT676347Q
   pac_bio_library_tube_legacy_id: 14643682
   pac_bio_library_tube_name: DN411853G-F1
@@ -936,10 +636,10 @@
   plate_barcode: DN413057R
   plate_uuid_lims: 35a2a1e0-3ceb-11e5-8758-68b59976a382
   recorded_at: 2016-04-04 10:08:23
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: H2
   well_uuid_lims: 367b9cc0-3ceb-11e5-8758-68b59976a382
 - cost_code: S0702
@@ -949,7 +649,7 @@
   id_sample_tmp: 2252521
   id_study_tmp: 3537
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT655764P
   pac_bio_library_tube_legacy_id: 14270042
   pac_bio_library_tube_name: DN399792H-A1
@@ -959,10 +659,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:17
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A1
   well_uuid_lims: 9977d650-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0700
@@ -972,7 +672,7 @@
   id_sample_tmp: 2279041
   id_study_tmp: 3529
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT646913J
   pac_bio_library_tube_legacy_id: 14198957
   pac_bio_library_tube_name: DN404324Q-A1
@@ -982,10 +682,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:17
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A2
   well_uuid_lims: 997ae390-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0702
@@ -995,7 +695,7 @@
   id_sample_tmp: 2252521
   id_study_tmp: 3537
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT655764P
   pac_bio_library_tube_legacy_id: 14270042
   pac_bio_library_tube_name: DN399792H-A1
@@ -1005,10 +705,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B1
   well_uuid_lims: 99998f20-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1018,7 +718,7 @@
   id_sample_tmp: 2302860
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT656843R
   pac_bio_library_tube_legacy_id: 14295273
   pac_bio_library_tube_name: DN407389W-B1
@@ -1028,10 +728,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B2
   well_uuid_lims: 999ac7a0-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0755
@@ -1041,7 +741,7 @@
   id_sample_tmp: 1751253
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365897O
   pac_bio_library_tube_legacy_id: 9445459
   pac_bio_library_tube_name: DN323980T-A1
@@ -1051,10 +751,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: C1
   well_uuid_lims: 99a8aa50-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1064,7 +764,7 @@
   id_sample_tmp: 2302861
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT656844S
   pac_bio_library_tube_legacy_id: 14295274
   pac_bio_library_tube_name: DN407389W-C1
@@ -1074,10 +774,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: C2
   well_uuid_lims: 99a9e2d0-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0755
@@ -1087,7 +787,7 @@
   id_sample_tmp: 1751253
   id_study_tmp: 2817
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT365897O
   pac_bio_library_tube_legacy_id: 9445459
   pac_bio_library_tube_name: DN323980T-A1
@@ -1097,10 +797,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: D1
   well_uuid_lims: 99b7c580-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1110,7 +810,7 @@
   id_sample_tmp: 2302862
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT656845T
   pac_bio_library_tube_legacy_id: 14295275
   pac_bio_library_tube_name: DN407389W-D1
@@ -1120,10 +820,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: D2
   well_uuid_lims: 99b8fe00-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1133,7 +833,7 @@
   id_sample_tmp: 2307085
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT661821T
   pac_bio_library_tube_legacy_id: 14427600
   pac_bio_library_tube_name: DN407857G-B1
@@ -1146,30 +846,7 @@
   tag_identifier: 73
   tag_sequence: GCAACATTAT
   tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
-  well_label: E1
-  well_uuid_lims: 99c6b9a0-2c7d-11e5-a6a1-68b59976a382
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 39859
-  id_pac_bio_tmp: 3000
-  id_sample_tmp: 2307086
-  id_study_tmp: 2979
-  last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT661822U
-  pac_bio_library_tube_legacy_id: 14427601
-  pac_bio_library_tube_name: DN407857G-C1
-  pac_bio_library_tube_uuid: e00091b0-2959-11e5-a897-68b59976a382
-  pac_bio_run_name: 39859
-  pac_bio_run_uuid: 04659b10-2c7d-11e5-b214-68b59976a382
-  plate_barcode: DN410723Q
-  plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
-  recorded_at: 2016-04-04 10:08:18
-  tag_identifier: 74
-  tag_sequence: GGTCGTGTAT
-  tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
+  tag_set_name: 73 to 96 - 10 mer tags
   well_label: E1
   well_uuid_lims: 99c6b9a0-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1179,7 +856,7 @@
   id_sample_tmp: 2302863
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT656846U
   pac_bio_library_tube_legacy_id: 14295276
   pac_bio_library_tube_name: DN407389W-E1
@@ -1189,10 +866,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: E2
   well_uuid_lims: 99c7f220-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1202,7 +879,7 @@
   id_sample_tmp: 2307088
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT661823V
   pac_bio_library_tube_legacy_id: 14427602
   pac_bio_library_tube_name: DN407857G-E1
@@ -1215,30 +892,7 @@
   tag_identifier: 75
   tag_sequence: GAATCTGTAT
   tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
-  well_label: F1
-  well_uuid_lims: 99d5d4d0-2c7d-11e5-a6a1-68b59976a382
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 39859
-  id_pac_bio_tmp: 3003
-  id_sample_tmp: 2307089
-  id_study_tmp: 2979
-  last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT661824W
-  pac_bio_library_tube_legacy_id: 14427603
-  pac_bio_library_tube_name: DN407857G-F1
-  pac_bio_library_tube_uuid: e01ca530-2959-11e5-a897-68b59976a382
-  pac_bio_run_name: 39859
-  pac_bio_run_uuid: 04659b10-2c7d-11e5-b214-68b59976a382
-  plate_barcode: DN410723Q
-  plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
-  recorded_at: 2016-04-04 10:08:18
-  tag_identifier: 76
-  tag_sequence: GTACATCTAT
-  tag_set_id_lims: 10
-  tag_set_name: '73 to 96 - 10 mer tags'
+  tag_set_name: 73 to 96 - 10 mer tags
   well_label: F1
   well_uuid_lims: 99d5d4d0-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1248,7 +902,7 @@
   id_sample_tmp: 2302864
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT656847V
   pac_bio_library_tube_legacy_id: 14295277
   pac_bio_library_tube_name: DN407389W-F1
@@ -1258,10 +912,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: F2
   well_uuid_lims: 99d70d50-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1271,7 +925,7 @@
   id_sample_tmp: 2302865
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT656848W
   pac_bio_library_tube_legacy_id: 14295278
   pac_bio_library_tube_name: DN407389W-G1
@@ -1281,10 +935,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: G2
   well_uuid_lims: 99e62880-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0702
@@ -1294,7 +948,7 @@
   id_sample_tmp: 2030290
   id_study_tmp: 291
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT540292T
   pac_bio_library_tube_legacy_id: 11799647
   pac_bio_library_tube_name: DN361557U-E1
@@ -1304,10 +958,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: H1
   well_uuid_lims: 99f3e420-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S0982
@@ -1317,7 +971,7 @@
   id_sample_tmp: 2302866
   id_study_tmp: 2979
   last_updated: 2016-03-31 14:19:53
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT656849A
   pac_bio_library_tube_legacy_id: 14295279
   pac_bio_library_tube_name: DN407389W-H1
@@ -1327,10 +981,10 @@
   plate_barcode: DN410723Q
   plate_uuid_lims: 99592ac0-2c7d-11e5-a6a1-68b59976a382
   recorded_at: 2016-04-04 10:08:18
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: H2
   well_uuid_lims: 99f543b0-2c7d-11e5-a6a1-68b59976a382
 - cost_code: S4048
@@ -1340,7 +994,7 @@
   id_sample_tmp: 2817558
   id_study_tmp: 3970
   last_updated: 2016-12-15 11:23:15
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT871610E
   pac_bio_library_tube_legacy_id: 18200561
   pac_bio_library_tube_name: DN468178B-A1
@@ -1350,10 +1004,10 @@
   plate_barcode: DN470775M
   plate_uuid_lims: 66bcde90-bc78-11e6-9bff-68b59976a384
   recorded_at: 2016-12-15 11:23:27
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A1
   well_uuid_lims: 66f46950-bc78-11e6-9bff-68b59976a384
 - cost_code: S0982
@@ -1363,7 +1017,7 @@
   id_sample_tmp: 3354850
   id_study_tmp: 2979
   last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1386523A
   pac_bio_library_tube_legacy_id: 21502617
   pac_bio_library_tube_name: DN505769F-H7
@@ -1379,351 +1033,6 @@
   tag_set_name: 1_96_BA_PacBio
   well_label: B1
   well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12461
-  id_sample_tmp: 3354853
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386524B
-  pac_bio_library_tube_legacy_id: 21502618
-  pac_bio_library_tube_name: DN505769F-A8
-  pac_bio_library_tube_uuid: fa4707b4-4488-11e8-acc1-68b599768938
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 12
-  tag_sequence: GCGCACGCACTACAGA
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12462
-  id_sample_tmp: 3354875
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386525C
-  pac_bio_library_tube_legacy_id: 21502619
-  pac_bio_library_tube_name: DN505769F-H10
-  pac_bio_library_tube_uuid: fa5bb150-4488-11e8-acc1-68b599768938
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 16
-  tag_sequence: TAGATGCGAGAGTAGA
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12463
-  id_sample_tmp: 3368599
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386519E
-  pac_bio_library_tube_legacy_id: 21502516
-  pac_bio_library_tube_name: DN505768E-B1
-  pac_bio_library_tube_uuid: c9224b26-4488-11e8-aa5e-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 25
-  tag_sequence: CACGCACACACGCGCG
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12464
-  id_sample_tmp: 3368600
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386520U
-  pac_bio_library_tube_legacy_id: 21502517
-  pac_bio_library_tube_name: DN505768E-C1
-  pac_bio_library_tube_uuid: c946a7a0-4488-11e8-aa5e-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 32
-  tag_sequence: TATCTCTGTAGAGTCT
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12465
-  id_sample_tmp: 3368605
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386521V
-  pac_bio_library_tube_legacy_id: 21502518
-  pac_bio_library_tube_name: DN505768E-H1
-  pac_bio_library_tube_uuid: c95b7edc-4488-11e8-aa5e-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 35
-  tag_sequence: TCTATGTCTCAGTAGT
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12466
-  id_sample_tmp: 3368614
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386522W
-  pac_bio_library_tube_legacy_id: 21502519
-  pac_bio_library_tube_name: DN505768E-B3
-  pac_bio_library_tube_uuid: c9705a78-4488-11e8-aa5e-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 39
-  tag_sequence: CTGTGTGTGATAGAGT
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12467
-  id_sample_tmp: 3320286
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386526D
-  pac_bio_library_tube_legacy_id: 21503105
-  pac_bio_library_tube_name: DN505770V-B3
-  pac_bio_library_tube_uuid: 1c29edc4-4489-11e8-84f7-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 42
-  tag_sequence: GAGACTAGAGATAGTG
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12468
-  id_sample_tmp: 3320283
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386527E
-  pac_bio_library_tube_legacy_id: 21503106
-  pac_bio_library_tube_name: DN505770V-G2
-  pac_bio_library_tube_uuid: 1c3ec3e8-4489-11e8-84f7-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 51
-  tag_sequence: ACACACAGACTGTGAG
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12469
-  id_sample_tmp: 3320300
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386528F
-  pac_bio_library_tube_legacy_id: 21503107
-  pac_bio_library_tube_name: DN505770V-H4
-  pac_bio_library_tube_uuid: 1c5da4ca-4489-11e8-84f7-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 53
-  tag_sequence: TGCTCTCGTGTACTGT
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12470
-  id_sample_tmp: 3320290
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386529G
-  pac_bio_library_tube_legacy_id: 21503108
-  pac_bio_library_tube_name: DN505770V-F3
-  pac_bio_library_tube_uuid: 1c725eb0-4489-11e8-84f7-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 58
-  tag_sequence: AGATATCATCAGCGAG
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12471
-  id_sample_tmp: 3320317
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386530W
-  pac_bio_library_tube_legacy_id: 21503109
-  pac_bio_library_tube_name: DN505770V-A7
-  pac_bio_library_tube_uuid: 1c8700b8-4489-11e8-84f7-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 78
-  tag_sequence: CATAGAGAGATAGTAT
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12472
-  id_sample_tmp: 3320307
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386531A
-  pac_bio_library_tube_legacy_id: 21503110
-  pac_bio_library_tube_name: DN505770V-G5
-  pac_bio_library_tube_uuid: 1c9bdbfa-4489-11e8-84f7-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 87
-  tag_sequence: ATAGCGACGCGATATA
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12473
-  id_sample_tmp: 3560428
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386532B
-  pac_bio_library_tube_legacy_id: 21503208
-  pac_bio_library_tube_name: DN518129T-E3
-  pac_bio_library_tube_uuid: 4cd8e81c-4489-11e8-aa5e-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 91
-  tag_sequence: CACACGAGATCTCATC
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12474
-  id_sample_tmp: 3560429
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386533C
-  pac_bio_library_tube_legacy_id: 21503209
-  pac_bio_library_tube_name: DN518129T-F3
-  pac_bio_library_tube_uuid: 4ceb6ef6-4489-11e8-aa5e-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 92
-  tag_sequence: AGATACACATGATACT
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
-- cost_code: S0982
-  id_lims: SQSCP
-  id_pac_bio_run_lims: 61123
-  id_pac_bio_tmp: 12475
-  id_sample_tmp: 3560432
-  id_study_tmp: 2979
-  last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
-  pac_bio_library_tube_id_lims: NT1386534D
-  pac_bio_library_tube_legacy_id: 21503210
-  pac_bio_library_tube_name: DN518129T-A4
-  pac_bio_library_tube_uuid: 4cf64420-4489-11e8-aa5e-68b59976a384
-  pac_bio_run_name: 61123
-  pac_bio_run_uuid: 8248f7ac-4499-11e8-8060-68b59976a384
-  plate_barcode: DN521486O
-  plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
-  recorded_at: 2018-04-20 12:52:28
-  tag_identifier: 96
-  tag_sequence: GTGTGCACTCACACTC
-  tag_set_id_lims: 125
-  tag_set_name: 1_96_BA_PacBio
-  well_label: B1
-  well_uuid_lims: a7cb153c-4499-11e8-84f7-68b59976a384
 - cost_code: S4286
   id_lims: SQSCP
   id_pac_bio_run_lims: 61123
@@ -1731,7 +1040,7 @@
   id_sample_tmp: 3611796
   id_study_tmp: 4820
   last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1377108L
   pac_bio_library_tube_legacy_id: 21475210
   pac_bio_library_tube_name: DN520158U-A1
@@ -1741,10 +1050,10 @@
   plate_barcode: DN521486O
   plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
   recorded_at: 2018-04-20 12:52:28
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A1
   well_uuid_lims: a79f2eb8-4499-11e8-84f7-68b59976a384
 - cost_code: S4286
@@ -1754,7 +1063,7 @@
   id_sample_tmp: 3611796
   id_study_tmp: 4820
   last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1377108L
   pac_bio_library_tube_legacy_id: 21475210
   pac_bio_library_tube_name: DN520158U-A1
@@ -1764,10 +1073,10 @@
   plate_barcode: DN521486O
   plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
   recorded_at: 2018-04-20 12:52:29
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: C1
   well_uuid_lims: a7e0853e-4499-11e8-84f7-68b59976a384
 - cost_code: S4286
@@ -1777,7 +1086,7 @@
   id_sample_tmp: 3611796
   id_study_tmp: 4820
   last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1377108L
   pac_bio_library_tube_legacy_id: 21475210
   pac_bio_library_tube_name: DN520158U-A1
@@ -1787,10 +1096,10 @@
   plate_barcode: DN521486O
   plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
   recorded_at: 2018-04-20 12:52:29
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: D1
   well_uuid_lims: a7f82176-4499-11e8-84f7-68b59976a384
 - cost_code: S4286
@@ -1800,7 +1109,7 @@
   id_sample_tmp: 3611796
   id_study_tmp: 4820
   last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1377108L
   pac_bio_library_tube_legacy_id: 21475210
   pac_bio_library_tube_name: DN520158U-A1
@@ -1810,10 +1119,10 @@
   plate_barcode: DN521486O
   plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
   recorded_at: 2018-04-20 12:52:29
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: E1
   well_uuid_lims: a80ff86e-4499-11e8-84f7-68b59976a384
 - cost_code: S4286
@@ -1823,7 +1132,7 @@
   id_sample_tmp: 3611796
   id_study_tmp: 4820
   last_updated: 2018-04-20 12:52:26
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1377108L
   pac_bio_library_tube_legacy_id: 21475210
   pac_bio_library_tube_name: DN520158U-A1
@@ -1833,10 +1142,10 @@
   plate_barcode: DN521486O
   plate_uuid_lims: a7967fc0-4499-11e8-84f7-68b59976a384
   recorded_at: 2018-04-20 12:52:29
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: F1
   well_uuid_lims: a82475aa-4499-11e8-84f7-68b59976a384
 - cost_code: S4293
@@ -1846,7 +1155,7 @@
   id_sample_tmp: 3135749
   id_study_tmp: 4559
   last_updated: 2017-07-27 16:18:30
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1121208W
   pac_bio_library_tube_legacy_id: 19659637
   pac_bio_library_tube_name: DN489056G-A1
@@ -1856,10 +1165,10 @@
   plate_barcode: DN493601N
   plate_uuid_lims: b52fb9ec-72e6-11e7-899f-68b59976a384
   recorded_at: 2017-07-27 16:18:32
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A2
   well_uuid_lims: b58039f8-72e6-11e7-899f-68b59976a384
 - cost_code: S4293
@@ -1869,7 +1178,7 @@
   id_sample_tmp: 3135749
   id_study_tmp: 4559
   last_updated: 2017-07-27 16:18:30
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1121208W
   pac_bio_library_tube_legacy_id: 19659637
   pac_bio_library_tube_name: DN489056G-A1
@@ -1879,10 +1188,10 @@
   plate_barcode: DN493601N
   plate_uuid_lims: b52fb9ec-72e6-11e7-899f-68b59976a384
   recorded_at: 2017-07-27 16:18:32
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: B2
   well_uuid_lims: b5936ffa-72e6-11e7-899f-68b59976a384
 - cost_code: S4773
@@ -1892,7 +1201,7 @@
   id_sample_tmp: 4237953
   id_study_tmp: 5735
   last_updated: 2020-03-13 15:46:06
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: 103
   pac_bio_library_tube_legacy_id: 999
   pac_bio_library_tube_name: DTOL8493629
@@ -1915,7 +1224,7 @@
   id_sample_tmp: 5490195
   id_study_tmp: 5735
   last_updated: 2021-04-09 13:00:40
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1667187Q
   pac_bio_library_tube_legacy_id: 40356040
   pac_bio_library_tube_name: DN787408U-C2
@@ -1938,9 +1247,9 @@
   id_sample_tmp: 5490195
   id_study_tmp: 5735
   last_updated: 2021-04-29 16:50:57
-  library_created_at: ~
+  library_created_at: null
   pac_bio_library_tube_id_lims: NT1670945H
-  pac_bio_library_tube_legacy_id: 41562896 
+  pac_bio_library_tube_legacy_id: 41562896
   pac_bio_library_tube_name: DN712146I-B1
   pac_bio_library_tube_uuid: 077f0032-a2b2-11eb-8894-fa163eac3af7
   pac_bio_run_name: 81876
@@ -1948,225 +1257,36 @@
   plate_barcode: DN804753L
   plate_uuid_lims: 10041238-a90b-11eb-81ec-fa163eea3084
   recorded_at: 2021-04-29 16:50:57
-  tag_identifier: ~
-  tag_sequence: ~
-  tag_set_id_lims: ~
-  tag_set_name: ~
+  tag_identifier: null
+  tag_sequence: null
+  tag_set_id_lims: null
+  tag_set_name: null
   well_label: A1
   well_uuid_lims: 10101d08-a90b-11eb-81ec-fa163eea3084
-- id_pac_bio_tmp: '20992'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
+- cost_code: S0910
+  id_lims: SQSCP
+  id_pac_bio_run_lims: '83472'
+  id_pac_bio_tmp: '20992'
   id_sample_tmp: '5784049'
   id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
+  last_updated: '2021-06-17 18:03:25'
+  library_created_at: null
+  pac_bio_library_tube_id_lims: NT1675841U
+  pac_bio_library_tube_legacy_id: '43509073'
+  pac_bio_library_tube_name: DN817778O-A1
+  pac_bio_library_tube_uuid: 266c2b00-ccec-11eb-8e68-fa163eac3af7
+  pac_bio_run_name: '83472'
   pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
+  plate_barcode: DN821136N
+  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
+  recorded_at: '2021-06-17 18:03:25'
+  tag2_identifier: null
+  tag2_sequence: null
+  tag2_set_id_lims: null
+  tag2_set_name: null
   tag_identifier: '1001'
   tag_sequence: CACATATCAGAGTGCG
   tag_set_id_lims: '226'
   tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
   well_label: A1
   well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675841U
-  pac_bio_library_tube_uuid: 266c2b00-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-A1
-  pac_bio_library_tube_legacy_id: '43509073'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
-- id_pac_bio_tmp: '20993'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
-  id_sample_tmp: '5784050'
-  id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
-  pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
-  tag_identifier: '1002'
-  tag_sequence: ACACACAGACTGTGAG
-  tag_set_id_lims: '226'
-  tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
-  well_label: A1
-  well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675842V
-  pac_bio_library_tube_uuid: 2675a5ea-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-B1
-  pac_bio_library_tube_legacy_id: '43509074'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
-- id_pac_bio_tmp: '20994'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
-  id_sample_tmp: '5784051'
-  id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
-  pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
-  tag_identifier: '1003'
-  tag_sequence: ACACATCTCGTGAGAG
-  tag_set_id_lims: '226'
-  tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
-  well_label: A1
-  well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675843W
-  pac_bio_library_tube_uuid: 2679d23c-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-C1
-  pac_bio_library_tube_legacy_id: '43509075'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
-- id_pac_bio_tmp: '20995'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
-  id_sample_tmp: '5784052'
-  id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
-  pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
-  tag_identifier: '1004'
-  tag_sequence: CACGCACACACGCGCG
-  tag_set_id_lims: '226'
-  tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
-  well_label: A1
-  well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675844A
-  pac_bio_library_tube_uuid: 267dcb76-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-D1
-  pac_bio_library_tube_legacy_id: '43509076'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
-- id_pac_bio_tmp: '20996'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
-  id_sample_tmp: '5784053'
-  id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
-  pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
-  tag_identifier: '1005'
-  tag_sequence: CACTCGACTCTCGCGT
-  tag_set_id_lims: '226'
-  tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
-  well_label: A1
-  well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675845B
-  pac_bio_library_tube_uuid: 26819652-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-E1
-  pac_bio_library_tube_legacy_id: '43509077'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
-- id_pac_bio_tmp: '20997'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
-  id_sample_tmp: '5784054'
-  id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
-  pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
-  tag_identifier: '1006'
-  tag_sequence: CATATATATCAGCTGT
-  tag_set_id_lims: '226'
-  tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
-  well_label: A1
-  well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675846C
-  pac_bio_library_tube_uuid: 26857074-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-F1
-  pac_bio_library_tube_legacy_id: '43509078'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
-- id_pac_bio_tmp: '20998'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
-  id_sample_tmp: '5784055'
-  id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
-  pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
-  tag_identifier: '1008'
-  tag_sequence: ACAGTCGAGCGCTGCG
-  tag_set_id_lims: '226'
-  tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
-  well_label: A1
-  well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675847D
-  pac_bio_library_tube_uuid: 26895c0c-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-G1
-  pac_bio_library_tube_legacy_id: '43509079'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
-- id_pac_bio_tmp: '20999'
-  last_updated: '2021-06-17 18:03:25'
-  recorded_at: '2021-06-17 18:03:25'
-  id_sample_tmp: '5784056'
-  id_study_tmp: '6276'
-  id_pac_bio_run_lims: '83472'
-  pac_bio_run_uuid: 20dad194-cf96-11eb-99d4-fa163eea3084
-  cost_code: S0910
-  id_lims: SQSCP
-  tag_identifier: '1012'
-  tag_sequence: ACACTAGATCGCGTGT
-  tag_set_id_lims: '226'
-  tag_set_name: Sequel_RSII_96_barcodes_v1
-  tag2_sequence: ~
-  tag2_set_id_lims: ~
-  tag2_set_name: ~
-  tag2_identifier: ~
-  plate_barcode: DN821136N
-  plate_uuid_lims: 4d3291f0-cf96-11eb-96bb-fa163eac3af7
-  well_label: A1
-  well_uuid_lims: 4d4bf96a-cf96-11eb-96bb-fa163eac3af7
-  pac_bio_library_tube_id_lims: NT1675848E
-  pac_bio_library_tube_uuid: 268d2e40-ccec-11eb-8e68-fa163eac3af7
-  pac_bio_library_tube_name: DN817778O-H1
-  pac_bio_library_tube_legacy_id: '43509080'
-  library_created_at: ~
-  pac_bio_run_name: '83472'
