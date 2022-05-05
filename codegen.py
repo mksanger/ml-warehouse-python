@@ -75,6 +75,7 @@ if __name__ == "__main__":
             url,
             "--outfile",
             "generated.py",
+            "--noviews",
         ]
     )
 

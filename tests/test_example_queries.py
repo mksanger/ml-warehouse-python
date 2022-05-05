@@ -54,13 +54,6 @@ class TestMLWarehouseExampleRecentQueries(object):
                 81230,
                 81876,
                 83472,
-                83472,
-                83472,
-                83472,
-                83472,
-                83472,
-                83472,
-                83472,
             ]
         ]
 
@@ -203,34 +196,19 @@ class TestMLWarehouseExampleNpgIrodsQueries(object):
 
         expected_ids_tmp = [
             1714,
-            1715,
-            1717,
             1720,
+            1715,
             1727,
+            1717,
             2993,
             3118,
             4063,
             12460,
-            12461,
-            12462,
-            12463,
-            12464,
-            12465,
-            12466,
-            12467,
-            12468,
-            12469,
-            12470,
-            12471,
-            12472,
-            12473,
-            12474,
-            12475,
-            16207,
             20300,
+            16207,
         ]
 
-        assert records.count() == 26
+        assert records.count() == len(expected_ids_tmp)
 
         observed_ids_tmp = [row.id_pac_bio_tmp for row in records.all()]
 
