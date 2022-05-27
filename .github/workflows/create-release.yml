@@ -1,0 +1,46 @@
+
+name: "Create release"
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    defaults:
+      run:
+        shell: bash -l -e -o pipefail {0}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Fetch Tags"
+        run: git fetch --tags --force
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: "Install Dependencies"
+        run: |
+          pip install --upgrade pip
+          pip install build
+
+      - name: "Build Package"
+        run: python -m build
+
+      - name: "Get release version"
+        run: |
+          echo ML_WAREHOUSE_PYTHON_VERSION=$(git describe --always --tags --dirty) >> $GITHUB_ENV
+
+      - name: "Create Release"
+        uses: ncipollo/release-action@v1.10.0
+        with:
+          name: ${{ env.ML_WAREHOUSE_PYTHON_VERSION }}
+          prerelease: ${{ !(github.ref == 'refs/heads/master') }}
+          artifacts: "dist/*.tar.gz"
+          removeArtifacts: true
+          artifactErrorsFailBuild: true
+          generateReleaseNotes: true
