@@ -1,0 +1,13 @@
+services:
+  mysql-server:
+    platform: linux/x86_64
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_USER: "test"
+      MYSQL_PASSWORD: "test"
+      MYSQL_DATABASE: "mlwarehouse"
+      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+
