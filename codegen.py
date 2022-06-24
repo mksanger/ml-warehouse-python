@@ -69,6 +69,7 @@ if __name__ == "__main__":
     )
 
     # Generate the declarative mappings.
+    # Raise an error in case of non-zero process exit code.
     subprocess.run(
         [
             "sqlacodegen",
@@ -77,7 +78,7 @@ if __name__ == "__main__":
             "generated.py",
             "--noviews",
         ]
-    )
+    ).check_returncode()
 
     # Move the generated file.
     os.rename("generated.py", "src/ml_warehouse/schema.py")
