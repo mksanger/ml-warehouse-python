@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# @author Adam Blanchet <ab59@sanger.ac.uk>
+# @author mgcam <mg8@sanger.ac.uk>
 
 from ml_warehouse._decorators import add_docstring
 from sqlalchemy import CHAR, Column, Computed, DECIMAL, Date, DateTime, Enum, Float, ForeignKey, ForeignKeyConstraint, Index, String, TIMESTAMP, Table, Text, text
@@ -286,6 +286,12 @@ class IseqRun(Base):
     id_run = Column(mysqlINTEGER(10, unsigned=True), primary_key=True, comment='NPG run identifier')
     id_flowcell_lims = Column(String(20, 'utf8_unicode_ci'), index=True, comment='LIMS specific flowcell id')
     folder_name = Column(String(64, 'utf8_unicode_ci'), comment='Runfolder name')
+    rp__read1_number_of_cycles = Column(mysqlSMALLINT(5, unsigned=True), comment='Read 1 number of cycles')
+    rp__read2_number_of_cycles = Column(mysqlSMALLINT(5, unsigned=True), comment='Read 2 number of cycles')
+    rp__flow_cell_mode = Column(String(4, 'utf8_unicode_ci'), comment='Flowcell mode')
+    rp__workflow_type = Column(String(16, 'utf8_unicode_ci'), comment='Workflow type')
+    rp__flow_cell_consumable_version = Column(String(4, 'utf8_unicode_ci'), comment='Flowcell consumable version')
+    rp__sbs_consumable_version = Column(String(4, 'utf8_unicode_ci'), comment='Sbs consumable version')
 
 
 @add_docstring
@@ -745,7 +751,7 @@ class IseqFlowcell(Base):
     cost_code = Column(String(20, 'utf8_unicode_ci'), comment='Valid WTSI cost code')
     is_r_and_d = Column(mysqlTINYINT(1), server_default=text("'0'"), comment='A boolean flag derived from cost code, flags RandD')
     priority = Column(mysqlSMALLINT(2, unsigned=True), server_default=text("'1'"), comment='Priority')
-    manual_qc = Column(mysqlTINYINT(1), comment='Manual QC decision, NULL for unknown')
+    manual_qc = Column(mysqlTINYINT(1), comment='Legacy QC decision value set per lane which may be used for per-lane billing: iseq_product_metrics.qc is likely to contain the per product QC summary of use to most downstream users')
     external_release = Column(mysqlTINYINT(1), comment='Defaults to manual qc value; can be changed by the user later')
     flowcell_barcode = Column(String(15, 'utf8_unicode_ci'), comment='Manufacturer flowcell barcode or other identifier')
     tag_index = Column(mysqlSMALLINT(5, unsigned=True), comment='Tag index, NULL if lane is not a pool')
@@ -777,6 +783,15 @@ class IseqFlowcell(Base):
     sample = relationship('Sample', back_populates='iseq_flowcell')
     study = relationship('Study', back_populates='iseq_flowcell')
     iseq_product_metrics = relationship('IseqProductMetrics', back_populates='iseq_flowcell')
+
+
+@add_docstring
+class IseqRunInfo(IseqRun):
+    __tablename__ = 'iseq_run_info'
+    __table_args__ = {'comment': 'Table storing selected text files from the run folder'}
+
+    id_run = Column(ForeignKey('iseq_run.id_run'), primary_key=True, comment='NPG run identifier')
+    run_parameters_xml = Column(Text(collation='utf8_unicode_ci'), comment="The contents of Illumina's {R,r}unParameters.xml file")
 
 
 @add_docstring
