@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright © 2021 Genome Research Ltd. All rights reserved.
+# Copyright © 2022 Genome Research Ltd. All rights reserved.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# @author Adam Blanchet <ab59@sanger.ac.uk>
+# @author mgcam <mg8@sanger.ac.uk>
 
 from ml_warehouse._decorators import add_docstring
 from sqlalchemy import CHAR, Column, Computed, DECIMAL, Date, DateTime, Enum, Float, ForeignKey, ForeignKeyConstraint, Index, String, TIMESTAMP, Table, Text, text
@@ -239,6 +239,12 @@ class IseqExternalProductMetrics(Base):
     nrd_assessment = Column(CHAR(4), comment='"PASS" based on nrd_persent < 2% or "FAIL" or "NA" if genotyping data not available for this sample')
     sex_reported = Column(CHAR(6), comment='Sex as reported by sample supplier')
     sex_computed = Column(CHAR(6), comment='Genetic sex as identified by sequence data')
+    input_files_status = Column(CHAR(10), comment="Status of the input files, either 'USEABLE' or 'DELETED'")
+    intermediate_files_status = Column(CHAR(10), comment="Status of the intermediate files, either 'USEABLE' or 'DELETED'")
+    output_files_status = Column(CHAR(10), comment="Status of the output files, either 'ARCHIVED', 'USEABLE' or 'DELETED'")
+    input_status_override_ref = Column(String(255), comment='Status override reference for the input files')
+    intermediate_status_override_ref = Column(String(255), comment='Status override reference for the intermediate files')
+    output_status_override_ref = Column(String(255), comment='Status override reference for the output files')
 
     iseq_external_product_components = relationship('IseqExternalProductComponents', back_populates='iseq_external_product_metrics')
 
@@ -280,6 +286,12 @@ class IseqRun(Base):
     id_run = Column(mysqlINTEGER(10, unsigned=True), primary_key=True, comment='NPG run identifier')
     id_flowcell_lims = Column(String(20, 'utf8_unicode_ci'), index=True, comment='LIMS specific flowcell id')
     folder_name = Column(String(64, 'utf8_unicode_ci'), comment='Runfolder name')
+    rp__read1_number_of_cycles = Column(mysqlSMALLINT(5, unsigned=True), comment='Read 1 number of cycles')
+    rp__read2_number_of_cycles = Column(mysqlSMALLINT(5, unsigned=True), comment='Read 2 number of cycles')
+    rp__flow_cell_mode = Column(String(4, 'utf8_unicode_ci'), comment='Flowcell mode')
+    rp__workflow_type = Column(String(16, 'utf8_unicode_ci'), comment='Workflow type')
+    rp__flow_cell_consumable_version = Column(String(4, 'utf8_unicode_ci'), comment='Flowcell consumable version')
+    rp__sbs_consumable_version = Column(String(4, 'utf8_unicode_ci'), comment='Sbs consumable version')
 
 
 @add_docstring
@@ -413,10 +425,19 @@ class PacBioRunWellMetrics(Base):
     instrument_type = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), nullable=False, comment='The instrument type e.g. Sequel')
     instrument_name = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), comment='The instrument name e.g. SQ54097')
     chip_type = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), comment='The chip type e.g. 8mChip')
+    sl_hostname = Column(mysqlVARCHAR(255, charset='utf8', collation='utf8_unicode_ci'), comment='SMRT Link server hostname')
+    sl_run_uuid = Column(mysqlVARCHAR(36, charset='utf8', collation='utf8_unicode_ci'), comment='SMRT Link specific run uuid')
     ts_run_name = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), comment='The PacBio run name')
     movie_name = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), comment='The PacBio movie name')
+    movie_minutes = Column(mysqlSMALLINT(5, unsigned=True), comment='Movie time (collection time) in minutes')
+    created_by = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), comment='Created by user name recorded in SMRT Link')
+    binding_kit = Column(mysqlVARCHAR(255, charset='utf8', collation='utf8_unicode_ci'), comment='Binding kit version')
+    sequencing_kit = Column(mysqlVARCHAR(255, charset='utf8', collation='utf8_unicode_ci'), comment='Sequencing kit version')
+    sequencing_kit_lot_number = Column(mysqlVARCHAR(255, charset='utf8', collation='utf8_unicode_ci'), comment='Sequencing Kit lot number')
     cell_lot_number = Column(String(32), comment='SMRT Cell Lot Number')
     ccs_execution_mode = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), comment='The PacBio ccs exection mode e.g. OnInstument, OffInstument or None')
+    include_kinetics = Column(mysqlTINYINT(1, unsigned=True), comment='Include kinetics information where ccs is run')
+    loading_conc = Column(mysqlFLOAT(unsigned=True), comment='SMRT Cell loading concentration (pM)')
     run_start = Column(DateTime, comment='Timestamp of run started')
     run_complete = Column(DateTime, comment='Timestamp of run complete')
     run_status = Column(String(32), comment='Last recorded status, primarily to explain runs not completed.')
@@ -428,6 +449,7 @@ class PacBioRunWellMetrics(Base):
     primary_analysis_sw_version = Column(mysqlVARCHAR(32, charset='utf8', collation='utf8_unicode_ci'), comment='The PacBio primary analysis software version')
     control_num_reads = Column(mysqlINTEGER(10, unsigned=True), comment='The number of control reads')
     control_concordance_mean = Column(mysqlFLOAT(8, 6, unsigned=True), comment='The average concordance between the control raw reads and the control reference sequence')
+    control_concordance_mode = Column(mysqlFLOAT(unsigned=True), comment='The modal value from the concordance between the control raw reads and the control reference sequence')
     control_read_length_mean = Column(mysqlINTEGER(10, unsigned=True), comment='The mean polymerase read length of the control reads')
     local_base_rate = Column(mysqlFLOAT(8, 6, unsigned=True), comment='The average base incorporation rate, excluding polymerase pausing events')
     polymerase_read_bases = Column(mysqlBIGINT(20, unsigned=True), comment='Calculated by multiplying the number of productive (P1) ZMWs by the mean polymerase read length')
@@ -454,6 +476,19 @@ class PacBioRunWellMetrics(Base):
     hifi_low_quality_read_quality_median = Column(mysqlSMALLINT(5, unsigned=True), comment='The median base quality of HiFi bases filtered due to low quality (<Q20)')
 
     pac_bio_product_metrics = relationship('PacBioProductMetrics', back_populates='pac_bio_run_well_metrics')
+
+
+@add_docstring
+class PsdSampleCompoundsComponents(Base):
+    __tablename__ = 'psd_sample_compounds_components'
+    __table_args__ = {'comment': 'A join table owned by PSD to associate compound samples with '
+                'their component samples.'}
+
+    id = Column(mysqlBIGINT(20), primary_key=True)
+    compound_id_sample_tmp = Column(mysqlINTEGER(11), nullable=False, comment='The warehouse ID of the compound sample in the association.')
+    component_id_sample_tmp = Column(mysqlINTEGER(11), nullable=False, comment='The warehouse ID of the component sample in the association.')
+    last_updated = Column(DateTime, nullable=False, comment='Timestamp of last update.')
+    recorded_at = Column(DateTime, nullable=False, comment='Timestamp of warehouse update.')
 
 
 @add_docstring
@@ -542,6 +577,25 @@ t_schema_migrations = Table(
     'schema_migrations', metadata,
     Column('version', String(255, 'utf8_unicode_ci'), nullable=False, unique=True)
 )
+
+
+@add_docstring
+class SeqProductIrodsLocations(Base):
+    __tablename__ = 'seq_product_irods_locations'
+    __table_args__ = (
+        Index('pi_root_product', 'irods_root_collection', 'id_product', unique=True),
+        {'comment': 'Table relating products to their irods locations'}
+    )
+
+    id_seq_product_irods_locations_tmp = Column(mysqlBIGINT(20, unsigned=True), primary_key=True, comment='Internal to this database id, value can change')
+    id_product = Column(mysqlVARCHAR(64, charset='utf8', collation='utf8_unicode_ci'), nullable=False, index=True, comment='A sequencing platform specific product id. For Illumina, data corresponds to the id_iseq_product column in the iseq_product_metrics table')
+    seq_platform_name = Column(Enum('Illumina', 'PacBio', 'ONT'), nullable=False, index=True, comment='Name of the sequencing platform used to produce raw data')
+    pipeline_name = Column(String(32), nullable=False, index=True, comment='The name of the pipeline used to produce the data, values are: npg-prod, npg-prod-alt-process, cellranger, spaceranger, ncov2019-artic-nf')
+    irods_root_collection = Column(String(255), nullable=False, comment='Path to the product root collection in iRODS')
+    created = Column(DateTime, server_default=text('CURRENT_TIMESTAMP'), comment='Datetime this record was created')
+    last_changed = Column(DateTime, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'), comment='Datetime this record was created or changed')
+    irods_data_relative_path = Column(String(255), comment='The path, relative to the root collection, to the most used data location')
+    irods_secondary_data_relative_path = Column(String(255), comment='The path, relative to the root collection, to a useful data location')
 
 
 @add_docstring
@@ -697,7 +751,7 @@ class IseqFlowcell(Base):
     cost_code = Column(String(20, 'utf8_unicode_ci'), comment='Valid WTSI cost code')
     is_r_and_d = Column(mysqlTINYINT(1), server_default=text("'0'"), comment='A boolean flag derived from cost code, flags RandD')
     priority = Column(mysqlSMALLINT(2, unsigned=True), server_default=text("'1'"), comment='Priority')
-    manual_qc = Column(mysqlTINYINT(1), comment='Manual QC decision, NULL for unknown')
+    manual_qc = Column(mysqlTINYINT(1), comment='Legacy QC decision value set per lane which may be used for per-lane billing: iseq_product_metrics.qc is likely to contain the per product QC summary of use to most downstream users')
     external_release = Column(mysqlTINYINT(1), comment='Defaults to manual qc value; can be changed by the user later')
     flowcell_barcode = Column(String(15, 'utf8_unicode_ci'), comment='Manufacturer flowcell barcode or other identifier')
     tag_index = Column(mysqlSMALLINT(5, unsigned=True), comment='Tag index, NULL if lane is not a pool')
@@ -729,6 +783,15 @@ class IseqFlowcell(Base):
     sample = relationship('Sample', back_populates='iseq_flowcell')
     study = relationship('Study', back_populates='iseq_flowcell')
     iseq_product_metrics = relationship('IseqProductMetrics', back_populates='iseq_flowcell')
+
+
+@add_docstring
+class IseqRunInfo(IseqRun):
+    __tablename__ = 'iseq_run_info'
+    __table_args__ = {'comment': 'Table storing selected text files from the run folder'}
+
+    id_run = Column(ForeignKey('iseq_run.id_run'), primary_key=True, comment='NPG run identifier')
+    run_parameters_xml = Column(Text(collation='utf8_unicode_ci'), comment="The contents of Illumina's {R,r}unParameters.xml file")
 
 
 @add_docstring
@@ -777,6 +840,9 @@ class OseqFlowcell(Base):
 @add_docstring
 class PacBioRun(Base):
     __tablename__ = 'pac_bio_run'
+    __table_args__ = (
+        Index('unique_pac_bio_entry', 'id_lims', 'id_pac_bio_run_lims', 'well_label', 'comparable_tag_identifier', 'comparable_tag2_identifier', unique=True),
+    )
 
     id_pac_bio_tmp = Column(mysqlINTEGER(11), primary_key=True)
     last_updated = Column(DateTime, nullable=False, comment='Timestamp of last update')
@@ -805,6 +871,9 @@ class PacBioRun(Base):
     pac_bio_library_tube_legacy_id = Column(mysqlINTEGER(11), comment='Legacy library_id for backwards compatibility.')
     library_created_at = Column(DateTime, comment='Timestamp of library creation')
     pac_bio_run_name = Column(String(255, 'utf8_unicode_ci'), comment='Name of the run')
+    pipeline_id_lims = Column(String(60, 'utf8_unicode_ci'), comment='LIMS-specific pipeline identifier that unambiguously defines library type (eg. Sequel-v1, IsoSeq-v1)')
+    comparable_tag_identifier = Column(String(255, 'utf8_unicode_ci'), Computed('(ifnull(`tag_identifier`,-(1)))', persisted=False))
+    comparable_tag2_identifier = Column(String(255, 'utf8_unicode_ci'), Computed('(ifnull(`tag2_identifier`,-(1)))', persisted=False))
 
     sample = relationship('Sample', back_populates='pac_bio_run')
     study = relationship('Study', back_populates='pac_bio_run')

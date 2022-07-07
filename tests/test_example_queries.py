@@ -18,71 +18,56 @@
 # @author Adam Blanchet <ab59@sanger.ac.uk>
 
 from datetime import datetime
+
+from pytest import mark as m
+
 from examples.genotyping import get_flgen_plate
 from examples.long_illumina import summarize_long_illumina
-from examples.npg_qc import (
-    get_iseq_product_metrics_by_study,
-    get_iseq_product_metrics_run,
-    get_iseq_product_metrics_by_decode_percent,
-)
 from examples.npg_irods import (
     find_pacbio_runs,
     get_bmap_flowcell_records,
     get_stock_records,
+)
+from examples.npg_qc import (
+    get_iseq_product_metrics_by_decode_percent,
+    get_iseq_product_metrics_by_study,
+    get_iseq_product_metrics_run,
 )
 from examples.recently_updated import (
     get_recent_fluidigm,
     get_recent_ont,
     get_recent_pacbio_runs,
 )
-from pytest import mark as m
-from tests.ml_warehouse_fixture import (
-    mlwh_session,
-    mlwh_session_flgen,
-    mlwh_session_ipm,
-)
-
-# Stop IDEs optimizing away import
-_ = mlwh_session_flgen, mlwh_session, mlwh_session_ipm
 
 
 @m.describe("Running example queries")
 class TestMLWarehouseExampleRecentQueries(object):
-    @m.it("Successfully retrieve recently updated PacBio runs")
+    @m.it("Retrieves recently updated PacBio runs")
     def test_retrieve_recent_pacbio(self, mlwh_session):
 
         max_age = datetime(year=2021, month=1, day=31)
-
         recent_runs = get_recent_pacbio_runs(mlwh_session, max_age)
 
-        lims_ids = [
+        expected_lims_ids = [
             str(i)
             for i in [
                 81230,
                 81876,
                 83472,
-                83472,
-                83472,
-                83472,
-                83472,
-                83472,
-                83472,
-                83472,
             ]
         ]
 
         # Check count, so test doesn't risk taking ages to fail
-        assert recent_runs.count() == len(lims_ids)
+        assert recent_runs.count() == len(expected_lims_ids)
 
-        returned_lims_ids = [row.id_pac_bio_run_lims for row in recent_runs.all()]
+        observed_lims_ids = [row.id_pac_bio_run_lims for row in recent_runs.all()]
 
-        assert lims_ids == returned_lims_ids
+        assert set(observed_lims_ids) == set(expected_lims_ids)
 
-    @m.it("Successfully retrieve recently updated ONT runs")
+    @m.it("Retrieves recently updated ONT runs")
     def test_retrieve_recent_ont(self, mlwh_session):
 
         max_age = datetime(year=2018, month=1, day=1)
-
         recent_runs = get_recent_ont(mlwh_session, max_age)
 
         expected_names = [
@@ -100,17 +85,16 @@ class TestMLWarehouseExampleRecentQueries(object):
         # Check count, so test doesn't risk taking ages to fail
         assert recent_runs.count() == len(expected_names)
 
-        returned_names = [row.name for row in recent_runs.all()]
+        observed_names = [row.name for row in recent_runs.all()]
 
-        assert expected_names == returned_names
+        assert set(observed_names) == set(expected_names)
 
-    @m.it("Successfully retrieve recently updated fluidigm")
+    @m.it("Retrieves recently updated Fluidigm runs")
     def test_retrieve_recent_fluidigm(self, mlwh_session_flgen):
 
         max_age = datetime(year=2021, month=8, day=19)
 
         records = get_recent_fluidigm(mlwh_session_flgen, max_age)
-
         assert records.count() == 3
 
         expected_records = [
@@ -142,12 +126,12 @@ class TestMLWarehouseExampleRecentQueries(object):
                 datetime(2021, 8, 25, 10, 21, 52),
             ),
         ]
-        assert records.all() == expected_records
+        assert set(records.all()) == set(expected_records)
 
 
 @m.describe("Running example genotyping queries")
 class TestMLWarehouseExampleGenotypingQueries(object):
-    @m.it("Successfuly retrieve set of FlgenPlate matching barcode and label")
+    @m.it("Retrieves an FlgenPlate matching barcode and label")
     def test_retrieve_flgen_plate(self, mlwh_session_flgen):
 
         records = get_flgen_plate(mlwh_session_flgen, 1382108143, "S70")
@@ -173,14 +157,14 @@ class TestMLWarehouseExampleGenotypingQueries(object):
             None,
         ]
         res = records.first()
-        actual_result = [getattr(res, col.name) for col in res.__table__.columns]
+        observed_result = [getattr(res, col.name) for col in res.__table__.columns]
 
-        assert actual_result == expected_result
+        assert observed_result == expected_result
 
 
 @m.describe("Running example npg_irods queries")
 class TestMLWarehouseExampleNpgIrodsQueries(object):
-    @m.it("Successfully retrieve StockResource by stock ID")
+    @m.it("Retrieves StockResource by stock ID")
     def test_retrieve_stock_resource(self, mlwh_session):
 
         stock_id = "stock_barcode_01234"
@@ -190,7 +174,7 @@ class TestMLWarehouseExampleNpgIrodsQueries(object):
         assert records.count() == 1
         assert records.first().id_stock_resource_tmp == 2345678
 
-    @m.it("Successfully retrieve BmapFlowcellRecords by chip serialnumber and position")
+    @m.it("Retrieves BmapFlowcellRecords by chip serialnumber and position")
     def test_retrieve_bmap_flowcell(self, mlwh_session):
 
         chip_serialnumber = "KHPZDTGLPQJGPNWU"
@@ -201,7 +185,7 @@ class TestMLWarehouseExampleNpgIrodsQueries(object):
         assert records.count() == 1
         assert records.first().id_sample_tmp == 3135749
 
-    @m.it("Successfully retrieve PacBio runs")
+    @m.it("Retrieves PacBio runs")
     def test_retrieve_pacbio_runs(self, mlwh_session):
 
         run_id = 32669
@@ -212,43 +196,28 @@ class TestMLWarehouseExampleNpgIrodsQueries(object):
 
         expected_ids_tmp = [
             1714,
-            1715,
-            1717,
             1720,
+            1715,
             1727,
+            1717,
             2993,
             3118,
             4063,
             12460,
-            12461,
-            12462,
-            12463,
-            12464,
-            12465,
-            12466,
-            12467,
-            12468,
-            12469,
-            12470,
-            12471,
-            12472,
-            12473,
-            12474,
-            12475,
-            16207,
             20300,
+            16207,
         ]
 
-        assert records.count() == 26
+        assert records.count() == len(expected_ids_tmp)
 
-        returned_ids_tmp = [row.id_pac_bio_tmp for row in records.all()]
+        observed_ids_tmp = [row.id_pac_bio_tmp for row in records.all()]
 
-        assert expected_ids_tmp == returned_ids_tmp
+        assert set(observed_ids_tmp) == set(expected_ids_tmp)
 
 
 @m.describe("Running example npg_qc queries")
 class TestMLWarehouseExampleNpgQcQueries(object):
-    @m.it("Successfully retrieve IseqProductMetrics")
+    @m.it("Retrieves IseqProductMetrics")
     def test_retrieve_iseq_product_metrics(self, mlwh_session_ipm):
 
         run_ids = [7915, 15440, 18980, 17550]
@@ -263,7 +232,7 @@ class TestMLWarehouseExampleNpgQcQueries(object):
         assert records.first().id_run == 17550
         assert records.first().study_count == 5
 
-    @m.it("Successfully retrieve IseqProductMetrics by study")
+    @m.it("Retrieves IseqProductMetrics by study")
     def test_retrieve_iseq_product_metrics_by_study(self, mlwh_session_ipm):
 
         study_name = "Illumina Controls"
@@ -275,11 +244,11 @@ class TestMLWarehouseExampleNpgQcQueries(object):
 
         assert records.count() == 3
 
-        returned_run_ids = [row.id_run for row in records.all()]
+        observed_run_ids = [row.id_run for row in records.all()]
         expected_run_ids = [7915, 17550, 18980]
-        assert returned_run_ids == expected_run_ids
+        assert set(observed_run_ids) == set(expected_run_ids)
 
-    @m.it("Successfully retrieve IseqProductMetrics by decode percent")
+    @m.it("Retrieves IseqProductMetrics by decode percent")
     def test_retrieve_iseq_product_metrics_by_decode_percent(self, mlwh_session):
 
         max_decode_percent = 95
@@ -291,14 +260,14 @@ class TestMLWarehouseExampleNpgQcQueries(object):
 
         assert records.count() == 2
 
-        returned_run_ids = [row.id_run for row in records.all()]
+        observed_run_ids = [row.id_run for row in records.all()]
         expected_run_ids = [18448, 26291]
-        assert returned_run_ids == expected_run_ids
+        assert set(observed_run_ids) == set(expected_run_ids)
 
 
 @m.describe("Running example long Illumina runs query")
 class TestMLWarehouseExampleLongIlluminaQuery(object):
-    @m.it("Successfully get long Illumina runs")
+    @m.it("Gets long Illumina runs")
     def test_summarize_long_illumina(self, mlwh_session_ipm):
 
         faculty_sponsor_pattern = "%tyler%"
@@ -318,13 +287,13 @@ class TestMLWarehouseExampleLongIlluminaQuery(object):
 
         assert records.count() == 1
 
-        expected = [
+        expected_record = (
             15440,
             "qc complete",
             datetime(2015, 2, 8, 21, 9, 14),
             4,
             "SEQCAP_Lebanon_LowCov-seq",
-        ]
-        actual = [i for i in records.first()._asdict().values()]
+        )
+        observed_record = records.first()
 
-        assert expected == actual
+        assert observed_record == expected_record

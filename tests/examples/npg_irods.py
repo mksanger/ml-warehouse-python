@@ -18,8 +18,10 @@
 # @author Adam Blanchet <ab59@sanger.ac.uk>
 
 from typing import Optional
-from ml_warehouse.ml_warehouse_schema import BmapFlowcell, PacBioRun, StockResource
-from sqlalchemy.orm import Session, Query
+
+from sqlalchemy.orm import Query, Session
+
+from ml_warehouse.schema import BmapFlowcell, PacBioRun, StockResource
 
 
 def get_stock_records(sess: Session, stock_id: str):

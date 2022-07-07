@@ -1,3 +1,2 @@
 # sqlacodegen==3.0.0b2
 git+https://github.com/wtsi-npg/sqlacodegen.git@2b123c0526f0b075ec46dcb3e97b6a26b8cebdd6 # fork of sqlacodegen with bugfixes
-black==21.8b0

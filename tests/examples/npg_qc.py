@@ -19,19 +19,18 @@
 
 from typing import Sequence
 
+from sqlalchemy.orm import Session
+from sqlalchemy.sql.expression import distinct
+from sqlalchemy.sql.functions import func
 from sqlalchemy.sql.schema import Column
 from sqlalchemy.sql.sqltypes import Integer
 
-from ml_warehouse.ml_warehouse_schema import (
+from ml_warehouse.schema import (
     IseqFlowcell,
     IseqProductMetrics,
     IseqRunLaneMetrics,
     Study,
 )
-
-from sqlalchemy.sql.expression import distinct
-from sqlalchemy.orm import Session
-from sqlalchemy.sql.functions import func
 
 
 def get_iseq_product_metrics_run(
