@@ -39,7 +39,7 @@ jobs:
         uses: ncipollo/release-action@v1.10.0
         with:
           name: ${{ env.ML_WAREHOUSE_PYTHON_VERSION }}
-          prerelease: ${{ !(github.ref == 'refs/heads/master') }}
+          prerelease: ${{ !(github.ref == 'refs/heads/main') }}
           artifacts: "dist/*.tar.gz"
           removeArtifacts: true
           artifactErrorsFailBuild: true
