@@ -31,15 +31,16 @@ jobs:
       - name: "Build Package"
         run: python -m build
 
-      - name: "Get release version"
+      - name: "Get release variables"
         run: |
           echo ML_WAREHOUSE_PYTHON_VERSION=$(git describe --always --tags --dirty) >> $GITHUB_ENV
+          echo MAIN_SHA=$(git rev-parse origin/main) >> $GITHUB_ENV
 
       - name: "Create Release"
         uses: ncipollo/release-action@v1.10.0
         with:
           name: ${{ env.ML_WAREHOUSE_PYTHON_VERSION }}
-          prerelease: ${{ !(github.ref == 'refs/heads/main') }}
+          prerelease: ${{ !(github.sha == env.MAIN_SHA) }}
           artifacts: "dist/*.tar.gz"
           removeArtifacts: true
           artifactErrorsFailBuild: true
