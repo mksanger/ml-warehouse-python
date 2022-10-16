@@ -1,4 +1,4 @@
 cryptography==36.0.1
 pymysql==1.0.2
 sqlalchemy-utils==0.38.1
-sqlalchemy==1.4.29
+sqlalchemy==1.4.42
